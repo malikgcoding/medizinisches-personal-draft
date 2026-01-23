@@ -45,7 +45,7 @@ const FAQ = () => {
 								}
 								className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-card-hover transition-colors"
 							>
-								<span className="font-medium text-foreground pr-4">
+								<span className="font-medium text-lg text-foreground pr-4">
 									{faq.question}
 								</span>
 								<span
@@ -61,7 +61,7 @@ const FAQ = () => {
 									openIndex === index ? 'max-h-96' : 'max-h-0'
 								}`}
 							>
-								<div className="px-6 pb-5 text-muted-foreground leading-relaxed">
+								<div className="px-6 pb-5 text-muted-foreground text-base md:text-lg leading-relaxed">
 									{faq.answer}
 								</div>
 							</div>
