@@ -25,7 +25,7 @@ const Accordion = () => {
               isOpen ? 'max-h-96' : 'max-h-0'
             }`}
           >
-            <div className="px-6 pb-5 text-muted-foreground leading-relaxed space-y-4">
+            <div className="pt-4 pb-5 text-foreground leading-relaxed space-y-4 text-base">
               <p>
                 Die Domain medizinisches-personal.de ist eine Premium-Domain mit exaktem Keyword-Matching. Sie ist ideal für Unternehmen in der Personalvermittlung und im Recruiting im Gesundheitswesen.
               </p>
