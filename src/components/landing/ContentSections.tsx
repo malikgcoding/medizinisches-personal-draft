@@ -20,7 +20,7 @@ const ContentSections = () => {
         <div className="grid gap-8 md:grid-cols-2">
           {/* Für wen relevant */}
           <div className="md:col-span-2">
-            <section className="px-6 py-20">
+            <section className="px-6 py-10">
               <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-12">
                   <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
@@ -33,38 +33,38 @@ const ContentSections = () => {
                     {
                       title: "Zeitarbeit / Arbeitnehmerüberlassung",
                       content: "Zugang zur Nachfrage, bevor sie verteilt wird. Nicht reagieren – vorliegen.",
-                      link: "medizinisches-personal.de/zeitarbeit"
+                      link: "/zeitarbeit"
                     },
                     {
                       title: "Jobportale & Recruiting-Plattformen",
                       content: "Eigentum am generischen Einstiegspunkt. Reichweite entsteht, bevor Kampagnen starten.",
-                      link: "medizinisches-personal.de/jobportale"
+                      link: "/jobportale"
                     },
                     {
                       title: "Kliniken und Klinikgruppen",
                       content: "Unabhängiger Zugang zum Bewerbermarkt. Weniger Abhängigkeit von Plattformen und Dienstleistern.",
-                      link: "medizinisches-personal.de/kliniken"
+                      link: "/kliniken"
                     },
                     {
                       title: "Gesundheitsverbände",
                       content: "Sprachführerschaft im digitalen Raum. Begriffe prägen Wahrnehmung – nicht Logos.",
-                      link: "medizinisches-personal.de/verbaende"
+                      link: "/verbaende"
                     },
                     {
                       title: "Fachverlage & Gesundheitsmedien",
                       content: "Struktureller SEO-Traffic auf einem dauerhaft relevanten Thema. Redaktionell und wirtschaftlich nutzbar.",
-                      link: "medizinisches-personal.de/verlage"
+                      link: "/verlage"
                     },
                     {
                       title: "Pflegeheime & Träger",
                       content: "Direkter Zugang zur Pflege-Nachfrage. Ohne Vermittler, ohne Streuverluste.",
-                      link: "medizinisches-personal.de/pflegeheime"
+                      link: "/pflegeheime"
                     }
                   ].map((card, index) => (
                     <div key={index} className="bg-card rounded-2xl border border-border-subtle p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 relative group">
-                      <h3 className="text-xl font-semibold text-foreground mb-3">{card.title}</h3>
+                      <h3 className="text-xl font-semibold mb-3" style={{ color: '#2f6f5e' }}>{card.title}</h3>
                       <p className="text-muted-foreground mb-4">{card.content}</p>
-                      <a href={`https://${card.link}`} target="_blank" rel="noopener noreferrer" className="absolute bottom-4 right-4 text-primary font-medium text-sm hover:text-primary/80 transition-colors">
+                      <a href={`https://medizinisches-personal.de${card.link}`} target="_blank" rel="noopener noreferrer" className="absolute bottom-4 right-4 text-primary font-medium text-sm hover:text-primary/80 transition-colors">
                         {card.link}
                       </a>
                     </div>
