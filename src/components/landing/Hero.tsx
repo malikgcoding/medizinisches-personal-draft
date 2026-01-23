@@ -23,7 +23,7 @@ const Hero = () => {
             style={{ animationDelay: '0.2s' }}
           >
             <img 
-              src="/src/assets/dach-map.png" 
+              src="/dach_map.svg" 
               alt="DACH Region - Deutschland, Österreich, Schweiz" 
               className="w-full max-w-md opacity-90"
             />
