@@ -83,25 +83,49 @@ const ContentSections = () => {
               <h2 className="section-heading">Was hier konkret angeboten wird</h2>
             </div>
             <div className="section-card opacity-0 animate-slide-up">
-              <p className="text-lg text-muted-foreground mb-6 font-semibold">
+              <p className="text-lg text-muted-foreground mb-6">
                 Zum Paket gehören folgende Domains:
               </p>
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                {[
-                  'medizinisches-personal.de',
-                  'medizinisches-personal.at',
-                  'medizinischespersonal.at',
-                  'medizinisches-personal.ch',
-                  'medizinischespersonal.ch',
-                  'medizinisches-personal.app',
-                  'medizinischespersonal.app'
-                ].map((domain, index) => (
-                  <div key={index} className="bg-card rounded-2xl border border-border-subtle p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 text-center">
-                    <span className="font-semibold" style={{ color: '#2f6f5e' }}>{domain}</span>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="md:col-span-2">
+                  <div className="grid grid-cols-2 gap-4">
+                    {[
+                      'medizinisches-personal.de',
+                      'medizinisches-personal.at',
+                      'medizinischespersonal.at',
+                      'medizinisches-personal.ch',
+                      'medizinischespersonal.ch',
+                      'medizinisches-personal.app',
+                      'medizinischespersonal.app'
+                    ].map((domain, index) => (
+                      <div key={index} className="bg-card rounded-2xl border border-border-subtle p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 text-center">
+                        <span className="font-semibold" style={{ color: '#2f6f5e' }}>{domain}</span>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
+                <div className="bg-muted rounded-2xl p-5">
+                  <h4 className="font-semibold text-foreground mb-4">Lieferumfang</h4>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <span className="text-green-600 font-bold">✅</span>
+                      <span className="text-sm text-muted-foreground">Nur Domain-Rechte</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-red-600 font-bold">❌</span>
+                      <span className="text-sm text-muted-foreground">Kein Geschäftsbetrieb</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-red-600 font-bold">❌</span>
+                      <span className="text-sm text-muted-foreground">Keine Vermittlung</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-red-600 font-bold">❌</span>
+                      <span className="text-sm text-muted-foreground">Keine Services</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p className="text-lg text-muted-foreground leading-tight">Es handelt sich ausschließlich um digitale Assets. Keine Dienstleistungen. Kein Betrieb. Kein Matching. Keine Job- oder Personalvermittlung.</p>
             </div>
           </div>
 
