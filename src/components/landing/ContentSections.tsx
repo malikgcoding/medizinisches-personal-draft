@@ -197,48 +197,48 @@ const ContentSections = () => {
               icon={<FileTextIcon />}
               delay="0.8s"
             >
-              <div className="grid grid-cols-5 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                 <div className="text-center p-6 bg-primary-light rounded-2xl min-h-[140px] flex flex-col justify-center">
-                  <div className="w-8 h-8 mx-auto mb-3 text-primary">
+                  <div className="w-8 h-8 mx-auto mb-3 text-primary flex-shrink-0">
                     <GlobeIcon />
                   </div>
-                  <div className="text-sm font-semibold text-primary mb-2">Asset</div>
-                  <div className="text-lg font-bold text-primary">Domain-Paket</div>
-                  <div className="text-xs text-muted-foreground mt-1">DE / AT / CH / APP</div>
+                  <div className="text-2xl font-bold text-primary mb-2">Asset</div>
+                  <div className="text-primary">Domain-Paket</div>
+                  <div className="text-muted-foreground mt-1">DE / AT / CH / APP</div>
                 </div>
 
                 <div className="text-center p-6 bg-primary-light rounded-2xl min-h-[140px] flex flex-col justify-center">
-                  <div className="w-8 h-8 mx-auto mb-3 text-green-600">
+                  <div className="w-8 h-8 mx-auto mb-3 text-[#2f6f5e] flex-shrink-0">
                     <CheckCircleIcon />
                   </div>
-                  <div className="text-sm font-semibold text-primary mb-2">Status</div>
-                  <div className="text-lg font-bold text-green-600">verfügbar</div>
+                  <div className="text-2xl font-bold text-primary mb-2">Status</div>
+                  <div className="text-[#2f6f5e] font-bold">verfügbar</div>
                 </div>
 
                 <div className="text-center p-6 bg-primary-light rounded-2xl min-h-[140px] flex flex-col justify-center">
-                  <div className="w-8 h-8 mx-auto mb-3 text-primary">
+                  <div className="w-8 h-8 mx-auto mb-3 text-primary flex-shrink-0">
                     <KeyIcon />
                   </div>
-                  <div className="text-sm font-semibold text-primary mb-2">Preis</div>
-                  <div className="text-lg font-bold text-primary">nicht öffentlich</div>
+                  <div className="text-2xl font-bold text-primary mb-2">Preis</div>
+                  <div className="text-primary">nicht öffentlich</div>
                 </div>
 
                 <div className="text-center p-6 bg-primary-light rounded-2xl min-h-[140px] flex flex-col justify-center">
-                  <div className="w-8 h-8 mx-auto mb-3 text-primary">
+                  <div className="w-8 h-8 mx-auto mb-3 text-primary flex-shrink-0">
                     <FileTextIcon />
                   </div>
-                  <div className="text-sm font-semibold text-primary mb-2">Transaktion</div>
-                  <div className="text-xs text-muted-foreground">Domain-Transfer</div>
-                  <div className="text-xs text-muted-foreground">oder Lizenzmodell</div>
+                  <div className="text-2xl font-bold text-primary mb-2">Transaktion</div>
+                  <div className="text-muted-foreground">Domain-Transfer</div>
+                  <div className="text-muted-foreground">oder Lizenzmodell</div>
                 </div>
 
                 <div className="text-center p-6 bg-primary-light rounded-2xl min-h-[140px] flex flex-col justify-center">
-                  <div className="w-8 h-8 mx-auto mb-3 text-primary">
+                  <div className="w-8 h-8 mx-auto mb-3 text-primary flex-shrink-0">
                     <MailIcon />
                   </div>
-                  <div className="text-sm font-semibold text-primary mb-2">Erstkontakt</div>
-                  <div className="text-xs text-muted-foreground">Gespräch – diskret</div>
-                  <div className="text-xs text-muted-foreground">& unverbindlich</div>
+                  <div className="text-2xl font-bold text-primary mb-2">Erstkontakt</div>
+                  <div className="text-muted-foreground">Gespräch – diskret</div>
+                  <div className="text-muted-foreground">& unverbindlich</div>
                 </div>
               </div>
             </SectionCard>
