@@ -142,24 +142,50 @@ const ContentSections = () => {
           {/* Strategischer Wert */}
           <div className="md:col-span-2">
             <SectionCard 
-              title="Warum diese Domain strategisch wertvoll ist" 
+              title="Warum diese Domains strategisch wertvoll sind" 
               icon={<TrendingIcon />}
               delay="0.4s"
             >
-              <ul className="space-y-3">
-                {[
-                  'Exaktes Keyword-Matching für Suchmaschinen',
-                  'Hohe Suchvolumina im DACH-Raum',
-                  'Sofortige Branchenzuordnung',
-                  'Vertrauensaufbau durch Professionalität',
-                  'Langfristiger SEO-Vorteil'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="text-primary mt-0.5"><CheckCircleIcon /></span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <p className="text-lg text-muted-foreground mb-6">
+                Personalgewinnung beginnt nicht mit einer Anzeige.
+                <br />
+                Sie beginnt mit einer Suche.
+              </p>
+              
+              <p className="text-lg text-muted-foreground mb-6">
+                Menschen suchen nicht nach Namen.
+                <br />
+                Sie suchen nach Begriffen.
+              </p>
+
+              <div className="bg-muted rounded-lg px-4 py-3 mb-6 flex items-center gap-2">
+                <span className="text-muted-foreground">🔍</span>
+                <div className="flex flex-wrap gap-2 text-muted-foreground">
+                  <span>„medizinisches Personal"</span>
+                  <span>„Personal im Gesundheitswesen"</span>
+                  <span>„Pflegepersonal finden"</span>
+                </div>
+              </div>
+
+              <p className="text-lg text-muted-foreground mb-6">
+                Begriffe bündeln Nachfrage.
+                <br />
+                Domains kontrollieren den Einstieg.
+              </p>
+
+              <p className="text-lg text-muted-foreground mb-6">
+                Operative Maßnahmen verbrauchen Budget.
+                <br />
+                Anzeigen, Zeitarbeit, Print = Opex.
+              </p>
+
+              <p className="text-lg text-muted-foreground">
+                Domain-Eigentum schafft Zugang.
+                <br />
+                Planbar. Handelbar. Dauerhaft.
+                <br />
+                CapEx.
+              </p>
             </SectionCard>
           </div>
 
