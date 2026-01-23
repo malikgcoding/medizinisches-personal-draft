@@ -11,7 +11,7 @@ const Accordion = () => {
           onClick={() => setIsOpen(!isOpen)}
           className="w-full flex items-center justify-between text-left hover:text-primary transition-colors"
         >
-          <span className="font-medium text-foreground">Mehr über Markt, Wachstum & Nachfrage und digitale Zugänge lesen</span>
+          <span className="font-medium text-foreground">Weitere Informationen</span>
             <span 
               className={`flex-shrink-0 text-primary transition-transform duration-300 ${
                 isOpen ? 'rotate-180' : ''
@@ -22,31 +22,18 @@ const Accordion = () => {
           </button>
           <div 
             className={`overflow-hidden transition-all duration-300 ${
-              isOpen ? 'max-h-[2000px]' : 'max-h-0'
+              isOpen ? 'max-h-96' : 'max-h-0'
             }`}
           >
             <div className="pt-6 pb-5 text-foreground leading-relaxed space-y-4 text-base text-left">
-              <h3 className="font-bold text-lg mb-4">Medizinisches Personal im DACH-Raum – Markt, Nachfrage und digitale Zugänge</h3>
               <p>
-                Der Begriff medizinisches Personal beschreibt sämtliche Fachkräfte, die direkt oder indirekt an der medizinischen Versorgung beteiligt sind. Dazu zählen Pflegekräfte, medizinische Fachangestellte, therapeutische Berufe, medizinisch-technische Assistenz, psychosoziale Fachkräfte, Hebammen, Reha-Personal sowie Ausbildungs- und Lehrberufe im Gesundheitswesen. In Deutschland, Österreich und der Schweiz wird dieser Begriff als übergeordnete Suchanfrage genutzt, wenn Einrichtungen, Träger oder Plattformen Personal im Gesundheitswesen suchen oder anbieten.
+                Die Domain medizinisches-personal.de ist eine Premium-Domain mit exaktem Keyword-Matching. Sie ist ideal für Unternehmen in der Personalvermittlung und im Recruiting im Gesundheitswesen.
               </p>
               <p>
-                Der Markt für medizinisches Personal im DACH-Raum ist seit Jahren von einem strukturellen Fachkräftemangel geprägt. Demografische Entwicklungen, eine alternde Bevölkerung und steigender Versorgungsbedarf treffen auf eine sinkende Zahl verfügbarer Fachkräfte. Besonders betroffen sind Pflegeberufe, therapeutische Fachrichtungen, medizinische Assistenz sowie Einrichtungen der Langzeit- und Altenpflege. Diese Entwicklung führt dazu, dass die Nachfrage nach medizinischem Personal kontinuierlich steigt und langfristig bestehen bleibt.
+                Mit dem genauen Branchenkeyword in der Domain gewinnen Sie sofort an Glaubwürdigkeit und SEO-Vorteilen. Eine Domain wirkt am Anfang - vor Kampagnen und Teams.
               </p>
               <p>
-                Die Suche nach medizinischem Personal beginnt heute überwiegend digital. Verantwortliche in Kliniken, Pflegeeinrichtungen, Zeitarbeitsunternehmen oder Gesundheitsorganisationen nutzen Suchmaschinen, um Personalbedarf zu decken oder Marktüberblicke zu gewinnen. Dabei werden nicht primär Markennamen gesucht, sondern generische Begriffe wie „medizinisches Personal", „Pflegepersonal finden", „Personal im Gesundheitswesen" oder „medizinische Fachkräfte". Diese Suchbegriffe bündeln Nachfrage über alle Versorgungsbereiche hinweg.
-              </p>
-              <p>
-                Domains, die exakt auf solche generischen Begriffe ausgerichtet sind, übernehmen im digitalen Prozess eine besondere Rolle. Sie fungieren als erster Zugangspunkt zur Nachfrage und können unabhängig von konkreten Geschäftsmodellen genutzt werden. Eine Domain wie medizinisches-personal.de oder die entsprechenden Länderdomains für Österreich und die Schweiz ist nicht an eine einzelne Institution oder Dienstleistung gebunden, sondern bildet den thematischen Einstieg in den gesamten Markt für medizinisches Personal.
-              </p>
-              <p>
-                Das hier angebotene Domain-Paket deckt den Begriff „medizinisches Personal" vollständig im deutschsprachigen Raum ab. Es eignet sich für unterschiedliche Nutzungsszenarien, darunter die Weiterleitung auf bestehende Karriereseiten, der Aufbau von Jobportalen oder Bewerberplattformen, redaktionelle Inhalte im Gesundheitsumfeld, Lizenzmodelle oder White-Label-Kooperationen. Die Domains können auch als langfristiges digitales Asset gehalten werden, da der zugrunde liegende Markt dauerhaft relevant bleibt.
-              </p>
-              <p>
-                Im Unterschied zu operativen Recruiting-Maßnahmen, die laufende Kosten verursachen, stellt Domain-Eigentum eine strukturelle Positionierung dar. Die Nachfrage nach medizinischem Personal ist nicht zyklisch, sondern systemisch. Entsprechend behalten thematisch präzise Domains im Gesundheitswesen ihren Wert über lange Zeiträume. Sie sind übertragbar, lizenzierbar und unabhängig von einzelnen Kampagnen oder Plattformen einsetzbar.
-              </p>
-              <p>
-                Zusammenfassend lässt sich festhalten: Der Markt für medizinisches Personal im DACH-Raum ist dauerhaft angespannt, digital geprägt und begriffsgetrieben. Domains, die diesen Oberbegriff abbilden, schaffen einen kontrollierbaren Einstieg in einen zentralen Zukunftsmarkt des Gesundheitswesens.
+                Wir bieten vollständigen technischen Support bei der Domainübertragung und Einrichtung. Der Prozess ist sicher, schnell und unkompliziert.
               </p>
             </div>
         </div>
