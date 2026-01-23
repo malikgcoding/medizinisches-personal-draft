@@ -96,18 +96,18 @@ const ContentSections = () => {
                   'medizinisches-personal.app',
                   'medizinischespersonal.app'
                 ].map((domain, index) => (
-                  <div key={index} className="bg-card border border-border-subtle rounded-lg p-3 text-center">
-                    <span className="text-sm font-medium text-foreground">{domain}</span>
+                  <div key={index} className="bg-card rounded-2xl border border-border-subtle p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 text-center">
+                    <span className="font-semibold" style={{ color: '#2f6f5e' }}>{domain}</span>
                   </div>
                 ))}
               </div>
-              <div className="text-center">
-                <p className="text-muted-foreground mb-2">Es handelt sich ausschließlich um digitale Assets.</p>
+              <div>
+                <p className="text-lg text-muted-foreground mb-2">Es handelt sich ausschließlich um digitale Assets.</p>
                 <div className="space-y-1">
-                  <p className="text-sm text-muted-foreground">Keine Dienstleistungen.</p>
-                  <p className="text-sm text-muted-foreground">Kein Betrieb.</p>
-                  <p className="text-sm text-muted-foreground">Kein Matching.</p>
-                  <p className="text-sm text-muted-foreground">Keine Job- oder Personalvermittlung.</p>
+                  <p className="text-lg text-muted-foreground">Keine Dienstleistungen.</p>
+                  <p className="text-lg text-muted-foreground">Kein Betrieb.</p>
+                  <p className="text-lg text-muted-foreground">Kein Matching.</p>
+                  <p className="text-lg text-muted-foreground">Keine Job- oder Personalvermittlung.</p>
                 </div>
               </div>
             </div>
