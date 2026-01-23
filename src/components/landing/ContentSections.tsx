@@ -105,7 +105,7 @@ const ContentSections = () => {
                   </div>
                 </div>
                 <div className="md:col-span-1 flex flex-col justify-start">
-                  <h4 className="font-semibold mb-1" style={{ color: '#2f6f5e' }}>Lieferumfang</h4>
+                  <h3 className="font-semibold mb-1" style={{ color: '#2f6f5e' }}>Lieferumfang</h3>
                   <p className="text-lg text-muted-foreground">Es handelt sich ausschließlich um digitale Assets. Keine Dienstleistungen. Kein Betrieb. Kein Matching. Keine Job- oder Personalvermittlung.</p>
                 </div>
               </div>
@@ -250,11 +250,8 @@ const ContentSections = () => {
             >
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>
-                  Eine Domain wirkt am Anfang. Vor Kampagnen. Vor Teams. Vor Budgetfreigaben.
-                </p>
-                <p>
-                  Sie ist kein Werkzeug.<br />
-                  Sie ist ein Zugang.
+                  Eine Domain wirkt am Anfang. Vor Kampagnen. Vor Teams. Vor Budgetfreigaben.<br />
+                  Sie ist kein Werkzeug. Sie ist ein Zugang.
                 </p>
                 <p className="text-foreground font-medium">
                   Die entscheidende Frage lautet nicht:<br />
