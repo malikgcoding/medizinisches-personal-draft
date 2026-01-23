@@ -19,92 +19,100 @@ const ContentSections = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid gap-8 md:grid-cols-2">
           {/* Für wen relevant */}
-          <SectionCard 
-            title="Für wen dieses Programm relevant ist" 
-            icon={<UsersIcon />}
-            delay="0.1s"
-          >
-            <ul className="space-y-3">
-              {[
-                'Personalvermittler im Gesundheitswesen',
-                'Kliniken und Krankenhäuser',
-                'Pflegeeinrichtungen und Seniorenheime',
-                'HR-Agenturen mit Fokus auf Medizin',
-                'Investoren im Healthcare-Sektor'
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5"><CheckCircleIcon /></span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </SectionCard>
+          <div className="md:col-span-2">
+            <SectionCard 
+              title="Für wen dieses Programm relevant ist" 
+              icon={<UsersIcon />}
+              delay="0.1s"
+            >
+              <ul className="space-y-3">
+                {[
+                  'Personalvermittler im Gesundheitswesen',
+                  'Kliniken und Krankenhäuser',
+                  'Pflegeeinrichtungen und Seniorenheime',
+                  'HR-Agenturen mit Fokus auf Medizin',
+                  'Investoren im Healthcare-Sektor'
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="text-primary mt-0.5"><CheckCircleIcon /></span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </SectionCard>
+          </div>
 
           {/* Was angeboten wird */}
-          <SectionCard 
-            title="Was hier konkret angeboten wird" 
-            icon={<BriefcaseIcon />}
-            delay="0.2s"
-          >
-            <p className="mb-4">
-              Die Premium-Domain <strong className="text-foreground">medizinisches-personal.de</strong> steht 
-              zum Verkauf. Eine einmalige Gelegenheit für Unternehmen, die im Bereich 
-              Personalvermittlung oder Recruiting im Gesundheitswesen tätig sind.
-            </p>
-            <p>
-              Inklusive vollständiger Übertragung aller Rechte und technischer Unterstützung 
-              beim Transfer.
-            </p>
-          </SectionCard>
+          <div className="md:col-span-2">
+            <SectionCard 
+              title="Was hier konkret angeboten wird" 
+              icon={<BriefcaseIcon />}
+              delay="0.2s"
+            >
+              <p className="mb-4">
+                Die Premium-Domain <strong className="text-foreground">medizinisches-personal.de</strong> steht 
+                zum Verkauf. Eine einmalige Gelegenheit für Unternehmen, die im Bereich 
+                Personalvermittlung oder Recruiting im Gesundheitswesen tätig sind.
+              </p>
+              <p>
+                Inklusive vollständiger Übertragung aller Rechte und technischer Unterstützung 
+                beim Transfer.
+              </p>
+            </SectionCard>
+          </div>
 
           {/* Nutzungsszenarien */}
-          <SectionCard 
-            title={
-              <>
-                <span className="hidden sm:inline">Mögliche Nutzungsszenarien</span>
-                <span className="sm:hidden">Mögliche<br />Nutzungs-<br />szenarien</span>
-              </>
-            }
-            icon={<TargetIcon />}
-            delay="0.3s"
-          >
-            <ul className="space-y-3">
-              {[
-                'Jobportal für medizinisches Fachpersonal',
-                'Recruiting-Plattform für Pflegekräfte',
-                'Vermittlungsagentur für Ärzte und Therapeuten',
-                'Corporate-Website für HR-Dienstleister',
-                'Branchen-Blog mit Lead-Generierung'
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 min-w-0">
-                  <span className="text-primary mt-0.5 flex-shrink-0"><CheckCircleIcon /></span>
-                  <span className="break-words">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </SectionCard>
+          <div className="md:col-span-2">
+            <SectionCard 
+              title={
+                <>
+                  <span className="hidden sm:inline">Mögliche Nutzungsszenarien</span>
+                  <span className="sm:hidden">Mögliche<br />Nutzungs-<br />szenarien</span>
+                </>
+              }
+              icon={<TargetIcon />}
+              delay="0.3s"
+            >
+              <ul className="space-y-3">
+                {[
+                  'Jobportal für medizinisches Fachpersonal',
+                  'Recruiting-Plattform für Pflegekräfte',
+                  'Vermittlungsagentur für Ärzte und Therapeuten',
+                  'Corporate-Website für HR-Dienstleister',
+                  'Branchen-Blog mit Lead-Generierung'
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 min-w-0">
+                    <span className="text-primary mt-0.5 flex-shrink-0"><CheckCircleIcon /></span>
+                    <span className="break-words">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </SectionCard>
+          </div>
 
           {/* Strategischer Wert */}
-          <SectionCard 
-            title="Warum diese Domain strategisch wertvoll ist" 
-            icon={<TrendingIcon />}
-            delay="0.4s"
-          >
-            <ul className="space-y-3">
-              {[
-                'Exaktes Keyword-Matching für Suchmaschinen',
-                'Hohe Suchvolumina im DACH-Raum',
-                'Sofortige Branchenzuordnung',
-                'Vertrauensaufbau durch Professionalität',
-                'Langfristiger SEO-Vorteil'
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5"><CheckCircleIcon /></span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </SectionCard>
+          <div className="md:col-span-2">
+            <SectionCard 
+              title="Warum diese Domain strategisch wertvoll ist" 
+              icon={<TrendingIcon />}
+              delay="0.4s"
+            >
+              <ul className="space-y-3">
+                {[
+                  'Exaktes Keyword-Matching für Suchmaschinen',
+                  'Hohe Suchvolumina im DACH-Raum',
+                  'Sofortige Branchenzuordnung',
+                  'Vertrauensaufbau durch Professionalität',
+                  'Langfristiger SEO-Vorteil'
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="text-primary mt-0.5"><CheckCircleIcon /></span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </SectionCard>
+          </div>
 
           {/* Full-width: Was unter medizinisches Personal verstanden wird */}
           <div className="md:col-span-2">
