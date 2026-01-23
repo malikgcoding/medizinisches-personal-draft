@@ -69,9 +69,9 @@ const ContentSections = () => {
                 'Corporate-Website für HR-Dienstleister',
                 'Branchen-Blog mit Lead-Generierung'
               ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5"><CheckCircleIcon /></span>
-                  <span>{item}</span>
+                <li key={i} className="flex items-start gap-3 min-w-0">
+                  <span className="text-primary mt-0.5 flex-shrink-0"><CheckCircleIcon /></span>
+                  <span className="break-words">{item}</span>
                 </li>
               ))}
             </ul>
