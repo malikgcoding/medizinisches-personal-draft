@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="relative min-h-[85vh] flex items-center px-6 py-20 overflow-hidden">
+    <section className="relative min-h-[85vh] flex items-center px-6 pb-20 overflow-hidden">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
       
