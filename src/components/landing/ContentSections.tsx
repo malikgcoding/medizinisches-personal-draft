@@ -82,7 +82,7 @@ const ContentSections = () => {
               </div>
               <h2 className="section-heading">Was hier konkret angeboten wird</h2>
             </div>
-            <div className="bg-card rounded-3xl border border-border-subtle p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1" style={{ boxShadow: 'var(--shadow-card)' }}>
+            <div className="section-card">
               <p className="text-lg text-muted-foreground mb-6">
                 Zum Paket gehören folgende Domains:
               </p>
@@ -101,7 +101,7 @@ const ContentSections = () => {
                   </div>
                 ))}
               </div>
-              <div className="border-l-4 pl-6 rounded-l-lg" style={{ borderColor: '#2f6f5e' }}>
+              <div className="border-l-4 pl-6 rounded-lg overflow-hidden" style={{ borderColor: '#2f6f5e' }}>
                 <p className="text-lg text-muted-foreground mb-2">Es handelt sich ausschließlich um digitale Assets.</p>
                 <div className="space-y-1">
                   <p className="text-lg text-muted-foreground">Keine Dienstleistungen.</p>
