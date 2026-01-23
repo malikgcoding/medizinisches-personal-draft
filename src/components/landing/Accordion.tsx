@@ -5,17 +5,13 @@ const Accordion = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <section className="px-6 py-20">
+    <section className="px-6 py-8">
       <div className="max-w-3xl mx-auto">
-        <div 
-          className="bg-card rounded-3xl border border-border-subtle overflow-hidden transition-all duration-300"
-          style={{ boxShadow: 'var(--shadow-card)' }}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="w-full flex items-center justify-between text-left hover:text-primary transition-colors"
         >
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-card-hover transition-colors"
-          >
-            <span className="font-medium text-foreground text-lg">Weitere Informationen</span>
+          <span className="font-medium text-foreground">Weitere Informationen</span>
             <span 
               className={`flex-shrink-0 text-primary transition-transform duration-300 ${
                 isOpen ? 'rotate-180' : ''
@@ -40,7 +36,6 @@ const Accordion = () => {
                 Wir bieten vollständigen technischen Support bei der Domainübertragung und Einrichtung. Der Prozess ist sicher, schnell und unkompliziert.
               </p>
             </div>
-          </div>
         </div>
       </div>
     </section>
