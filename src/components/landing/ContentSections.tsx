@@ -57,7 +57,12 @@ const ContentSections = () => {
 
           {/* Nutzungsszenarien */}
           <SectionCard 
-            title={<>Mögliche<wbr /> Nutzungsszenarien</>}
+            title={
+              <>
+                <span className="hidden sm:inline">Mögliche Nutzungsszenarien</span>
+                <span className="sm:hidden">Mögliche<br />Nutzungs-<br />szenarien</span>
+              </>
+            }
             icon={<TargetIcon />}
             delay="0.3s"
           >
