@@ -104,26 +104,9 @@ const ContentSections = () => {
                     ))}
                   </div>
                 </div>
-                <div className="bg-muted rounded-2xl p-5">
-                  <h4 className="font-semibold text-foreground mb-4">Lieferumfang</h4>
-                  <div className="space-y-2">
-                    <div className="flex items-start gap-2">
-                      <span className="text-green-600 font-bold">✅</span>
-                      <span className="text-sm text-muted-foreground">Nur Domain-Rechte</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-red-600 font-bold">❌</span>
-                      <span className="text-sm text-muted-foreground">Kein Geschäftsbetrieb</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-red-600 font-bold">❌</span>
-                      <span className="text-sm text-muted-foreground">Keine Vermittlung</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-red-600 font-bold">❌</span>
-                      <span className="text-sm text-muted-foreground">Keine Services</span>
-                    </div>
-                  </div>
+                <div className="md:col-span-1 flex flex-col justify-start">
+                  <h4 className="font-semibold mb-4" style={{ color: '#2f6f5e' }}>Lieferumfang</h4>
+                  <p className="text-sm text-muted-foreground">Es handelt sich ausschließlich um digitale Assets. Keine Dienstleistungen. Kein Betrieb. Kein Matching. Keine Job- oder Personalvermittlung.</p>
                 </div>
               </div>
             </div>
