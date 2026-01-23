@@ -198,7 +198,7 @@ const ContentSections = () => {
               delay="0.8s"
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
-                <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center">
+                <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
                   <div className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-2 md:mb-3 text-primary flex-shrink-0">
                     <GlobeIcon />
                   </div>
@@ -207,7 +207,7 @@ const ContentSections = () => {
                   <div className="text-muted-foreground text-xs md:text-sm mt-1">DE / AT / CH / APP</div>
                 </div>
 
-                <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center">
+                <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
                   <div className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-2 md:mb-3 text-[#2f6f5e] flex-shrink-0">
                     <CheckCircleIcon />
                   </div>
@@ -215,7 +215,7 @@ const ContentSections = () => {
                   <div className="text-muted-foreground text-sm md:text-base">verfügbar</div>
                 </div>
 
-                <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center">
+                <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
                   <div className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-2 md:mb-3 text-primary flex-shrink-0">
                     <KeyIcon />
                   </div>
@@ -223,7 +223,7 @@ const ContentSections = () => {
                   <div className="text-muted-foreground text-sm md:text-base">nicht öffentlich</div>
                 </div>
 
-                <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center">
+                <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
                   <div className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-2 md:mb-3 text-primary flex-shrink-0">
                     <FileTextIcon />
                   </div>
@@ -232,7 +232,7 @@ const ContentSections = () => {
                   <div className="text-muted-foreground text-xs md:text-sm">oder Lizenzmodell</div>
                 </div>
 
-                <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center">
+                <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
                   <div className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-2 md:mb-3 text-primary flex-shrink-0">
                     <MailIcon />
                   </div>
