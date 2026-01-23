@@ -28,54 +28,47 @@ const ContentSections = () => {
                   </div>
                   <h2 className="section-heading">Für wen dieses Paket relevant ist</h2>
                 </div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <div className="relative p-6 bg-primary-light rounded-2xl">
-                    <div className="absolute top-4 right-4 text-xs text-[#2f6f5e] font-medium">/zeitarbeit</div>
-                    <h3 className="text-lg font-bold text-primary mb-3">Zeitarbeit / Arbeitnehmerüberlassung</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      Zugang zur Nachfrage, bevor sie verteilt wird. Nicht reagieren – vorliegen.
-                    </p>
-                  </div>
-
-                  <div className="relative p-6 bg-primary-light rounded-2xl">
-                    <div className="absolute top-4 right-4 text-xs text-[#2f6f5e] font-medium">/jobportale</div>
-                    <h3 className="text-lg font-bold text-primary mb-3">Jobportale & Recruiting-Plattformen</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      Eigentum am generischen Einstiegspunkt. Reichweite entsteht, bevor Kampagnen starten.
-                    </p>
-                  </div>
-
-                  <div className="relative p-6 bg-primary-light rounded-2xl">
-                    <div className="absolute top-4 right-4 text-xs text-[#2f6f5e] font-medium">/kliniken</div>
-                    <h3 className="text-lg font-bold text-primary mb-3">Kliniken und Klinikgruppen</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      Unabhängiger Zugang zum Bewerbermarkt. Weniger Abhängigkeit von Plattformen und Dienstleistern.
-                    </p>
-                  </div>
-
-                  <div className="relative p-6 bg-primary-light rounded-2xl">
-                    <div className="absolute top-4 right-4 text-xs text-[#2f6f5e] font-medium">/verbaende</div>
-                    <h3 className="text-lg font-bold text-primary mb-3">Gesundheitsverbände</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      Sprachführerschaft im digitalen Raum. Begriffe prägen Wahrnehmung – nicht Logos.
-                    </p>
-                  </div>
-
-                  <div className="relative p-6 bg-primary-light rounded-2xl">
-                    <div className="absolute top-4 right-4 text-xs text-[#2f6f5e] font-medium">/verlage</div>
-                    <h3 className="text-lg font-bold text-primary mb-3">Fachverlage & Gesundheitsmedien</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      Struktureller SEO-Traffic auf einem dauerhaft relevanten Thema. Redaktionell und wirtschaftlich nutzbar.
-                    </p>
-                  </div>
-
-                  <div className="relative p-6 bg-primary-light rounded-2xl">
-                    <div className="absolute top-4 right-4 text-xs text-[#2f6f5e] font-medium">/pflegeheime</div>
-                    <h3 className="text-lg font-bold text-primary mb-3">Pflegeheime & Träger</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      Direkter Zugang zur Pflege-Nachfrage. Ohne Vermittler, ohne Streuverluste.
-                    </p>
-                  </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {[
+                    {
+                      title: "Krankenhäuser & Kliniken",
+                      content: "Optimieren Sie Ihre Personalplanung und reduzieren Sie Kosten durch effiziente Personaldisposition.",
+                      link: "Jetzt anfragen"
+                    },
+                    {
+                      title: "Arztpraxen & MVZ",
+                      content: "Vereinfachen Sie die Verwaltung Ihrer medizinischen Teams und konzentrieren Sie sich auf die Patientenversorgung.",
+                      link: "Jetzt anfragen"
+                    },
+                    {
+                      title: "Pflegeeinrichtungen",
+                      content: "Verbessern Sie die Personaleinsatzplanung und sorgen Sie für eine bessere Betreuung Ihrer Bewohner.",
+                      link: "Jetzt anfragen"
+                    },
+                    {
+                      title: "Rettungsdienste",
+                      content: "Koordinieren Sie Ihre Einsätze effizienter und stellen Sie eine optimale Notfallversorgung sicher.",
+                      link: "Jetzt anfragen"
+                    },
+                    {
+                      title: "Gesundheitsämter",
+                      content: "Verwalten Sie Ihr Personal effizient und stellen Sie eine kontinuierliche öffentliche Gesundheitsversorgung sicher.",
+                      link: "Jetzt anfragen"
+                    },
+                    {
+                      title: "Medizinische Labore",
+                      content: "Optimieren Sie Ihre Arbeitsabläufe und steigern Sie die Produktivität durch bessere Personaleinsatzplanung.",
+                      link: "Jetzt anfragen"
+                    }
+                  ].map((card, index) => (
+                    <div key={index} className="bg-card rounded-2xl border border-border-subtle p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 relative group">
+                      <h3 className="text-xl font-semibold text-foreground mb-3">{card.title}</h3>
+                      <p className="text-muted-foreground mb-4">{card.content}</p>
+                      <a href="#contact" className="absolute bottom-4 right-4 text-primary font-medium text-sm hover:text-primary/80 transition-colors">
+                        {card.link}
+                      </a>
+                    </div>
+                  ))}
                 </div>
               </div>
             </section>
