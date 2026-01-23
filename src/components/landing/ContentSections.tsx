@@ -6,11 +6,9 @@ import {
   TrendingIcon, 
   LightbulbIcon, 
   GlobeIcon,
-  KeyIcon,
   FileTextIcon,
   CheckCircleIcon,
-  HeartPulseIcon,
-  BuildingIcon
+  HeartPulseIcon
 } from './icons';
 
 const ContentSections = () => {
@@ -129,82 +127,70 @@ const ContentSections = () => {
             </SectionCard>
           </div>
 
-          {/* Markt & Kontext */}
-          <SectionCard 
-            title="Markt & Kontext" 
-            icon={<GlobeIcon />}
-            delay="0.6s"
-          >
-            <p className="mb-4">
-              Der Fachkräftemangel im Gesundheitswesen ist eines der drängendsten 
-              Themen in Deutschland. Die Nachfrage nach qualifiziertem medizinischem 
-              Personal steigt kontinuierlich.
-            </p>
-            <div className="grid grid-cols-2 gap-4 mt-6">
-              <div className="text-center p-4 bg-primary-light rounded-2xl">
-                <div className="text-2xl font-bold text-primary">1.5M+</div>
-                <div className="text-xs text-muted-foreground mt-1">Pflegekräfte in DE</div>
+          {/* Markt & Kontext - Full width with 3 boxes */}
+          <div className="md:col-span-2">
+            <SectionCard 
+              title="Markt & Kontext" 
+              icon={<GlobeIcon />}
+              delay="0.6s"
+            >
+              <p className="mb-6">
+                Der Fachkräftemangel im Gesundheitswesen ist eines der drängendsten 
+                Themen in Deutschland. Die Nachfrage nach qualifiziertem medizinischem 
+                Personal steigt kontinuierlich.
+              </p>
+              <div className="grid grid-cols-3 gap-4">
+                <div className="text-center p-4 bg-primary-light rounded-2xl">
+                  <div className="text-2xl font-bold text-primary">1.5M+</div>
+                  <div className="text-xs text-muted-foreground mt-1">Pflegekräfte in DE</div>
+                </div>
+                <div className="text-center p-4 bg-primary-light rounded-2xl">
+                  <div className="text-2xl font-bold text-primary">400K+</div>
+                  <div className="text-xs text-muted-foreground mt-1">Ärzte in DE</div>
+                </div>
+                <div className="text-center p-4 bg-primary-light rounded-2xl">
+                  <div className="text-2xl font-bold text-primary">50K+</div>
+                  <div className="text-xs text-muted-foreground mt-1">Offene Stellen</div>
+                </div>
               </div>
-              <div className="text-center p-4 bg-primary-light rounded-2xl">
-                <div className="text-2xl font-bold text-primary">400K+</div>
-                <div className="text-xs text-muted-foreground mt-1">Ärzte in DE</div>
+            </SectionCard>
+          </div>
+
+          {/* Nutzungslogik - Full width with poetic text */}
+          <div className="md:col-span-2">
+            <SectionCard 
+              title="Nutzungslogik: wie eine Domain wirkt" 
+              icon={<LightbulbIcon />}
+              delay="0.7s"
+            >
+              <div className="space-y-6 text-muted-foreground leading-relaxed">
+                <p>
+                  Eine Domain wirkt am Anfang.<br />
+                  Vor Kampagnen.<br />
+                  Vor Teams.<br />
+                  Vor Budgetfreigaben.
+                </p>
+                <p>
+                  Sie ist kein Werkzeug.<br />
+                  Sie ist ein Zugang.
+                </p>
+                <p className="text-foreground font-medium">
+                  Die entscheidende Frage lautet nicht:<br />
+                  „Wen gewinnen wir?"
+                </p>
+                <p className="text-foreground font-medium">
+                  Sondern:<br />
+                  <span className="text-primary text-lg">„Wem gehört der Einstieg?"</span>
+                </p>
               </div>
-            </div>
-          </SectionCard>
-
-          {/* Nutzungslogik */}
-          <SectionCard 
-            title="Nutzungslogik: Wie eine Domain wirkt" 
-            icon={<LightbulbIcon />}
-            delay="0.7s"
-          >
-            <p className="mb-4">
-              Eine präzise Domain wie diese funktioniert auf mehreren Ebenen:
-            </p>
-            <ul className="space-y-3">
-              {[
-                'Direct Type-In Traffic durch Eingabe',
-                'Hohe organische Sichtbarkeit',
-                'Markenbildung ohne Erklärungsbedarf',
-                'Conversion-Boost durch Relevanz'
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5"><CheckCircleIcon /></span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </SectionCard>
-
-          {/* Wem gehört der Einstieg */}
-          <SectionCard 
-            title="Wem gehört der Einstieg?" 
-            icon={<KeyIcon />}
-            delay="0.8s"
-          >
-            <p className="mb-4">
-              Diese Domain ist ideal für Unternehmen und Einzelpersonen, die:
-            </p>
-            <ul className="space-y-3">
-              {[
-                'Eine neue Plattform aufbauen möchten',
-                'Ihre bestehende Marke stärken wollen',
-                'Als Investition für Wiederverkauf',
-                'Wettbewerbsvorteil sichern möchten'
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5"><CheckCircleIcon /></span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </SectionCard>
+            </SectionCard>
+          </div>
 
           {/* Deal-Rahmenbedingungen */}
           <SectionCard 
             title="Deal-Rahmenbedingungen" 
             icon={<FileTextIcon />}
-            delay="0.9s"
+            delay="0.8s"
           >
             <ul className="space-y-3">
               {[
