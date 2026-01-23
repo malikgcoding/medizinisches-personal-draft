@@ -165,10 +165,7 @@ const ContentSections = () => {
             >
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>
-                  Eine Domain wirkt am Anfang.<br />
-                  Vor Kampagnen.<br />
-                  Vor Teams.<br />
-                  Vor Budgetfreigaben.
+                  Eine Domain wirkt am Anfang. Vor Kampagnen. Vor Teams. Vor Budgetfreigaben.
                 </p>
                 <p>
                   Sie ist kein Werkzeug.<br />
@@ -180,7 +177,7 @@ const ContentSections = () => {
                 </p>
                 <p className="text-foreground font-medium">
                   Sondern:<br />
-                  <span className="text-primary text-lg">„Wem gehört der Einstieg?"</span>
+                  <span className="text-primary text-lg font-bold">„Wem gehört der Einstieg?"</span>
                 </p>
               </div>
             </SectionCard>
