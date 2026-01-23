@@ -21,17 +21,18 @@ const ContentSections = () => {
           {/* Für wen relevant */}
           <div className="md:col-span-2">
             <SectionCard 
-              title="Für wen dieses Programm relevant ist" 
+              title="Für wen dieses Paket relevant ist" 
               icon={<UsersIcon />}
               delay="0.1s"
             >
               <ul className="space-y-3">
                 {[
-                  'Personalvermittler im Gesundheitswesen',
-                  'Kliniken und Krankenhäuser',
-                  'Pflegeeinrichtungen und Seniorenheime',
-                  'HR-Agenturen mit Fokus auf Medizin',
-                  'Investoren im Healthcare-Sektor'
+                  'Zeitarbeit / Arbeitnehmerüberlassung',
+                  'Jobportale & Recruiting-Plattformen',
+                  'Kliniken und Klinikgruppen',
+                  'Gesundheitsverbände',
+                  'Fachverlage & Gesundheitsmedien',
+                  'Pflegeheime & Träger'
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <span className="text-primary mt-0.5"><CheckCircleIcon /></span>
@@ -50,40 +51,48 @@ const ContentSections = () => {
               delay="0.2s"
             >
               <p className="mb-4">
-                Die Premium-Domain <strong className="text-foreground">medizinisches-personal.de</strong> steht 
-                zum Verkauf. Eine einmalige Gelegenheit für Unternehmen, die im Bereich 
-                Personalvermittlung oder Recruiting im Gesundheitswesen tätig sind.
+                Zum Paket gehören folgende Domains:
               </p>
-              <p>
-                Inklusive vollständiger Übertragung aller Rechte und technischer Unterstützung 
-                beim Transfer.
-              </p>
-            </SectionCard>
-          </div>
-
-          {/* Nutzungsszenarien */}
-          <div className="md:col-span-2">
-            <SectionCard 
-              title={
-                <>
-                  <span className="hidden sm:inline">Mögliche Nutzungsszenarien</span>
-                  <span className="sm:hidden">Mögliche<br />Nutzungs-<br />szenarien</span>
-                </>
-              }
-              icon={<TargetIcon />}
-              delay="0.3s"
-            >
-              <ul className="space-y-3">
+              <ul className="space-y-2 mb-6">
                 {[
-                  'Jobportal für medizinisches Fachpersonal',
-                  'Recruiting-Plattform für Pflegekräfte',
-                  'Vermittlungsagentur für Ärzte und Therapeuten',
-                  'Corporate-Website für HR-Dienstleister',
-                  'Branchen-Blog mit Lead-Generierung'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 min-w-0">
-                    <span className="text-primary mt-0.5 flex-shrink-0"><CheckCircleIcon /></span>
-                    <span className="break-words">{item}</span>
+                  'medizinisches-personal.de',
+                  'medizinisches-personal.at',
+                  'medizinischespersonal.at',
+                  'medizinisches-personal.ch',
+                  'medizinischespersonal.ch',
+                  'medizinisches-personal.app',
+                  'medizinischespersonal.app'
+                ].map((domain, i) => (
+                  <li key={i} className="flex items-center gap-3">
+                    <span className="text-primary"><CheckCircleIcon /></span>
+                    <span className="font-mono text-sm">{domain}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mb-4">
+                Es handelt sich ausschließlich um digitale Assets.
+              </p>
+              <p className="mb-4 text-muted-foreground">
+                Keine Dienstleistungen.<br />
+                Kein Betrieb.<br />
+                Kein Matching.<br />
+                Keine Job- oder Personalvermittlung.
+              </p>
+              <p className="mb-4 font-medium">
+                Mögliche Nutzungsszenarien:
+              </p>
+              <ul className="space-y-2">
+                {[
+                  'Weiterleitung auf bestehende Karriere- oder Recruiting-Seiten',
+                  'Aufbau eines Jobportals, Marktplatzes oder Bewerber-Hubs',
+                  'Redaktionelle Nutzung im Gesundheitsumfeld',
+                  'Lizenzmodelle (zeitlich, regional, exklusiv)',
+                  'White-Label-Kooperationsmodelle',
+                  'Langfristige Asset-Haltung'
+                ].map((scenario, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="text-primary mt-0.5"><CheckCircleIcon /></span>
+                    <span className="text-sm">{scenario}</span>
                   </li>
                 ))}
               </ul>
@@ -93,51 +102,62 @@ const ContentSections = () => {
           {/* Strategischer Wert */}
           <div className="md:col-span-2">
             <SectionCard 
-              title="Warum diese Domain strategisch wertvoll ist" 
+              title="Warum diese Domains strategisch wertvoll sind" 
               icon={<TrendingIcon />}
               delay="0.4s"
             >
-              <ul className="space-y-3">
-                {[
-                  'Exaktes Keyword-Matching für Suchmaschinen',
-                  'Hohe Suchvolumina im DACH-Raum',
-                  'Sofortige Branchenzuordnung',
-                  'Vertrauensaufbau durch Professionalität',
-                  'Langfristiger SEO-Vorteil'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="text-primary mt-0.5"><CheckCircleIcon /></span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Personalgewinnung beginnt nicht mit einer Anzeige.<br />
+                  Sie beginnt mit einer Suche.
+                </p>
+                <p>
+                  Menschen suchen nicht nach Namen.<br />
+                  Sie suchen nach Begriffen.
+                </p>
+                <p className="text-primary font-medium text-center my-6">
+                  „medizinisches Personal"<br />
+                  „Personal im Gesundheitswesen"<br />
+                  „Pflegepersonal finden"
+                </p>
+                <p>
+                  Begriffe bündeln Nachfrage.<br />
+                  Domains kontrollieren den Einstieg.
+                </p>
+                <p className="text-foreground font-medium">
+                  Operative Maßnahmen verbrauchen Budget.<br />
+                  Anzeigen, Zeitarbeit, Print = Opex.
+                </p>
+                <p className="text-primary font-medium">
+                  Domain-Eigentum schafft Zugang.<br />
+                  Planbar. Handelbar. Dauerhaft.<br />
+                  CapEx.
+                </p>
+              </div>
             </SectionCard>
           </div>
 
           {/* Full-width: Was unter medizinisches Personal verstanden wird */}
           <div className="md:col-span-2">
             <SectionCard 
-              title="Was unter medizinisches Personal verstanden wird" 
+              title="Was unter „medizinisches Personal" verstanden wird" 
               icon={<HeartPulseIcon />}
               delay="0.5s"
             >
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {[
-                  'Ärzte aller Fachrichtungen',
-                  'Pflegefachkräfte',
-                  'Medizinische Fachangestellte',
-                  'Therapeuten (Physio, Ergo, Logo)',
-                  'Hebammen und Entbindungspfleger',
-                  'Rettungssanitäter und Notfallmediziner',
-                  'Laborpersonal',
-                  'Radiologie-Techniker',
-                  'Verwaltungspersonal im Gesundheitswesen'
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-2 text-sm">
-                    <span className="text-primary"><CheckCircleIcon /></span>
-                    <span>{item}</span>
-                  </div>
-                ))}
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  Als medizinisches Personal gelten alle qualifizierten Fachkräfte, die direkt oder indirekt 
+                  an der medizinischen und gesundheitlichen Versorgung beteiligt sind.
+                </p>
+                <p>
+                  Dazu zählen unter anderem Pflegekräfte, medizinische Fachangestellte, therapeutische Berufe, 
+                  medizinisch-technische Assistenz, psychosoziale Fachkräfte, Hebammen, Reha-Personal sowie 
+                  Ausbildungs- und Lehrberufe im Gesundheitswesen.
+                </p>
+                <p>
+                  Der Begriff beschreibt keine einzelne Funktion, sondern ein funktionales Gesamtsystem 
+                  innerhalb des Gesundheitswesens.
+                </p>
               </div>
             </SectionCard>
           </div>
