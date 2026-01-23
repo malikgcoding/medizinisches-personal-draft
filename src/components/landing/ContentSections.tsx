@@ -15,7 +15,7 @@ import {
 
 const ContentSections = () => {
   return (
-    <section id="details" className="px-6 py-20">
+    <section id="details" className="px-6 pb-10 pt-16">
       <div className="max-w-6xl mx-auto">
         <div className="grid gap-8 md:grid-cols-2">
           {/* Für wen relevant */}
@@ -82,32 +82,33 @@ const ContentSections = () => {
               </div>
             </div>
             <div className="section-card opacity-0 animate-slide-up">
-              <h2 className="section-heading mb-6">Was hier konkret angeboten wird</h2>
+              <div className="flex items-center mb-6">
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-2xl bg-primary-light text-primary mr-4">
+                  <BriefcaseIcon />
+                </div>
+                <h2 className="section-heading mb-0">Was hier konkret angeboten wird</h2>
+              </div>
               <p className="text-lg text-muted-foreground mb-6">
                 Zum Paket gehören folgende Domains:
               </p>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="md:col-span-2">
-                  <div className="grid grid-cols-2 gap-4">
-                    {[
-                      'medizinisches-personal.de',
-                      'medizinisches-personal.at',
-                      'medizinischespersonal.at',
-                      'medizinisches-personal.ch',
-                      'medizinischespersonal.ch',
-                      'medizinisches-personal.app',
-                      'medizinischespersonal.app'
-                    ].map((domain, index) => (
-                      <div key={index} className="bg-card rounded-2xl border border-border-subtle p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 text-center">
-                        <span className="font-semibold" style={{ color: '#2f6f5e' }}>{domain}</span>
-                      </div>
-                    ))}
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                {[
+                  'medizinisches-personal.de',
+                  'medizinisches-personal.at',
+                  'medizinischespersonal.at',
+                  'medizinisches-personal.ch',
+                  'medizinischespersonal.ch',
+                  'medizinisches-personal.app',
+                  'medizinischespersonal.app'
+                ].map((domain, index) => (
+                  <div key={index} className="bg-card rounded-2xl border border-border-subtle p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 text-center">
+                    <span className="font-semibold" style={{ color: '#2f6f5e' }}>{domain}</span>
                   </div>
-                </div>
-                <div className="md:col-span-1 flex flex-col justify-start">
-                  <h3 className="font-semibold mb-1 text-xl" style={{ color: '#2f6f5e' }}>Lieferumfang</h3>
-                  <p className="text-lg text-muted-foreground">Es handelt sich ausschließlich um digitale Assets. Keine Dienstleistungen. Kein Betrieb. Kein Matching. Keine Job- oder Personalvermittlung.</p>
-                </div>
+                ))}
+              </div>
+              <div className="w-full">
+                <h3 className="font-semibold mb-1 text-xl" style={{ color: '#2f6f5e' }}>Lieferumfang</h3>
+                <p className="text-lg text-muted-foreground">Es handelt sich ausschließlich um digitale Assets. Keine Dienstleistungen. Kein Betrieb. Kein Matching. Keine Job- oder Personalvermittlung.</p>
               </div>
             </div>
           </div>

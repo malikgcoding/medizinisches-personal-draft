@@ -20,7 +20,7 @@ const FAQ = () => {
 	const [openIndex, setOpenIndex] = useState<number | null>(0);
 
 	return (
-		<section className="px-6 py-20 bg-muted/30">
+		<section className="px-6 pt-10 pb-20 bg-muted/30">
 			<div className="max-w-3xl mx-auto">
 				<div className="text-center mb-12">
 					<div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
