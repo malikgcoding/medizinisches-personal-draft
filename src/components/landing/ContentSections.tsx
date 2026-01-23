@@ -33,40 +33,40 @@ const ContentSections = () => {
                     {
                       title: "Krankenhäuser & Kliniken",
                       content: "Optimieren Sie Ihre Personalplanung und reduzieren Sie Kosten durch effiziente Personaldisposition.",
-                      link: "Jetzt anfragen"
+                      link: "/kliniken"
                     },
                     {
                       title: "Arztpraxen & MVZ",
                       content: "Vereinfachen Sie die Verwaltung Ihrer medizinischen Teams und konzentrieren Sie sich auf die Patientenversorgung.",
-                      link: "Jetzt anfragen"
+                      link: "/praxen"
                     },
                     {
                       title: "Pflegeeinrichtungen",
                       content: "Verbessern Sie die Personaleinsatzplanung und sorgen Sie für eine bessere Betreuung Ihrer Bewohner.",
-                      link: "Jetzt anfragen"
+                      link: "/pflegeheime"
                     },
                     {
                       title: "Rettungsdienste",
                       content: "Koordinieren Sie Ihre Einsätze effizienter und stellen Sie eine optimale Notfallversorgung sicher.",
-                      link: "Jetzt anfragen"
+                      link: "/rettungsdienste"
                     },
                     {
                       title: "Gesundheitsämter",
                       content: "Verwalten Sie Ihr Personal effizient und stellen Sie eine kontinuierliche öffentliche Gesundheitsversorgung sicher.",
-                      link: "Jetzt anfragen"
+                      link: "/gesundheitsaemter"
                     },
                     {
                       title: "Medizinische Labore",
                       content: "Optimieren Sie Ihre Arbeitsabläufe und steigern Sie die Produktivität durch bessere Personaleinsatzplanung.",
-                      link: "Jetzt anfragen"
+                      link: "/labore"
                     }
                   ].map((card, index) => (
                     <div key={index} className="bg-card rounded-2xl border border-border-subtle p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 relative group">
                       <h3 className="text-xl font-semibold text-foreground mb-3">{card.title}</h3>
                       <p className="text-muted-foreground mb-4">{card.content}</p>
-                      <a href="#contact" className="absolute bottom-4 right-4 text-primary font-medium text-sm hover:text-primary/80 transition-colors">
+                      <div className="absolute bottom-4 right-4 text-primary font-medium text-sm">
                         {card.link}
-                      </a>
+                      </div>
                     </div>
                   ))}
                 </div>
