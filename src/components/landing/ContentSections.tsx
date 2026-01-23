@@ -101,12 +101,7 @@ const ContentSections = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex gap-4">
-                <div className="w-1 rounded-full flex-shrink-0" style={{ backgroundColor: '#2f6f5e' }}></div>
-                <div>
-                  <p className="text-lg text-muted-foreground leading-tight">Es handelt sich ausschließlich um digitale Assets. Keine Dienstleistungen. Kein Betrieb. Kein Matching. Keine Job- oder Personalvermittlung.</p>
-                </div>
-              </div>
+              <p className="text-lg text-muted-foreground leading-tight">Es handelt sich ausschließlich um digitale Assets. Keine Dienstleistungen. Kein Betrieb. Kein Matching. Keine Job- oder Personalvermittlung.</p>
             </div>
           </div>
 
@@ -147,44 +142,30 @@ const ContentSections = () => {
               delay="0.4s"
             >
               <p className="text-lg text-muted-foreground mb-6">
-                Personalgewinnung beginnt nicht mit einer Anzeige.
-                <br />
-                Sie beginnt mit einer Suche.
+                Personalgewinnung beginnt nicht mit einer Anzeige. Sie beginnt mit einer Suche.
               </p>
               
               <p className="text-lg text-muted-foreground mb-6">
-                Menschen suchen nicht nach Namen.
-                <br />
-                Sie suchen nach Begriffen.
+                Menschen suchen nicht nach Namen. Sie suchen nach Begriffen.
               </p>
 
-              <div className="bg-muted rounded-lg px-4 py-3 mb-6 flex items-center gap-2">
-                <span className="text-muted-foreground">🔍</span>
-                <div className="flex flex-wrap gap-2 text-muted-foreground">
-                  <span>„medizinisches Personal"</span>
-                  <span>„Personal im Gesundheitswesen"</span>
-                  <span>„Pflegepersonal finden"</span>
+              <div className="flex gap-4 mb-6">
+                <div className="w-1 rounded-full flex-shrink-0" style={{ backgroundColor: '#2f6f5e' }}></div>
+                <div>
+                  <p className="text-lg text-muted-foreground italic">„medizinisches Personal" „Personal im Gesundheitswesen" „Pflegepersonal finden"</p>
                 </div>
               </div>
 
               <p className="text-lg text-muted-foreground mb-6">
-                Begriffe bündeln Nachfrage.
-                <br />
-                Domains kontrollieren den Einstieg.
+                Begriffe bündeln Nachfrage. Domains kontrollieren den Einstieg.
               </p>
 
               <p className="text-lg text-muted-foreground mb-6">
-                Operative Maßnahmen verbrauchen Budget.
-                <br />
-                Anzeigen, Zeitarbeit, Print = Opex.
+                Operative Maßnahmen verbrauchen Budget. Anzeigen, Zeitarbeit, Print = Opex.
               </p>
 
               <p className="text-lg text-muted-foreground">
-                Domain-Eigentum schafft Zugang.
-                <br />
-                Planbar. Handelbar. Dauerhaft.
-                <br />
-                CapEx.
+                Domain-Eigentum schafft Zugang. Planbar. Handelbar. Dauerhaft. CapEx.
               </p>
             </SectionCard>
           </div>
