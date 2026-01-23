@@ -3,16 +3,24 @@ import { ChevronDownIcon, HelpCircleIcon } from './icons';
 
 const faqs = [
   {
-    question: 'Können die Domains einzeln erworben werden?',
-    answer: 'Nein. Das Paket wird ausschließlich vollständig angeboten.'
+    question: 'Wie läuft der Kaufprozess ab?',
+    answer: 'Nach Ihrer Anfrage erhalten Sie ein detailliertes Angebot. Bei Einigung wird die Transaktion über einen sicheren Escrow-Service abgewickelt. Nach Zahlungseingang erfolgt die sofortige Übertragung der Domain.'
   },
   {
-    question: 'Gibt es operative Dienstleistungen?',
-    answer: 'Nein. Es handelt sich ausschließlich um Domain-Eigentum.'
+    question: 'Ist der Preis verhandelbar?',
+    answer: 'Ja, wir sind offen für Verhandlungen. Der finale Preis hängt von verschiedenen Faktoren ab, einschließlich Zahlungsmodalitäten und Ihrer geplanten Nutzung.'
   },
   {
-    question: 'Ist eine Nutzung ohne operative Gesellschaft möglich?',
-    answer: 'Ja. Weiterleitung, Lizenz- oder Holding-Modelle sind möglich.'
+    question: 'Welche Zahlungsmethoden werden akzeptiert?',
+    answer: 'Wir akzeptieren Banküberweisung, Escrow-Dienste wie Escrow.com oder Sedo, sowie bei entsprechender Vereinbarung auch Ratenzahlung.'
+  },
+  {
+    question: 'Wie lange dauert die Übertragung?',
+    answer: 'Nach Zahlungseingang wird die Domain innerhalb von 24-48 Stunden auf Ihren Registrar übertragen. Der komplette Prozess dauert in der Regel 3-5 Werktage.'
+  },
+  {
+    question: 'Erhalte ich Unterstützung nach dem Kauf?',
+    answer: 'Ja, wir bieten technischen Support bei der Übertragung und Einrichtung. Auf Wunsch können wir auch bei der initialen Website-Entwicklung unterstützen.'
   }
 ];
 
