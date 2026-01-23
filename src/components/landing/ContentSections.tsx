@@ -101,13 +101,10 @@ const ContentSections = () => {
                   </div>
                 ))}
               </div>
-              <div className="border-l-4 pl-6 rounded-lg overflow-hidden" style={{ borderColor: '#2f6f5e' }}>
-                <p className="text-lg text-muted-foreground mb-2">Es handelt sich ausschließlich um digitale Assets.</p>
-                <div className="space-y-1">
-                  <p className="text-lg text-muted-foreground">Keine Dienstleistungen.</p>
-                  <p className="text-lg text-muted-foreground">Kein Betrieb.</p>
-                  <p className="text-lg text-muted-foreground">Kein Matching.</p>
-                  <p className="text-lg text-muted-foreground">Keine Job- oder Personalvermittlung.</p>
+              <div className="flex gap-4">
+                <div className="w-1 rounded-full flex-shrink-0" style={{ backgroundColor: '#2f6f5e' }}></div>
+                <div>
+                  <p className="text-lg text-muted-foreground leading-tight">Es handelt sich ausschließlich um digitale Assets. Keine Dienstleistungen. Kein Betrieb. Kein Matching. Keine Job- oder Personalvermittlung.</p>
                 </div>
               </div>
             </div>
