@@ -105,8 +105,8 @@ const ContentSections = () => {
                   </div>
                 </div>
                 <div className="md:col-span-1 flex flex-col justify-start">
-                  <h4 className="font-semibold mb-4" style={{ color: '#2f6f5e' }}>Lieferumfang</h4>
-                  <p className="text-sm text-muted-foreground">Es handelt sich ausschließlich um digitale Assets. Keine Dienstleistungen. Kein Betrieb. Kein Matching. Keine Job- oder Personalvermittlung.</p>
+                  <h4 className="font-semibold mb-1" style={{ color: '#2f6f5e' }}>Lieferumfang</h4>
+                  <p className="text-lg text-muted-foreground">Es handelt sich ausschließlich um digitale Assets. Keine Dienstleistungen. Kein Betrieb. Kein Matching. Keine Job- oder Personalvermittlung.</p>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@ const ContentSections = () => {
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 min-w-0">
                     <span className="text-primary mt-0.5 flex-shrink-0"><CheckCircleIcon /></span>
-                    <span className="break-words">{item}</span>
+                    <span className="break-words text-lg text-muted-foreground">{item}</span>
                   </li>
                 ))}
               </ul>

@@ -21,6 +21,12 @@ const Footer = () => {
             © {new Date().getFullYear()} Alle Rechte vorbehalten
           </p>
         </div>
+
+        <p className="text-lg text-muted-foreground mb-2">
+          Die entscheidende Frage lautet nicht:<br />
+          „Wen gewinnen wir?"<br /><br />
+          Sondern:
+        </p>
       </div>
     </footer>
   );
