@@ -253,7 +253,7 @@ const ContentSections = () => {
                   Eine Domain wirkt am Anfang. Vor Kampagnen. Vor Teams. Vor Budgetfreigaben.<br />
                   Sie ist kein Werkzeug. Sie ist ein Zugang.
                 </p>
-                <p className="text-foreground font-medium">
+                <p className="text-muted-foreground font-medium">
                   Die entscheidende Frage lautet nicht:<br />
                   „Wen gewinnen wir?"
                 </p>
