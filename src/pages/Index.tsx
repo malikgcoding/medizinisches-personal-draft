@@ -2,7 +2,7 @@ import Header from '@/components/landing/Header';
 import Hero from '@/components/landing/Hero';
 import ContentSections from '@/components/landing/ContentSections';
 import FAQ from '@/components/landing/FAQ';
-import Contact from '@/components/landing/Contact';
+import Accordion from '@/components/landing/Accordion';
 import Footer from '@/components/landing/Footer';
 
 const Index = () => {
@@ -13,7 +13,7 @@ const Index = () => {
         <Hero />
         <ContentSections />
         <FAQ />
-        <Contact />
+        <Accordion />
       </main>
       <Footer />
     </div>

@@ -186,27 +186,29 @@ const ContentSections = () => {
             </SectionCard>
           </div>
 
-          {/* Deal-Rahmenbedingungen */}
-          <SectionCard 
-            title="Deal-Rahmenbedingungen" 
-            icon={<FileTextIcon />}
-            delay="0.8s"
-          >
-            <ul className="space-y-3">
-              {[
-                'Vollständige Eigentumsübertragung',
-                'Sichere Transaktion via Escrow',
-                'Technischer Support beim Transfer',
-                'Flexible Zahlungsoptionen möglich',
-                'Sofortige Verfügbarkeit nach Zahlung'
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="text-primary mt-0.5"><CheckCircleIcon /></span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </SectionCard>
+          {/* Deal-Rahmenbedingungen - Full width like Nutzungslogik */}
+          <div className="md:col-span-2">
+            <SectionCard 
+              title="Deal-Rahmenbedingungen" 
+              icon={<FileTextIcon />}
+              delay="0.8s"
+            >
+              <ul className="space-y-3">
+                {[
+                  'Vollständige Eigentumsübertragung',
+                  'Sichere Transaktion via Escrow',
+                  'Technischer Support beim Transfer',
+                  'Flexible Zahlungsoptionen möglich',
+                  'Sofortige Verfügbarkeit nach Zahlung'
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="text-primary mt-0.5"><CheckCircleIcon /></span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </SectionCard>
+          </div>
         </div>
       </div>
     </section>
