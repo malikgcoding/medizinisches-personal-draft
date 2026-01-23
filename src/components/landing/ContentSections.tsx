@@ -20,26 +20,65 @@ const ContentSections = () => {
         <div className="grid gap-8 md:grid-cols-2">
           {/* Für wen relevant */}
           <div className="md:col-span-2">
-            <SectionCard 
-              title="Für wen dieses Programm relevant ist" 
-              icon={<UsersIcon />}
-              delay="0.1s"
-            >
-              <ul className="space-y-3">
-                {[
-                  'Personalvermittler im Gesundheitswesen',
-                  'Kliniken und Krankenhäuser',
-                  'Pflegeeinrichtungen und Seniorenheime',
-                  'HR-Agenturen mit Fokus auf Medizin',
-                  'Investoren im Healthcare-Sektor'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="text-primary mt-0.5"><CheckCircleIcon /></span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </SectionCard>
+            <section className="px-6 py-20">
+              <div className="max-w-6xl mx-auto">
+                <div className="text-center mb-12">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
+                    <UsersIcon />
+                  </div>
+                  <h2 className="section-heading">Für wen dieses Paket relevant ist</h2>
+                </div>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className="relative p-6 bg-primary-light rounded-2xl">
+                    <div className="absolute top-4 right-4 text-xs text-[#2f6f5e] font-medium">/zeitarbeit</div>
+                    <h3 className="text-lg font-bold text-primary mb-3">Zeitarbeit / Arbeitnehmerüberlassung</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Zugang zur Nachfrage, bevor sie verteilt wird. Nicht reagieren – vorliegen.
+                    </p>
+                  </div>
+
+                  <div className="relative p-6 bg-primary-light rounded-2xl">
+                    <div className="absolute top-4 right-4 text-xs text-[#2f6f5e] font-medium">/jobportale</div>
+                    <h3 className="text-lg font-bold text-primary mb-3">Jobportale & Recruiting-Plattformen</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Eigentum am generischen Einstiegspunkt. Reichweite entsteht, bevor Kampagnen starten.
+                    </p>
+                  </div>
+
+                  <div className="relative p-6 bg-primary-light rounded-2xl">
+                    <div className="absolute top-4 right-4 text-xs text-[#2f6f5e] font-medium">/kliniken</div>
+                    <h3 className="text-lg font-bold text-primary mb-3">Kliniken und Klinikgruppen</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Unabhängiger Zugang zum Bewerbermarkt. Weniger Abhängigkeit von Plattformen und Dienstleistern.
+                    </p>
+                  </div>
+
+                  <div className="relative p-6 bg-primary-light rounded-2xl">
+                    <div className="absolute top-4 right-4 text-xs text-[#2f6f5e] font-medium">/verbaende</div>
+                    <h3 className="text-lg font-bold text-primary mb-3">Gesundheitsverbände</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Sprachführerschaft im digitalen Raum. Begriffe prägen Wahrnehmung – nicht Logos.
+                    </p>
+                  </div>
+
+                  <div className="relative p-6 bg-primary-light rounded-2xl">
+                    <div className="absolute top-4 right-4 text-xs text-[#2f6f5e] font-medium">/verlage</div>
+                    <h3 className="text-lg font-bold text-primary mb-3">Fachverlage & Gesundheitsmedien</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Struktureller SEO-Traffic auf einem dauerhaft relevanten Thema. Redaktionell und wirtschaftlich nutzbar.
+                    </p>
+                  </div>
+
+                  <div className="relative p-6 bg-primary-light rounded-2xl">
+                    <div className="absolute top-4 right-4 text-xs text-[#2f6f5e] font-medium">/pflegeheime</div>
+                    <h3 className="text-lg font-bold text-primary mb-3">Pflegeheime & Träger</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Direkter Zugang zur Pflege-Nachfrage. Ohne Vermittler, ohne Streuverluste.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
 
           {/* Was angeboten wird */}
