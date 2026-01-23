@@ -1,85 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Soft Minimalist Design System - Medical Personnel Landing Page
+   Primary Accent: #2f6f5e (HSL: 160 40% 31%)
+   Clean, airy, high-end feel with generous whitespace
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    /* Core palette - Monochrome base with teal accent */
+    --background: 0 0% 99%;
+    --foreground: 220 20% 15%;
+    
+    /* Accent color: #2f6f5e converted to HSL */
+    --primary: 160 40% 31%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 160 35% 95%;
+    --primary-muted: 160 30% 45%;
+    
+    /* Card and surface colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 220 20% 15%;
+    --card-hover: 0 0% 98%;
+    
+    /* Muted tones for subtle elements */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 10% 45%;
+    
+    /* Secondary - soft warm gray */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 20% 20%;
+    
+    /* Accent matches primary */
+    --accent: 160 40% 31%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Popover */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 20% 15%;
+    
+    /* Border - very subtle */
+    --border: 220 14% 92%;
+    --border-subtle: 220 10% 95%;
+    --input: 220 14% 92%;
+    --ring: 160 40% 31%;
+    
+    /* Destructive */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Radius - Strong rounded aesthetic */
+    --radius: 1.5rem;
+    --radius-lg: 1.5rem;
+    --radius-xl: 2rem;
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(220 20% 15% / 0.08);
+    --shadow-hover: 0 8px 30px -8px hsl(220 20% 15% / 0.12);
+    --shadow-card: 0 2px 12px -2px hsl(220 20% 15% / 0.06);
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
+    /* Sidebar */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
-
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
+    --primary: 160 40% 40%;
+    --primary-foreground: 0 0% 100%;
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
-
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
@@ -100,6 +110,52 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Verdana', 'Geneva', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-primary font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .section-card {
+    @apply bg-card rounded-3xl border border-border-subtle p-8 md:p-10 transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    box-shadow: var(--shadow-card);
+  }
+
+  .section-card:hover {
+    box-shadow: var(--shadow-hover);
+  }
+
+  .pill-button {
+    @apply inline-flex items-center justify-center rounded-full px-8 py-4 text-sm font-semibold transition-all duration-300;
+  }
+
+  .pill-button-primary {
+    @apply pill-button bg-primary text-primary-foreground hover:opacity-90 hover:scale-105;
+  }
+
+  .pill-button-outline {
+    @apply pill-button border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground;
+  }
+
+  .pill-badge {
+    @apply inline-flex items-center rounded-full px-4 py-1.5 text-xs font-medium bg-primary-light text-primary;
+  }
+
+  .section-heading {
+    @apply text-2xl md:text-3xl font-semibold text-primary mb-4;
+  }
+
+  .section-subheading {
+    @apply text-muted-foreground text-base md:text-lg leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }
