@@ -102,7 +102,6 @@ const ContentSections = () => {
                 ))}
               </div>
               <div className="w-full">
-                <h3 className="font-semibold mb-1 text-xl" style={{ color: '#2f6f5e' }}>Lieferumfang</h3>
                 <p className="text-lg text-muted-foreground">Es handelt sich ausschließlich um digitale Assets. Keine Dienstleistungen. Kein Betrieb. Kein Matching. Keine Job- oder Personalvermittlung.</p>
               </div>
             </div>
@@ -235,7 +234,7 @@ const ContentSections = () => {
                   Die entscheidende Frage lautet nicht: „Wen gewinnen wir?" Sondern:
                 </p>
                 <p className="text-foreground font-medium">
-                  <span className="text-primary text-lg font-bold">„Wem gehört der Einstieg?"</span>
+                  <span className="text-primary text-2xl font-bold">„Wem gehört der Einstieg?"</span>
                 </p>
               </div>
             </SectionCard>
