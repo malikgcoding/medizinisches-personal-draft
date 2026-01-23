@@ -83,7 +83,7 @@ const ContentSections = () => {
               <h2 className="section-heading">Was hier konkret angeboten wird</h2>
             </div>
             <div className="section-card opacity-0 animate-slide-up">
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-lg text-muted-foreground mb-6 font-semibold">
                 Zum Paket gehören folgende Domains:
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8">
@@ -155,7 +155,7 @@ const ContentSections = () => {
                   Sie suchen nach Begriffen.
                 </p>
 
-                <div className="flex gap-4 mb-6 justify-center">
+                <div className="flex gap-4 mb-6">
                   <div className="w-1 rounded-full flex-shrink-0" style={{ backgroundColor: '#2f6f5e' }}></div>
                   <div>
                     <p className="text-lg text-muted-foreground italic">„medizinisches Personal" „Personal im Gesundheitswesen" „Pflegepersonal finden"</p>
