@@ -76,21 +76,41 @@ const ContentSections = () => {
 
           {/* Was angeboten wird */}
           <div className="md:col-span-2">
-            <SectionCard 
-              title="Was hier konkret angeboten wird" 
-              icon={<BriefcaseIcon />}
-              delay="0.2s"
-            >
-              <p className="mb-4">
-                Die Premium-Domain <strong className="text-foreground">medizinisches-personal.de</strong> steht 
-                zum Verkauf. Eine einmalige Gelegenheit für Unternehmen, die im Bereich 
-                Personalvermittlung oder Recruiting im Gesundheitswesen tätig sind.
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
+                <BriefcaseIcon />
+              </div>
+              <h2 className="section-heading">Was hier konkret angeboten wird</h2>
+            </div>
+            <div className="mb-8">
+              <p className="text-lg text-muted-foreground mb-6">
+                Zum Paket gehören folgende Domains:
               </p>
-              <p>
-                Inklusive vollständiger Übertragung aller Rechte und technischer Unterstützung 
-                beim Transfer.
-              </p>
-            </SectionCard>
+              <div className="grid grid-cols-2 gap-4 mb-8">
+                {[
+                  'medizinisches-personal.de',
+                  'medizinisches-personal.at',
+                  'medizinischespersonal.at',
+                  'medizinisches-personal.ch',
+                  'medizinischespersonal.ch',
+                  'medizinisches-personal.app',
+                  'medizinischespersonal.app'
+                ].map((domain, index) => (
+                  <div key={index} className="bg-card border border-border-subtle rounded-lg p-3 text-center">
+                    <span className="text-sm font-medium text-foreground">{domain}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="text-center">
+                <p className="text-muted-foreground mb-2">Es handelt sich ausschließlich um digitale Assets.</p>
+                <div className="space-y-1">
+                  <p className="text-sm text-muted-foreground">Keine Dienstleistungen.</p>
+                  <p className="text-sm text-muted-foreground">Kein Betrieb.</p>
+                  <p className="text-sm text-muted-foreground">Kein Matching.</p>
+                  <p className="text-sm text-muted-foreground">Keine Job- oder Personalvermittlung.</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Nutzungsszenarien */}
