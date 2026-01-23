@@ -219,18 +219,14 @@ const ContentSections = () => {
               icon={<GlobeIcon />} 
               delay="0.6s"
             >
-              <h2 className="text-2xl font-bold mb-4" style={{ color: '#2f6f5e' }}>Markt & Kontext</h2>
-              <p className="text-lg text-muted-foreground mb-4">
-                Der Gesundheitssektor im DACH-Raum steht strukturell unter Druck: Mehr ältere Menschen. Mehr Versorgungsbedarf. Weniger verfügbare Fachkräfte.
-              </p>
               <div className="grid grid-cols-3 gap-4 mb-4">
-                <div className="text-center p-4 bg-primary-light rounded-2xl">
+                <div className="flex items-center justify-center text-center p-4 bg-primary-light rounded-2xl h-full min-h-[80px]">
                   <div className="text-lg font-bold text-primary">Mehr ältere Menschen.</div>
                 </div>
-                <div className="text-center p-4 bg-primary-light rounded-2xl">
+                <div className="flex items-center justify-center text-center p-4 bg-primary-light rounded-2xl h-full min-h-[80px]">
                   <div className="text-lg font-bold text-primary">Mehr Versorgungsbedarf.</div>
                 </div>
-                <div className="text-center p-4 bg-primary-light rounded-2xl">
+                <div className="flex items-center justify-center text-center p-4 bg-primary-light rounded-2xl h-full min-h-[80px]">
                   <div className="text-lg font-bold text-primary">Weniger verfügbare Fachkräfte.</div>
                 </div>
               </div>
