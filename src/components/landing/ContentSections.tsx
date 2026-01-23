@@ -140,7 +140,7 @@ const ContentSections = () => {
           {/* Full-width: Was unter medizinisches Personal verstanden wird */}
           <div className="md:col-span-2">
             <SectionCard 
-              title="Was unter „medizinisches Personal" verstanden wird" 
+              title="Was unter medizinisches Personal verstanden wird" 
               icon={<HeartPulseIcon />}
               delay="0.5s"
             >
