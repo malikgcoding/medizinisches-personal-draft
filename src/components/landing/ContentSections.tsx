@@ -57,7 +57,7 @@ const ContentSections = () => {
 
           {/* Nutzungsszenarien */}
           <SectionCard 
-            title="Mögliche Nutzungsszenarien" 
+            title={<>Mögliche<wbr /> Nutzungsszenarien</>}
             icon={<TargetIcon />}
             delay="0.3s"
           >
