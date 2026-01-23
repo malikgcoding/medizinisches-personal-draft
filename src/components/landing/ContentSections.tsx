@@ -142,7 +142,7 @@ const ContentSections = () => {
               icon={<TrendingIcon />}
               delay="0.4s"
             >
-              <div className="text-center">
+              <div>
                 <h3 className="text-2xl font-semibold text-muted-foreground mb-6">
                   Personalgewinnung beginnt nicht mit einer Anzeige.
                   <br />
