@@ -82,7 +82,7 @@ const ContentSections = () => {
               </div>
               <h2 className="section-heading">Was hier konkret angeboten wird</h2>
             </div>
-            <div className="section-card">
+            <div className="section-card opacity-0 animate-slide-up">
               <p className="text-lg text-muted-foreground mb-6">
                 Zum Paket gehören folgende Domains:
               </p>
