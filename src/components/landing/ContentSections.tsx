@@ -31,42 +31,42 @@ const ContentSections = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {[
                     {
-                      title: "Krankenhäuser & Kliniken",
-                      content: "Optimieren Sie Ihre Personalplanung und reduzieren Sie Kosten durch effiziente Personaldisposition.",
-                      link: "/kliniken"
+                      title: "Zeitarbeit / Arbeitnehmerüberlassung",
+                      content: "Zugang zur Nachfrage, bevor sie verteilt wird. Nicht reagieren – vorliegen.",
+                      link: "medizinisches-personal.de/zeitarbeit"
                     },
                     {
-                      title: "Arztpraxen & MVZ",
-                      content: "Vereinfachen Sie die Verwaltung Ihrer medizinischen Teams und konzentrieren Sie sich auf die Patientenversorgung.",
-                      link: "/praxen"
+                      title: "Jobportale & Recruiting-Plattformen",
+                      content: "Eigentum am generischen Einstiegspunkt. Reichweite entsteht, bevor Kampagnen starten.",
+                      link: "medizinisches-personal.de/jobportale"
                     },
                     {
-                      title: "Pflegeeinrichtungen",
-                      content: "Verbessern Sie die Personaleinsatzplanung und sorgen Sie für eine bessere Betreuung Ihrer Bewohner.",
-                      link: "/pflegeheime"
+                      title: "Kliniken und Klinikgruppen",
+                      content: "Unabhängiger Zugang zum Bewerbermarkt. Weniger Abhängigkeit von Plattformen und Dienstleistern.",
+                      link: "medizinisches-personal.de/kliniken"
                     },
                     {
-                      title: "Rettungsdienste",
-                      content: "Koordinieren Sie Ihre Einsätze effizienter und stellen Sie eine optimale Notfallversorgung sicher.",
-                      link: "/rettungsdienste"
+                      title: "Gesundheitsverbände",
+                      content: "Sprachführerschaft im digitalen Raum. Begriffe prägen Wahrnehmung – nicht Logos.",
+                      link: "medizinisches-personal.de/verbaende"
                     },
                     {
-                      title: "Gesundheitsämter",
-                      content: "Verwalten Sie Ihr Personal effizient und stellen Sie eine kontinuierliche öffentliche Gesundheitsversorgung sicher.",
-                      link: "/gesundheitsaemter"
+                      title: "Fachverlage & Gesundheitsmedien",
+                      content: "Struktureller SEO-Traffic auf einem dauerhaft relevanten Thema. Redaktionell und wirtschaftlich nutzbar.",
+                      link: "medizinisches-personal.de/verlage"
                     },
                     {
-                      title: "Medizinische Labore",
-                      content: "Optimieren Sie Ihre Arbeitsabläufe und steigern Sie die Produktivität durch bessere Personaleinsatzplanung.",
-                      link: "/labore"
+                      title: "Pflegeheime & Träger",
+                      content: "Direkter Zugang zur Pflege-Nachfrage. Ohne Vermittler, ohne Streuverluste.",
+                      link: "medizinisches-personal.de/pflegeheime"
                     }
                   ].map((card, index) => (
                     <div key={index} className="bg-card rounded-2xl border border-border-subtle p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 relative group">
                       <h3 className="text-xl font-semibold text-foreground mb-3">{card.title}</h3>
                       <p className="text-muted-foreground mb-4">{card.content}</p>
-                      <div className="absolute bottom-4 right-4 text-primary font-medium text-sm">
+                      <a href={`https://${card.link}`} target="_blank" rel="noopener noreferrer" className="absolute bottom-4 right-4 text-primary font-medium text-sm hover:text-primary/80 transition-colors">
                         {card.link}
-                      </div>
+                      </a>
                     </div>
                   ))}
                 </div>
