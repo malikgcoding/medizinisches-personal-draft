@@ -119,19 +119,13 @@ const ContentSections = () => {
               icon={<TargetIcon />}
               delay="0.3s"
             >
-              <ul className="space-y-3">
-                {[
-                  'Jobportal für medizinisches Fachpersonal',
-                  'Recruiting-Plattform für Pflegekräfte',
-                  'Vermittlungsagentur für Ärzte und Therapeuten',
-                  'Corporate-Website für HR-Dienstleister',
-                  'Branchen-Blog mit Lead-Generierung'
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 min-w-0">
-                    <span className="text-primary mt-0.5 flex-shrink-0"><CheckCircleIcon /></span>
-                    <span className="break-words text-lg text-muted-foreground">{item}</span>
-                  </li>
-                ))}
+              <ul className="space-y-3 list-disc pl-6">
+                <li className="text-lg text-muted-foreground">Weiterleitung auf bestehende Karriere- oder Recruiting-Seiten</li>
+                <li className="text-lg text-muted-foreground">Aufbau eines Jobportals, Marktplatzes oder Bewerber-Hubs</li>
+                <li className="text-lg text-muted-foreground">Redaktionelle Nutzung im Gesundheitsumfeld</li>
+                <li className="text-lg text-muted-foreground">Lizenzmodelle (zeitlich, regional, exklusiv)</li>
+                <li className="text-lg text-muted-foreground">White-Label-Kooperationsmodelle</li>
+                <li className="text-lg text-muted-foreground">Langfristige Asset-Haltung</li>
               </ul>
             </SectionCard>
           </div>
