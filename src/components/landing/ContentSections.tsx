@@ -190,53 +190,58 @@ const ContentSections = () => {
             </SectionCard>
           </div>
 
-          {/* Deal-Rahmenbedingungen - 5 cards grid */}
+          {/* Deal-Rahmenbedingungen - 5 cards in one box */}
           <div className="md:col-span-2">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Deal-Rahmenbedingungen</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <SectionCard 
-                title="Asset" 
-                icon={<GlobeIcon />}
-                delay="0.8s"
-              >
-                <p className="text-lg font-semibold text-primary">Domain-Paket</p>
-                <p className="text-sm text-muted-foreground">DE / AT / CH / APP</p>
-              </SectionCard>
+            <SectionCard 
+              title="Deal-Rahmenbedingungen" 
+              icon={<FileTextIcon />}
+              delay="0.8s"
+            >
+              <div className="grid grid-cols-5 gap-4">
+                <div className="text-center p-6 bg-primary-light rounded-2xl min-h-[140px] flex flex-col justify-center">
+                  <div className="w-8 h-8 mx-auto mb-3 text-primary">
+                    <GlobeIcon />
+                  </div>
+                  <div className="text-sm font-semibold text-primary mb-2">Asset</div>
+                  <div className="text-lg font-bold text-primary">Domain-Paket</div>
+                  <div className="text-xs text-muted-foreground mt-1">DE / AT / CH / APP</div>
+                </div>
 
-              <SectionCard 
-                title="Status" 
-                icon={<CheckCircleIcon />}
-                delay="0.9s"
-              >
-                <p className="text-lg font-semibold text-green-600">verfügbar</p>
-              </SectionCard>
+                <div className="text-center p-6 bg-primary-light rounded-2xl min-h-[140px] flex flex-col justify-center">
+                  <div className="w-8 h-8 mx-auto mb-3 text-green-600">
+                    <CheckCircleIcon />
+                  </div>
+                  <div className="text-sm font-semibold text-primary mb-2">Status</div>
+                  <div className="text-lg font-bold text-green-600">verfügbar</div>
+                </div>
 
-              <SectionCard 
-                title="Preis" 
-                icon={<KeyIcon />}
-                delay="1.0s"
-              >
-                <p className="text-lg font-semibold text-primary">nicht öffentlich</p>
-              </SectionCard>
+                <div className="text-center p-6 bg-primary-light rounded-2xl min-h-[140px] flex flex-col justify-center">
+                  <div className="w-8 h-8 mx-auto mb-3 text-primary">
+                    <KeyIcon />
+                  </div>
+                  <div className="text-sm font-semibold text-primary mb-2">Preis</div>
+                  <div className="text-lg font-bold text-primary">nicht öffentlich</div>
+                </div>
 
-              <SectionCard 
-                title="Transaktion" 
-                icon={<FileTextIcon />}
-                delay="1.1s"
-              >
-                <p className="text-sm">Domain-Transfer</p>
-                <p className="text-sm">oder Lizenzmodell</p>
-              </SectionCard>
+                <div className="text-center p-6 bg-primary-light rounded-2xl min-h-[140px] flex flex-col justify-center">
+                  <div className="w-8 h-8 mx-auto mb-3 text-primary">
+                    <FileTextIcon />
+                  </div>
+                  <div className="text-sm font-semibold text-primary mb-2">Transaktion</div>
+                  <div className="text-xs text-muted-foreground">Domain-Transfer</div>
+                  <div className="text-xs text-muted-foreground">oder Lizenzmodell</div>
+                </div>
 
-              <SectionCard 
-                title="Erstkontakt" 
-                icon={<MailIcon />}
-                delay="1.2s"
-              >
-                <p className="text-sm">Gespräch – diskret</p>
-                <p className="text-sm">& unverbindlich</p>
-              </SectionCard>
-            </div>
+                <div className="text-center p-6 bg-primary-light rounded-2xl min-h-[140px] flex flex-col justify-center">
+                  <div className="w-8 h-8 mx-auto mb-3 text-primary">
+                    <MailIcon />
+                  </div>
+                  <div className="text-sm font-semibold text-primary mb-2">Erstkontakt</div>
+                  <div className="text-xs text-muted-foreground">Gespräch – diskret</div>
+                  <div className="text-xs text-muted-foreground">& unverbindlich</div>
+                </div>
+              </div>
+            </SectionCard>
           </div>
         </div>
       </div>
