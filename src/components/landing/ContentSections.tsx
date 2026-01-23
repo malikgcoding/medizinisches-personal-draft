@@ -199,44 +199,44 @@ const ContentSections = () => {
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
                 <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
-                  <div className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-2 md:mb-3 text-primary flex-shrink-0">
+                  <div className="flex justify-center mb-1 md:mb-2 text-primary flex-shrink-0">
                     <GlobeIcon />
                   </div>
-                  <div className="text-xl md:text-2xl font-bold text-primary mb-1 md:mb-2">Asset</div>
+                  <div className="text-xl md:text-2xl font-bold text-primary mb-0.5 md:mb-1">Asset</div>
                   <div className="text-muted-foreground text-sm md:text-base">Domain-Paket</div>
                   <div className="text-muted-foreground text-xs md:text-sm mt-1">DE / AT / CH / APP</div>
                 </div>
 
                 <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
-                  <div className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-2 md:mb-3 text-[#2f6f5e] flex-shrink-0">
+                  <div className="flex justify-center mb-1 md:mb-2 text-[#2f6f5e] flex-shrink-0">
                     <CheckCircleIcon />
                   </div>
-                  <div className="text-xl md:text-2xl font-bold text-primary mb-1 md:mb-2">Status</div>
+                  <div className="text-xl md:text-2xl font-bold text-primary mb-0.5 md:mb-1">Status</div>
                   <div className="text-muted-foreground text-sm md:text-base">verfügbar</div>
                 </div>
 
                 <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
-                  <div className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-2 md:mb-3 text-primary flex-shrink-0">
+                  <div className="flex justify-center mb-1 md:mb-2 text-primary flex-shrink-0">
                     <KeyIcon />
                   </div>
-                  <div className="text-xl md:text-2xl font-bold text-primary mb-1 md:mb-2">Preis</div>
+                  <div className="text-xl md:text-2xl font-bold text-primary mb-0.5 md:mb-1">Preis</div>
                   <div className="text-muted-foreground text-sm md:text-base">nicht öffentlich</div>
                 </div>
 
                 <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
-                  <div className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-2 md:mb-3 text-primary flex-shrink-0">
+                  <div className="flex justify-center mb-1 md:mb-2 text-primary flex-shrink-0">
                     <FileTextIcon />
                   </div>
-                  <div className="text-xl md:text-2xl font-bold text-primary mb-1 md:mb-2">Transaktion</div>
+                  <div className="text-xl md:text-2xl font-bold text-primary mb-0.5 md:mb-1">Transaktion</div>
                   <div className="text-muted-foreground text-xs md:text-sm">Domain-Transfer</div>
                   <div className="text-muted-foreground text-xs md:text-sm">oder Lizenzmodell</div>
                 </div>
 
                 <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
-                  <div className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-2 md:mb-3 text-primary flex-shrink-0">
+                  <div className="flex justify-center mb-1 md:mb-2 text-primary flex-shrink-0">
                     <MailIcon />
                   </div>
-                  <div className="text-xl md:text-2xl font-bold text-primary mb-1 md:mb-2">Erstkontakt</div>
+                  <div className="text-xl md:text-2xl font-bold text-primary mb-0.5 md:mb-1">Erstkontakt</div>
                   <div className="text-muted-foreground text-xs md:text-sm">Gespräch – diskret</div>
                   <div className="text-muted-foreground text-xs md:text-sm">& unverbindlich</div>
                 </div>
