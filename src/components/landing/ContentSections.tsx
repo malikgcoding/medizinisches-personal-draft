@@ -105,7 +105,7 @@ const ContentSections = () => {
                   </div>
                 </div>
                 <div className="md:col-span-1 flex flex-col justify-start">
-                  <h3 className="font-semibold mb-1" style={{ color: '#2f6f5e' }}>Lieferumfang</h3>
+                  <h3 className="font-semibold mb-1 text-xl" style={{ color: '#2f6f5e' }}>Lieferumfang</h3>
                   <p className="text-lg text-muted-foreground">Es handelt sich ausschließlich um digitale Assets. Keine Dienstleistungen. Kein Betrieb. Kein Matching. Keine Job- oder Personalvermittlung.</p>
                 </div>
               </div>
@@ -216,28 +216,30 @@ const ContentSections = () => {
           <div className="md:col-span-2">
             <SectionCard 
               title="Markt & Kontext" 
-              icon={<GlobeIcon />}
+              icon={<GlobeIcon />} 
               delay="0.6s"
             >
-              <p className="mb-6">
-                Der Fachkräftemangel im Gesundheitswesen ist eines der drängendsten 
-                Themen in Deutschland. Die Nachfrage nach qualifiziertem medizinischem 
-                Personal steigt kontinuierlich.
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#2f6f5e' }}>Markt & Kontext</h2>
+              <p className="text-lg text-muted-foreground mb-4">
+                Der Gesundheitssektor im DACH-Raum steht strukturell unter Druck: Mehr ältere Menschen. Mehr Versorgungsbedarf. Weniger verfügbare Fachkräfte.
               </p>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-3 gap-4 mb-4">
                 <div className="text-center p-4 bg-primary-light rounded-2xl">
-                  <div className="text-2xl font-bold text-primary">1.5M+</div>
-                  <div className="text-xs text-muted-foreground mt-1">Pflegekräfte in DE</div>
+                  <div className="text-lg font-bold text-primary">Mehr ältere Menschen.</div>
                 </div>
                 <div className="text-center p-4 bg-primary-light rounded-2xl">
-                  <div className="text-2xl font-bold text-primary">400K+</div>
-                  <div className="text-xs text-muted-foreground mt-1">Ärzte in DE</div>
+                  <div className="text-lg font-bold text-primary">Mehr Versorgungsbedarf.</div>
                 </div>
                 <div className="text-center p-4 bg-primary-light rounded-2xl">
-                  <div className="text-2xl font-bold text-primary">50K+</div>
-                  <div className="text-xs text-muted-foreground mt-1">Offene Stellen</div>
+                  <div className="text-lg font-bold text-primary">Weniger verfügbare Fachkräfte.</div>
                 </div>
               </div>
+              <p className="text-lg text-muted-foreground mb-2">
+                Dieser Engpass betrifft nahezu alle Bereiche: Pflege, Therapie, medizinische Assistenz, psychosoziale Versorgung, Ausbildung und ärztliche Berufe.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                Die Nachfrage ist dauerhaft. Der Wettbewerb um Zugang nimmt zu.
+              </p>
             </SectionCard>
           </div>
 
