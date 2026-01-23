@@ -76,14 +76,9 @@ const ContentSections = () => {
 
           {/* Was angeboten wird */}
           <div className="md:col-span-2">
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
-                <BriefcaseIcon />
-              </div>
-            </div>
             <div className="section-card opacity-0 animate-slide-up">
               <div className="flex items-center mb-6">
-                <div className="inline-flex items-center justify-center w-10 h-10 rounded-2xl bg-primary-light text-primary mr-4">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mr-4">
                   <BriefcaseIcon />
                 </div>
                 <h2 className="section-heading mb-0">Was hier konkret angeboten wird</h2>
