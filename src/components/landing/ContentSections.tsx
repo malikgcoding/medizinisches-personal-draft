@@ -199,7 +199,7 @@ const ContentSections = () => {
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
                 <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
-                  <div className="flex justify-center mb-1 md:mb-2 text-primary flex-shrink-0">
+                  <div className="text-primary mb-1 md:mb-2 flex-shrink-0">
                     <GlobeIcon />
                   </div>
                   <div className="text-xl md:text-2xl font-bold text-primary mb-0.5 md:mb-1">Asset</div>
@@ -208,7 +208,7 @@ const ContentSections = () => {
                 </div>
 
                 <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
-                  <div className="flex justify-center mb-1 md:mb-2 text-[#2f6f5e] flex-shrink-0">
+                  <div className="text-[#2f6f5e] mb-1 md:mb-2 flex-shrink-0">
                     <CheckCircleIcon />
                   </div>
                   <div className="text-xl md:text-2xl font-bold text-primary mb-0.5 md:mb-1">Status</div>
@@ -216,7 +216,7 @@ const ContentSections = () => {
                 </div>
 
                 <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
-                  <div className="flex justify-center mb-1 md:mb-2 text-primary flex-shrink-0">
+                  <div className="text-primary mb-1 md:mb-2 flex-shrink-0">
                     <KeyIcon />
                   </div>
                   <div className="text-xl md:text-2xl font-bold text-primary mb-0.5 md:mb-1">Preis</div>
@@ -224,7 +224,7 @@ const ContentSections = () => {
                 </div>
 
                 <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
-                  <div className="flex justify-center mb-1 md:mb-2 text-primary flex-shrink-0">
+                  <div className="text-primary mb-1 md:mb-2 flex-shrink-0">
                     <FileTextIcon />
                   </div>
                   <div className="text-xl md:text-2xl font-bold text-primary mb-0.5 md:mb-1">Transaktion</div>
@@ -233,7 +233,7 @@ const ContentSections = () => {
                 </div>
 
                 <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
-                  <div className="flex justify-center mb-1 md:mb-2 text-primary flex-shrink-0">
+                  <div className="text-primary mb-1 md:mb-2 flex-shrink-0">
                     <MailIcon />
                   </div>
                   <div className="text-xl md:text-2xl font-bold text-primary mb-0.5 md:mb-1">Erstkontakt</div>
