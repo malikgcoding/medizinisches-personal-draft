@@ -80,9 +80,9 @@ const ContentSections = () => {
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
                 <BriefcaseIcon />
               </div>
-              <h2 className="section-heading">Was hier konkret angeboten wird</h2>
             </div>
             <div className="section-card opacity-0 animate-slide-up">
+              <h2 className="section-heading mb-6">Was hier konkret angeboten wird</h2>
               <p className="text-lg text-muted-foreground mb-6">
                 Zum Paket gehören folgende Domains:
               </p>
@@ -191,24 +191,9 @@ const ContentSections = () => {
               icon={<HeartPulseIcon />}
               delay="0.5s"
             >
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {[
-                  'Ärzte aller Fachrichtungen',
-                  'Pflegefachkräfte',
-                  'Medizinische Fachangestellte',
-                  'Therapeuten (Physio, Ergo, Logo)',
-                  'Hebammen und Entbindungspfleger',
-                  'Rettungssanitäter und Notfallmediziner',
-                  'Laborpersonal',
-                  'Radiologie-Techniker',
-                  'Verwaltungspersonal im Gesundheitswesen'
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-2 text-sm">
-                    <span className="text-primary"><CheckCircleIcon /></span>
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
+              <p className="text-lg text-muted-foreground">
+                Als medizinisches Personal gelten alle qualifizierten Fachkräfte, die direkt oder indirekt an der medizinischen und gesundheitlichen Versorgung beteiligt sind. Dazu zählen unter anderem Pflegekräfte, medizinische Fachangestellte, therapeutische Berufe, medizinisch-technische Assistenz, psychosoziale Fachkräfte, Hebammen, Reha-Personal sowie Ausbildungs- und Lehrberufe im Gesundheitswesen. Der Begriff beschreibt keine einzelne Funktion, sondern ein funktionales Gesamtsystem innerhalb des Gesundheitswesens.
+              </p>
             </SectionCard>
           </div>
 
@@ -247,16 +232,13 @@ const ContentSections = () => {
               delay="0.7s"
             >
               <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>
-                  Eine Domain wirkt am Anfang. Vor Kampagnen. Vor Teams. Vor Budgetfreigaben.<br />
-                  Sie ist kein Werkzeug. Sie ist ein Zugang.
+                <p className="text-lg text-muted-foreground mb-2">
+                  Eine Domain wirkt am Anfang. Vor Kampagnen. Vor Teams. Vor Budgetfreigaben. Sie ist kein Werkzeug. Sie ist ein Zugang.
                 </p>
-                <p className="text-muted-foreground font-medium">
-                  Die entscheidende Frage lautet nicht:<br />
-                  „Wen gewinnen wir?"
+                <p className="text-lg text-muted-foreground font-medium mb-2">
+                  Die entscheidende Frage lautet nicht: „Wen gewinnen wir?" Sondern:
                 </p>
                 <p className="text-foreground font-medium">
-                  Sondern:<br />
                   <span className="text-primary text-lg font-bold">„Wem gehört der Einstieg?"</span>
                 </p>
               </div>
