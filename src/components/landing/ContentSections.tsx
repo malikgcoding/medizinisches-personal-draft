@@ -135,37 +135,46 @@ const ContentSections = () => {
           </div>
 
           {/* Strategischer Wert */}
+          {/* Strategischer Wert */}
           <div className="md:col-span-2">
-            <div className="text-center">
-              <h2 className="section-heading mb-8">Warum diese Domains strategisch wertvoll sind</h2>
-              
-              <h3 className="text-2xl font-semibold text-muted-foreground mb-6">
-                Personalgewinnung beginnt nicht mit einer Anzeige. <span style={{ color: '#2f6f5e' }}>Sie beginnt mit einer Suche.</span>
-              </h3>
-              
-              <p className="text-lg text-muted-foreground mb-6">
-                Menschen suchen nicht nach Namen. Sie suchen nach Begriffen.
-              </p>
+            <SectionCard 
+              title="Warum diese Domains strategisch wertvoll sind" 
+              icon={<TrendingIcon />}
+              delay="0.4s"
+            >
+              <div className="text-center">
+                <h3 className="text-2xl font-semibold text-muted-foreground mb-6">
+                  Personalgewinnung beginnt nicht mit einer Anzeige.
+                  <br />
+                  <span style={{ color: '#2f6f5e' }}>Sie beginnt mit einer Suche.</span>
+                </h3>
+                
+                <p className="text-lg text-muted-foreground mb-3">
+                  Menschen suchen nicht nach Namen.
+                  <br />
+                  Sie suchen nach Begriffen.
+                </p>
 
-              <div className="flex gap-4 mb-6 justify-center">
-                <div className="w-1 rounded-full flex-shrink-0" style={{ backgroundColor: '#2f6f5e' }}></div>
-                <div>
-                  <p className="text-lg text-muted-foreground italic">„medizinisches Personal" „Personal im Gesundheitswesen" „Pflegepersonal finden"</p>
+                <div className="flex gap-4 mb-6 justify-center">
+                  <div className="w-1 rounded-full flex-shrink-0" style={{ backgroundColor: '#2f6f5e' }}></div>
+                  <div>
+                    <p className="text-lg text-muted-foreground italic">„medizinisches Personal" „Personal im Gesundheitswesen" „Pflegepersonal finden"</p>
+                  </div>
                 </div>
+
+                <p className="text-lg text-muted-foreground mb-2">
+                  Begriffe bündeln Nachfrage. Domains kontrollieren den Einstieg.
+                </p>
+
+                <p className="text-lg text-muted-foreground mb-2">
+                  Operative Maßnahmen verbrauchen Budget. Anzeigen, Zeitarbeit, Print = Opex.
+                </p>
+
+                <p className="text-lg text-muted-foreground">
+                  Domain-Eigentum schafft Zugang. Planbar. Handelbar. Dauerhaft. CapEx.
+                </p>
               </div>
-
-              <p className="text-lg text-muted-foreground mb-6">
-                Begriffe bündeln Nachfrage. Domains kontrollieren den Einstieg.
-              </p>
-
-              <p className="text-lg text-muted-foreground mb-6">
-                Operative Maßnahmen verbrauchen Budget. Anzeigen, Zeitarbeit, Print = Opex.
-              </p>
-
-              <p className="text-lg text-muted-foreground">
-                Domain-Eigentum schafft Zugang. Planbar. Handelbar. Dauerhaft. CapEx.
-              </p>
-            </div>
+            </SectionCard>
           </div>
 
           {/* Full-width: Was unter medizinisches Personal verstanden wird */}
