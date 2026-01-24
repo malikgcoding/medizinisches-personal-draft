@@ -143,8 +143,7 @@ const ContentSections = () => {
             >
               <div>
                 <h3 className="text-xl sm:text-2xl font-semibold text-muted-foreground leading-snug mb-4 sm:mb-6">
-                  Personalgewinnung beginnt nicht mit einer Anzeige.
-                  <br />
+                  Personalgewinnung beginnt nicht mit einer Anzeige.<br />
                   <span style={{ color: '#2f6f5e' }}>Sie beginnt mit einer Suche.</span>
                 </h3>
                 
@@ -161,9 +160,17 @@ const ContentSections = () => {
                 </div>
 
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Begriffe bündeln Nachfrage. Domains kontrollieren den Einstieg.<br />
-                  Operative Maßnahmen verbrauchen Budget. Anzeigen, Zeitarbeit, Print = Opex.<br />
-                  Domain-Eigentum schafft Zugang. Planbar. Handelbar. Dauerhaft. CapEx.
+                  Begriffe bündeln Nachfrage.<br />
+                  Domains kontrollieren den Einstieg.<br />
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                  Operative Maßnahmen verbrauchen Budget.<br />
+                  Anzeigen, Zeitarbeit, Print = Opex.<br />
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                  Domain-Eigentum schafft Zugang.<br />
+                  Planbar. Handelbar. Dauerhaft.<br />
+                  CapEx.
                 </p>
               </div>
             </SectionCard>
@@ -201,10 +208,12 @@ const ContentSections = () => {
                 </div>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Dieser Engpass betrifft nahezu alle Bereiche: Pflege, Therapie, medizinische Assistenz, psychosoziale Versorgung, Ausbildung und ärztliche Berufe.
+                Dieser Engpass betrifft nahezu alle Bereiche:<br>
+                Pflege, Therapie, medizinische Assistenz, psychosoziale Versorgung, Ausbildung und ärztliche Berufe.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Die Nachfrage ist dauerhaft. Der Wettbewerb um Zugang nimmt zu.
+                Die Nachfrage ist dauerhaft.<br />
+                Der Wettbewerb um Zugang nimmt zu.
               </p>
             </SectionCard>
           </div>
@@ -218,12 +227,20 @@ const ContentSections = () => {
             >
               <div className="text-muted-foreground leading-relaxed">
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Eine Domain wirkt am Anfang. Vor Kampagnen. Vor Teams. Vor Budgetfreigaben. Sie ist kein Werkzeug. Sie ist ein Zugang.
+                  Eine Domain wirkt am Anfang.<br />
+                  Vor Kampagnen.<br />
+                  Vor Teams. Vor Budgetfreigaben.<br />
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                  Sie ist kein Werkzeug.<br />
+                  Sie ist ein Zugang.
                 </p>
                 <p className="text-lg text-muted-foreground font-medium leading-relaxed mb-4">
-                  Die entscheidende Frage lautet nicht: „Wen gewinnen wir?" Sondern:
+                  Die entscheidende Frage lautet nicht:<br />
+                  „Wen gewinnen wir?"
                 </p>
-                <p className="text-foreground font-medium">
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                  Sondern:<br />
                   <span className="text-primary text-xl sm:text-2xl font-bold">„Wem gehört der Einstieg?"</span>
                 </p>
               </div>
