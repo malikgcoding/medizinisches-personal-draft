@@ -9,12 +9,17 @@ const Hero = () => {
           {/* Left side - Text content */}
           <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-balance">
-              Medizinisches Personal
+              medizinisches personal
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Die ideale Domain für Personalvermittlung, Recruiting und HR-Lösungen im Gesundheitswesen. 
-              Strategisch wertvoll, sofort einsatzbereit für den DACH-Raum.
-            </p>
+            <div className="text-lg md:text-xl text-muted-foreground leading-relaxed space-y-4">
+              <p className="font-medium">Das Domain-Paket für den gesamten deutschsprachigen Gesundheitsmarkt</p>
+              <p>
+                Sieben Domains.<br />
+                Ein generischer Oberbegriff.<br />
+                Abdeckung des Suchbegriffs „medizinisches Personal" in Deutschland, Österreich und der Schweiz.
+              </p>
+              <p>Das Paket kann unverbindlich angefragt werden.</p>
+            </div>
           </div>
 
           {/* Right side - DACH Map */}

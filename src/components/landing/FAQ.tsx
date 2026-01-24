@@ -61,7 +61,7 @@ const FAQ = () => {
 									openIndex === index ? 'max-h-96' : 'max-h-0'
 								}`}
 							>
-								<div className="px-6 pb-5 text-muted-foreground text-base md:text-lg leading-relaxed">
+								<div className="px-6 pb-5 text-lg text-muted-foreground leading-relaxed">
 									{faq.answer}
 								</div>
 							</div>

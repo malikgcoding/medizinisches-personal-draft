@@ -61,13 +61,16 @@ const ContentSections = () => {
                       link: "/pflegeheime"
                     }
                   ].map((card, index) => (
-                    <div key={index} className="bg-card rounded-2xl border border-border-subtle p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 relative group">
-                      <h3 className="text-xl font-semibold mb-3" style={{ color: '#2f6f5e' }}>{card.title}</h3>
-                      <p className="text-muted-foreground mb-4">{card.content}</p>
-                      <a href={`https://medizinisches-personal.de${card.link}`} target="_blank" rel="noopener noreferrer" className="absolute bottom-4 right-4 text-primary font-medium text-sm hover:text-primary/80 transition-colors">
-                        {card.link}
-                      </a>
-                    </div>
+                    <a 
+                      key={index} 
+                      href={`https://medizinisches-personal.de${card.link}`} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-card rounded-2xl border border-border-subtle p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 block group"
+                    >
+                      <h3 className="text-xl font-semibold mb-3 text-primary group-hover:underline transition-all cursor-pointer">{card.title}</h3>
+                      <p className="text-lg text-muted-foreground leading-relaxed">{card.content}</p>
+                    </a>
                   ))}
                 </div>
               </div>
