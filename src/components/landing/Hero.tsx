@@ -4,7 +4,7 @@ const Hero = () => {
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
       
-      <div className="relative z-10 max-w-6xl mx-auto w-full">
+      <div className="relative z-10 max-w-6xl mx-auto w-full px-4 sm:px-0">
         <div className="flex flex-col md:grid md:grid-cols-2 gap-6 items-center">
           {/* DACH Map - Above title on mobile, right side on desktop */}
           <div 
