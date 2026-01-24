@@ -208,7 +208,7 @@ const ContentSections = () => {
                 </div>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Dieser Engpass betrifft nahezu alle Bereiche:<br>
+                  Dieser Engpass betrifft nahezu alle Bereiche:<br />
                 Pflege, Therapie, medizinische Assistenz, psychosoziale Versorgung, Ausbildung und ärztliche Berufe.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
