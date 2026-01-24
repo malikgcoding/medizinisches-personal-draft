@@ -15,12 +15,12 @@ import {
 
 const ContentSections = () => {
   return (
-    <section id="details" className="px-6 pb-10 pt-16">
+    <section id="details" className="px-4 sm:px-6 pb-10 pt-16 overflow-x-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="grid gap-8 md:grid-cols-2">
           {/* Für wen relevant */}
           <div className="md:col-span-2">
-            <section className="px-6 py-10">
+            <section className="px-0 sm:px-6 py-10">
               <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-12">
                   <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
@@ -148,9 +148,8 @@ const ContentSections = () => {
                   <span style={{ color: '#2f6f5e' }}>Sie beginnt mit einer Suche.</span>
                 </h3>
                 
-                <p className="text-lg text-muted-foreground mb-3">
-                  Menschen suchen nicht nach Namen.
-                  <br />
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  Menschen suchen nicht nach Namen.<br />
                   Sie suchen nach Begriffen.
                 </p>
 
@@ -161,15 +160,9 @@ const ContentSections = () => {
                   </div>
                 </div>
 
-                <p className="text-lg text-muted-foreground mb-2">
-                  Begriffe bündeln Nachfrage. Domains kontrollieren den Einstieg.
-                </p>
-
-                <p className="text-lg text-muted-foreground mb-2">
-                  Operative Maßnahmen verbrauchen Budget. Anzeigen, Zeitarbeit, Print = Opex.
-                </p>
-
-                <p className="text-lg text-muted-foreground">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Begriffe bündeln Nachfrage. Domains kontrollieren den Einstieg.<br />
+                  Operative Maßnahmen verbrauchen Budget. Anzeigen, Zeitarbeit, Print = Opex.<br />
                   Domain-Eigentum schafft Zugang. Planbar. Handelbar. Dauerhaft. CapEx.
                 </p>
               </div>
@@ -196,21 +189,21 @@ const ContentSections = () => {
               icon={<GlobeIcon />} 
               delay="0.6s"
             >
-              <div className="grid grid-cols-3 gap-4 mb-4">
-                <div className="flex items-center justify-center text-center p-4 bg-primary-light rounded-2xl h-full min-h-[80px]">
-                  <div className="text-lg font-bold text-primary">Mehr ältere Menschen.</div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-6">
+                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px]">
+                  <div className="text-sm sm:text-base lg:text-lg font-bold text-primary">Mehr ältere Menschen.</div>
                 </div>
-                <div className="flex items-center justify-center text-center p-4 bg-primary-light rounded-2xl h-full min-h-[80px]">
-                  <div className="text-lg font-bold text-primary">Mehr Versorgungsbedarf.</div>
+                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px]">
+                  <div className="text-sm sm:text-base lg:text-lg font-bold text-primary">Mehr Versorgungsbedarf.</div>
                 </div>
-                <div className="flex items-center justify-center text-center p-4 bg-primary-light rounded-2xl h-full min-h-[80px]">
-                  <div className="text-lg font-bold text-primary">Weniger verfügbare Fachkräfte.</div>
+                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px]">
+                  <div className="text-sm sm:text-base lg:text-lg font-bold text-primary">Weniger verfügbare Fachkräfte.</div>
                 </div>
               </div>
-              <p className="text-lg text-muted-foreground mb-2">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Dieser Engpass betrifft nahezu alle Bereiche: Pflege, Therapie, medizinische Assistenz, psychosoziale Versorgung, Ausbildung und ärztliche Berufe.
               </p>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Die Nachfrage ist dauerhaft. Der Wettbewerb um Zugang nimmt zu.
               </p>
             </SectionCard>
@@ -223,15 +216,15 @@ const ContentSections = () => {
               icon={<LightbulbIcon />}
               delay="0.7s"
             >
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p className="text-lg text-muted-foreground mb-2">
+              <div className="text-muted-foreground leading-relaxed">
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   Eine Domain wirkt am Anfang. Vor Kampagnen. Vor Teams. Vor Budgetfreigaben. Sie ist kein Werkzeug. Sie ist ein Zugang.
                 </p>
-                <p className="text-lg text-muted-foreground font-medium mb-2">
+                <p className="text-lg text-muted-foreground font-medium leading-relaxed mb-6">
                   Die entscheidende Frage lautet nicht: „Wen gewinnen wir?" Sondern:
                 </p>
                 <p className="text-foreground font-medium">
-                  <span className="text-primary text-2xl font-bold">„Wem gehört der Einstieg?"</span>
+                  <span className="text-primary text-xl sm:text-2xl font-bold">„Wem gehört der Einstieg?"</span>
                 </p>
               </div>
             </SectionCard>

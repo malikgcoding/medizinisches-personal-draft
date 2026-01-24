@@ -5,7 +5,7 @@ const Accordion = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <section className="px-6 py-8">
+    <section className="px-4 sm:px-6 py-8">
       <div className="max-w-3xl mx-auto">
         <button
           onClick={() => setIsOpen(!isOpen)}
