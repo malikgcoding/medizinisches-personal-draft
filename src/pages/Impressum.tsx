@@ -2,8 +2,17 @@ import Header from '@/components/landing/Header';
 import Footer from '@/components/landing/Footer';
 import DisclaimerOverlay from '@/components/DisclaimerOverlay';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Impressum = () => {
+  useEffect(() => {
+    document.title = 'Impressum | Medizinisches Personal';
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Impressum und rechtliche Angaben zu Medizinisches Personal.');
+    }
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <DisclaimerOverlay />

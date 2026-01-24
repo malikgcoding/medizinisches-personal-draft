@@ -2,8 +2,18 @@ import Header from '@/components/landing/Header';
 import Hero from '@/components/landing/Hero';
 import Footer from '@/components/landing/Footer';
 import DisclaimerOverlay from '@/components/DisclaimerOverlay';
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Kliniken = () => {
+  useEffect(() => {
+    document.title = 'Kliniken | Medizinisches Personal';
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Domain-Paket für medizinisches Personal in Kliniken: Strategische Sichtbarkeit im DACH-Gesundheitsmarkt.');
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <DisclaimerOverlay />
@@ -405,13 +415,18 @@ const Kliniken = () => {
 
           {/* Legal Notice */}
           <div className="md:col-span-2">
-            <div className="bg-muted/30 p-6 rounded-lg text-sm text-muted-foreground">
-              <p className="font-semibold text-primary mb-2">Rechtlicher Hinweis</p>
-              <p>
+            <div className="section-card">
+              <p className="text-lg font-semibold text-primary mb-4">Rechtlicher Hinweis</p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Diese Website ist kein Jobportal, kein Recruiting-Service und keine Personalvermittlung.<br />
                 Es werden keine Stellenangebote veröffentlicht und keine Bewerbungen entgegengenommen.
               </p>
             </div>
+          </div>
+
+          {/* Back Button */}
+          <div className="md:col-span-2 mt-8">
+            <Link to="/" className="text-primary hover:underline">← Zurück zur Startseite</Link>
           </div>
 
           </div>

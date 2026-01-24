@@ -2,8 +2,17 @@ import Header from '@/components/landing/Header';
 import Footer from '@/components/landing/Footer';
 import DisclaimerOverlay from '@/components/DisclaimerOverlay';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Datenschutz = () => {
+  useEffect(() => {
+    document.title = 'Datenschutz | Medizinisches Personal';
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Datenschutzerklärung von Medizinisches Personal.');
+    }
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <DisclaimerOverlay />
