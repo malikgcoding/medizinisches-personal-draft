@@ -10,8 +10,8 @@ const Footer = () => {
             <Link to="/datenschutz" rel="nofollow" className="hover:text-primary transition-colors">Datenschutz</Link>
           </div>
 
-          <div className="flex items-center justify-center">
-            <p className="text-xs text-muted-foreground leading-relaxed text-center max-w-5xl">
+          <div className="flex items-center justify-center px-4">
+            <p className="text-xs text-muted-foreground leading-relaxed text-center max-w-2xl">
               Ein Besuch dieser Website begründet kein Vertragsverhältnis. Über diese Seite werden keine Leistungen angeboten. Eine etwaige Übertragung digitaler Assets (Domains) erfolgt ausschließlich individuell und außerhalb dieser Website.
             </p>
           </div>

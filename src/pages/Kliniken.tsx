@@ -443,7 +443,7 @@ const Kliniken = () => {
           {/* Legal Notice */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <p className="text-lg font-semibold text-primary mb-4">Rechtlicher Hinweis</p>
+              <h2 className="section-heading mb-4">Rechtlicher Hinweis</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Diese Website ist kein Jobportal, kein Recruiting-Service und keine Personalvermittlung.<br />
                 Es werden keine Stellenangebote veröffentlicht und keine Bewerbungen entgegengenommen.
