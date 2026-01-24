@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import SectionCard from './SectionCard';
 import { 
   UsersIcon, 
@@ -61,16 +62,14 @@ const ContentSections = () => {
                       link: "/pflegeheime"
                     }
                   ].map((card, index) => (
-                    <a 
+                    <Link 
                       key={index} 
-                      href={`https://medizinisches-personal.de${card.link}`} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
+                      to={card.link}
                       className="bg-card rounded-2xl border border-border-subtle p-4 md:p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 block group w-full max-w-full min-w-0"
                     >
                       <h3 className="text-xl font-semibold mb-3 text-primary group-hover:underline transition-all cursor-pointer">{card.title}</h3>
                       <p className="text-lg text-muted-foreground leading-relaxed">{card.content}</p>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
