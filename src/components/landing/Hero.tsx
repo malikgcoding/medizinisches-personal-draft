@@ -14,7 +14,7 @@ const Hero = () => {
             <img 
               src="/dach_map.svg" 
               alt="DACH Region - Deutschland, Österreich, Schweiz" 
-              className="w-40 md:w-full md:max-w-md opacity-90"
+              className="w-48 md:w-full md:max-w-md opacity-90"
             />
           </div>
 
