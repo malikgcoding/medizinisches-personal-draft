@@ -20,7 +20,7 @@ const ContentSections = () => {
         <div className="grid gap-4 md:gap-8 md:grid-cols-2 w-full max-w-full min-w-0">
           {/* Für wen relevant */}
           <div className="md:col-span-2 w-full max-w-full min-w-0">
-            <section className="w-full max-w-full">
+            <section className="px-0 sm:px-6 py-10 w-full max-w-full">
               <div className="max-w-6xl mx-auto w-full max-w-full">
                 <div className="text-center mb-12 w-full max-w-full">
                   <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
