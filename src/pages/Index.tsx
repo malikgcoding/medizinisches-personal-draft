@@ -4,10 +4,12 @@ import ContentSections from '@/components/landing/ContentSections';
 import FAQ from '@/components/landing/FAQ';
 import Accordion from '@/components/landing/Accordion';
 import Footer from '@/components/landing/Footer';
+import DisclaimerOverlay from '@/components/DisclaimerOverlay';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
+      <DisclaimerOverlay />
       <Header />
       <main className="pt-16">
         <Hero />
