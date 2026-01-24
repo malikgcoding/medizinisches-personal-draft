@@ -89,7 +89,7 @@ const ContentSections = () => {
               <p className="text-lg text-muted-foreground mb-6">
                 Zum Paket gehören folgende Domains:
               </p>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 mb-6">
                 {[
                   'medizinisches-personal.de',
                   'medizinisches-personal.at',
@@ -99,8 +99,8 @@ const ContentSections = () => {
                   'medizinisches-personal.app',
                   'medizinischespersonal.app'
                 ].map((domain, index) => (
-                  <div key={index} className="bg-card rounded-2xl border border-border-subtle p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 text-center">
-                    <span className="font-semibold" style={{ color: '#2f6f5e' }}>{domain}</span>
+                  <div key={index} className="bg-card rounded-2xl border border-border-subtle p-3 sm:p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 text-center min-w-0">
+                    <span className="block text-sm sm:text-base font-semibold text-primary break-all leading-snug">{domain}</span>
                   </div>
                 ))}
               </div>
@@ -142,7 +142,7 @@ const ContentSections = () => {
               delay="0.4s"
             >
               <div>
-                <h3 className="text-2xl font-semibold text-muted-foreground mb-6">
+                <h3 className="text-xl sm:text-2xl font-semibold text-muted-foreground leading-snug mb-4 sm:mb-6">
                   Personalgewinnung beginnt nicht mit einer Anzeige.
                   <br />
                   <span style={{ color: '#2f6f5e' }}>Sie beginnt mit einer Suche.</span>
@@ -200,7 +200,7 @@ const ContentSections = () => {
                   <div className="text-sm sm:text-base lg:text-lg font-bold text-primary">Weniger verfügbare Fachkräfte.</div>
                 </div>
               </div>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
                 Dieser Engpass betrifft nahezu alle Bereiche: Pflege, Therapie, medizinische Assistenz, psychosoziale Versorgung, Ausbildung und ärztliche Berufe.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -217,10 +217,10 @@ const ContentSections = () => {
               delay="0.7s"
             >
               <div className="text-muted-foreground leading-relaxed">
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
                   Eine Domain wirkt am Anfang. Vor Kampagnen. Vor Teams. Vor Budgetfreigaben. Sie ist kein Werkzeug. Sie ist ein Zugang.
                 </p>
-                <p className="text-lg text-muted-foreground font-medium leading-relaxed mb-6">
+                <p className="text-lg text-muted-foreground font-medium leading-relaxed mb-4">
                   Die entscheidende Frage lautet nicht: „Wen gewinnen wir?" Sondern:
                 </p>
                 <p className="text-foreground font-medium">

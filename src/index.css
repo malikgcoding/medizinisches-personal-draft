@@ -109,9 +109,17 @@
     @apply border-border;
   }
 
+  html {
+    @apply overflow-x-hidden;
+  }
+
   body {
     @apply bg-background text-foreground antialiased overflow-x-hidden;
     font-family: 'Verdana', 'Geneva', sans-serif;
+  }
+
+  #root {
+    @apply min-h-screen overflow-x-hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -121,7 +129,7 @@
 
 @layer components {
   .section-card {
-    @apply bg-card rounded-3xl border border-border-subtle p-4 sm:p-6 md:p-8 lg:p-10 transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    @apply bg-card rounded-3xl border border-border-subtle p-4 sm:p-6 md:p-8 lg:p-10 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 min-w-0;
     box-shadow: var(--shadow-card);
   }
 
