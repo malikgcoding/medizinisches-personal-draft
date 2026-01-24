@@ -15,7 +15,7 @@ import {
 
 const ContentSections = () => {
   return (
-    <section id="details" className="px-2 sm:px-4 md:px-6 pb-10 pt-16 overflow-x-hidden w-full">
+    <section id="details" className="px-2 sm:px-4 md:px-6 pb-10 pt-8 sm:pt-16 overflow-x-hidden w-full">
       <div className="max-w-6xl mx-auto w-full px-2 sm:px-0">
         <div className="grid gap-8 md:grid-cols-2 w-full max-w-full min-w-0">
           {/* Für wen relevant */}
