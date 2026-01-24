@@ -15,20 +15,20 @@ import {
 
 const ContentSections = () => {
   return (
-    <section id="details" className="px-4 sm:px-6 pb-10 pt-16 overflow-x-hidden">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid gap-8 md:grid-cols-2">
+    <section id="details" className="px-2 sm:px-4 md:px-6 pb-10 pt-16 overflow-x-hidden w-full">
+      <div className="max-w-6xl mx-auto w-full px-2 sm:px-0">
+        <div className="grid gap-8 md:grid-cols-2 w-full max-w-full min-w-0">
           {/* Für wen relevant */}
-          <div className="md:col-span-2">
-            <section className="px-0 sm:px-6 py-10">
-              <div className="max-w-6xl mx-auto">
-                <div className="text-center mb-12">
+          <div className="md:col-span-2 w-full max-w-full min-w-0">
+            <section className="px-0 sm:px-6 py-10 w-full max-w-full">
+              <div className="max-w-6xl mx-auto w-full max-w-full">
+                <div className="text-center mb-12 w-full max-w-full">
                   <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
                     <UsersIcon />
                   </div>
                   <h2 className="section-heading">Für wen dieses Paket relevant ist</h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full max-w-full min-w-0">
                   {[
                     {
                       title: "Zeitarbeit / Arbeitnehmerüberlassung",
@@ -66,7 +66,7 @@ const ContentSections = () => {
                       href={`https://medizinisches-personal.de${card.link}`} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="bg-card rounded-2xl border border-border-subtle p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 block group"
+                      className="bg-card rounded-2xl border border-border-subtle p-4 md:p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 block group w-full max-w-full min-w-0"
                     >
                       <h3 className="text-xl font-semibold mb-3 text-primary group-hover:underline transition-all cursor-pointer">{card.title}</h3>
                       <p className="text-lg text-muted-foreground leading-relaxed">{card.content}</p>
@@ -78,18 +78,18 @@ const ContentSections = () => {
           </div>
 
           {/* Was angeboten wird */}
-          <div className="md:col-span-2">
-            <div className="section-card opacity-0 animate-slide-up">
+          <div className="md:col-span-2 w-full max-w-full min-w-0">
+            <div className="section-card opacity-0 animate-slide-up w-full max-w-full min-w-0">
               <div className="flex items-center mb-6">
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mr-4">
                   <BriefcaseIcon />
                 </div>
                 <h2 className="section-heading mb-0">Was hier konkret angeboten wird</h2>
               </div>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-lg text-muted-foreground mb-6 w-full max-w-full">
                 Zum Paket gehören folgende Domains:
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 mb-6 w-full max-w-full min-w-0">
                 {[
                   'medizinisches-personal.de',
                   'medizinisches-personal.at',
@@ -99,8 +99,8 @@ const ContentSections = () => {
                   'medizinisches-personal.app',
                   'medizinischespersonal.app'
                 ].map((domain, index) => (
-                  <div key={index} className="bg-card rounded-2xl border border-border-subtle p-3 sm:p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 text-center min-w-0">
-                    <span className="block text-sm sm:text-base font-semibold text-primary break-all leading-snug">{domain}</span>
+                  <div key={index} className="bg-card rounded-2xl border border-border-subtle p-3 sm:p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 text-center min-w-0 w-full max-w-full">
+                    <span className="block text-sm sm:text-base font-semibold text-primary break-all leading-snug w-full">{domain}</span>
                   </div>
                 ))}
               </div>
@@ -111,7 +111,7 @@ const ContentSections = () => {
           </div>
 
           {/* Nutzungsszenarien */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 w-full max-w-full min-w-0">
             <SectionCard 
               title={
                 <>
@@ -135,7 +135,7 @@ const ContentSections = () => {
 
           {/* Strategischer Wert */}
           {/* Strategischer Wert */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 w-full max-w-full min-w-0">
             <SectionCard 
               title="Warum diese Domains strategisch wertvoll sind" 
               icon={<TrendingIcon />}
@@ -152,10 +152,10 @@ const ContentSections = () => {
                   Sie suchen nach Begriffen.
                 </p>
 
-                <div className="flex gap-4 mb-6">
+                <div className="flex gap-4 mb-6 w-full max-w-full min-w-0">
                   <div className="w-1 rounded-full flex-shrink-0" style={{ backgroundColor: '#2f6f5e' }}></div>
-                  <div>
-                    <p className="text-lg text-muted-foreground italic">„medizinisches Personal" „Personal im Gesundheitswesen" „Pflegepersonal finden"</p>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-lg text-muted-foreground italic w-full break-words">„medizinisches Personal" „Personal im Gesundheitswesen" „Pflegepersonal finden"</p>
                   </div>
                 </div>
 
@@ -177,7 +177,7 @@ const ContentSections = () => {
           </div>
 
           {/* Full-width: Was unter medizinisches Personal verstanden wird */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 w-full max-w-full min-w-0">
             <SectionCard 
               title="Was unter „medizinisches Personal“ verstanden wird" 
               icon={<HeartPulseIcon />}
@@ -198,20 +198,20 @@ const ContentSections = () => {
           </div>
 
           {/* Markt & Kontext - Full width with 3 boxes */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 w-full max-w-full min-w-0">
             <SectionCard 
               title="Markt & Kontext" 
               icon={<GlobeIcon />} 
               delay="0.6s"
             >
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-6">
-                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px]">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-6 w-full max-w-full min-w-0">
+                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px] w-full max-w-full min-w-0">
                   <div className="text-sm sm:text-base lg:text-lg font-bold text-primary">Mehr ältere Menschen.</div>
                 </div>
-                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px]">
+                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px] w-full max-w-full min-w-0">
                   <div className="text-sm sm:text-base lg:text-lg font-bold text-primary">Mehr Versorgungsbedarf.</div>
                 </div>
-                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px]">
+                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px] w-full max-w-full min-w-0">
                   <div className="text-sm sm:text-base lg:text-lg font-bold text-primary">Weniger verfügbare Fachkräfte.</div>
                 </div>
               </div>
@@ -227,7 +227,7 @@ const ContentSections = () => {
           </div>
 
           {/* Nutzungslogik - Full width with poetic text */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 w-full max-w-full min-w-0">
             <SectionCard 
               title="Nutzungslogik: wie eine Domain wirkt" 
               icon={<LightbulbIcon />}
@@ -256,14 +256,14 @@ const ContentSections = () => {
           </div>
 
           {/* Deal-Rahmenbedingungen - 5 cards in one box */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 w-full max-w-full min-w-0">
             <SectionCard 
               title="Deal-Rahmenbedingungen" 
               icon={<FileTextIcon />}
               delay="0.8s"
             >
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
-                <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4 w-full max-w-full min-w-0">
+                <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center w-full max-w-full min-w-0">
                   <div className="flex justify-center mb-1 md:mb-2 text-primary flex-shrink-0">
                     <GlobeIcon />
                   </div>
