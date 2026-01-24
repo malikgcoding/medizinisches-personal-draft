@@ -5,9 +5,21 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
       
       <div className="relative z-10 max-w-6xl mx-auto w-full">
-        <div className="grid md:grid-cols-2 gap-6 items-center">
-          {/* Left side - Text content */}
-          <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-6 items-center">
+          {/* DACH Map - Above title on mobile, right side on desktop */}
+          <div 
+            className="flex justify-start md:justify-end animate-fade-in order-1 md:order-2 w-full"
+            style={{ animationDelay: '0.2s' }}
+          >
+            <img 
+              src="/dach_map.svg" 
+              alt="DACH Region - Deutschland, Österreich, Schweiz" 
+              className="w-32 md:w-full md:max-w-md opacity-90"
+            />
+          </div>
+
+          {/* Text content - Below map on mobile, left side on desktop */}
+          <div className="animate-fade-in order-2 md:order-1" style={{ animationDelay: '0.1s' }}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-balance">
               medizinisches personal
             </h1>
@@ -20,18 +32,6 @@ const Hero = () => {
               </p>
               <p>Das Paket kann unverbindlich angefragt werden.</p>
             </div>
-          </div>
-
-          {/* Right side - DACH Map */}
-          <div 
-            className="flex justify-center md:justify-end animate-fade-in"
-            style={{ animationDelay: '0.2s' }}
-          >
-            <img 
-              src="/dach_map.svg" 
-              alt="DACH Region - Deutschland, Österreich, Schweiz" 
-              className="w-full max-w-md opacity-90"
-            />
           </div>
         </div>
       </div>
