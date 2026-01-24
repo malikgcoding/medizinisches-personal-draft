@@ -21,11 +21,11 @@ const Accordion = () => {
           </span>
         </button>
         <div 
-          className={`overflow-hidden transition-all duration-300 ${
-            isOpen ? 'max-h-[1200px]' : 'max-h-0'
+          className={`transition-all duration-300 ${
+            isOpen ? 'max-h-none' : 'max-h-0 overflow-hidden'
           }`}
         >
-          <div className="pt-6 pb-5 text-muted-foreground leading-relaxed space-y-4 text-base md:text-lg text-left">
+          <div className="pt-6 pb-5 text-lg text-muted-foreground leading-relaxed space-y-4 text-left">
             <p><strong>Medizinisches Personal im DACH-Raum – Markt, Nachfrage und digitale Zugänge</strong></p>
             <p>
               Der Begriff medizinisches Personal beschreibt sämtliche Fachkräfte, die direkt oder indirekt an der medizinischen Versorgung beteiligt sind. Dazu zählen Pflegekräfte, medizinische Fachangestellte, therapeutische Berufe, medizinisch-technische Assistenz, psychosoziale Fachkräfte, Hebammen, Reha-Personal sowie Ausbildungs- und Lehrberufe im Gesundheitswesen. In Deutschland, Österreich und der Schweiz wird dieser Begriff als übergeordnete Suchanfrage genutzt, wenn Einrichtungen, Träger oder Plattformen Personal im Gesundheitswesen suchen oder anbieten.
