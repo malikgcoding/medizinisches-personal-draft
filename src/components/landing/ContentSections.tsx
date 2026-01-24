@@ -71,16 +71,16 @@ const ContentSections = () => {
                       <h3 className="text-xl font-semibold mb-3 text-primary group-hover:underline transition-all cursor-pointer">{card.title}</h3>
                       <p className="text-lg text-muted-foreground leading-relaxed">{card.content}</p>
                     </a>
-                  ))}
-                </div>
-              </div>
-            </section>
-          </div>
-
-          {/* Was angeboten wird */}
-          <div className="md:col-span-2">
-            <div className="section-card opacity-0 animate-slide-up">
-              <div className="flex items-center mb-6">
+                    <a 
+                      key={index} 
+                      href={`https://medizinisches-personal.de${card.link}`} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-card rounded-2xl border border-border-subtle p-4 sm:p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 block group w-full max-w-xs mx-auto"
+                    >
+                      <h3 className="text-xl font-semibold mb-3 text-primary group-hover:underline transition-all cursor-pointer">{card.title}</h3>
+                      <p className="text-lg text-muted-foreground leading-relaxed">{card.content}</p>
+                    </a>
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mr-4">
                   <BriefcaseIcon />
                 </div>
@@ -204,14 +204,14 @@ const ContentSections = () => {
               icon={<GlobeIcon />} 
               delay="0.6s"
             >
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-6">
-                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px]">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-6 w-full max-w-full min-w-0 overflow-x-auto">
+                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px] w-full max-w-full min-w-0">
                   <div className="text-sm sm:text-base lg:text-lg font-bold text-primary">Mehr ältere Menschen.</div>
                 </div>
-                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px]">
+                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px] w-full max-w-full min-w-0">
                   <div className="text-sm sm:text-base lg:text-lg font-bold text-primary">Mehr Versorgungsbedarf.</div>
                 </div>
-                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px]">
+                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px] w-full max-w-full min-w-0">
                   <div className="text-sm sm:text-base lg:text-lg font-bold text-primary">Weniger verfügbare Fachkräfte.</div>
                 </div>
               </div>
