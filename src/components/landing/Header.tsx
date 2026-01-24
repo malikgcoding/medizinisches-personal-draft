@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom';
+
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border-subtle">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 flex items-center justify-between">
-        <a href="/" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <img src="/logo.svg" alt="Logo" className="h-6 w-auto" />
-        </a>
+        </Link>
         <a 
           href="mailto:hallo@medizinisches-personal.de" 
           className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary/10 transition-colors"
