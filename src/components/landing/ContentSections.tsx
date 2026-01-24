@@ -15,8 +15,8 @@ import {
 
 const ContentSections = () => {
   return (
-    <section id="details" className="px-4 sm:px-6 pb-10 pt-16 overflow-x-hidden">
-      <div className="max-w-6xl mx-auto">
+    <section id="details" className="px-4 sm:px-6 pb-10 pt-16 overflow-x-hidden w-full">
+      <div className="max-w-6xl mx-auto w-full overflow-x-hidden">
         <div className="grid gap-8 md:grid-cols-2">
           {/* Für wen relevant */}
           <div className="md:col-span-2">
