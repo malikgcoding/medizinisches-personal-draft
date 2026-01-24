@@ -21,7 +21,7 @@ const ContentSections = () => {
         <div className="grid gap-4 md:gap-8 md:grid-cols-2 w-full max-w-full min-w-0">
           {/* Für wen relevant */}
           <div className="md:col-span-2 w-full max-w-full min-w-0">
-            <section className="px-0 sm:px-6 py-10 w-full max-w-full">
+            <section className="py-10 w-full max-w-full">
               <div className="max-w-6xl mx-auto w-full max-w-full">
                 <div className="text-center mb-12 w-full max-w-full">
                   <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
@@ -296,14 +296,17 @@ const ContentSections = () => {
                   <div className="text-muted-foreground text-xs md:text-sm">oder Lizenzmodell</div>
                 </div>
 
-                <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
-                  <div className="flex justify-center mb-1 md:mb-2 text-primary flex-shrink-0">
+                <a 
+                  href="mailto:hallo@medizinisches-personal.de"
+                  className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center hover:bg-primary/10 hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
+                >
+                  <div className="flex justify-center mb-1 md:mb-2 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <MailIcon />
                   </div>
-                  <div className="text-xl md:text-2xl font-bold text-primary mb-0.5 md:mb-1">Erstkontakt</div>
+                  <div className="text-xl md:text-2xl font-bold text-primary mb-0.5 md:mb-1 group-hover:underline">Erstkontakt</div>
                   <div className="text-muted-foreground text-xs md:text-sm">Gespräch – diskret</div>
                   <div className="text-muted-foreground text-xs md:text-sm">& unverbindlich</div>
-                </div>
+                </a>
               </div>
             </SectionCard>
           </div>

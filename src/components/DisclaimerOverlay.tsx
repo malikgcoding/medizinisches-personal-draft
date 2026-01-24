@@ -1,7 +1,15 @@
 import { useState, useEffect } from 'react';
 
 const DisclaimerOverlay = () => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Check if overlay has been shown in this browser session
+    if (!(window as any).__disclaimerShown) {
+      setIsVisible(true);
+      (window as any).__disclaimerShown = true;
+    }
+  }, []);
 
   useEffect(() => {
     if (isVisible) {

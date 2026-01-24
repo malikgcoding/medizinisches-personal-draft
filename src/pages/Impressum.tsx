@@ -23,48 +23,70 @@ const Impressum = () => {
           
           <div className="prose prose-slate max-w-none space-y-6 text-muted-foreground">
             <section>
-              <h2 className="text-xl font-semibold text-foreground mb-3">Angaben gemäß § 5 TMG</h2>
+              <h2 className="text-xl font-semibold text-primary mb-3">Anbieter</h2>
               <p>
                 D.I.E. STRATEGIE GmbH<br />
-                Grüner Hof 5<br />
-                89073 Ulm
+                Ensingerstraße 33/2<br />
+                89073 Ulm<br />
+                Deutschland
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-foreground mb-3">Kontakt</h2>
+              <h2 className="text-xl font-semibold text-primary mb-3">Vertreten durch den Geschäftsführer</h2>
+              <p>Damir Koren</p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-primary mb-3">Kontakt</h2>
               <p>
-                Telefon: +49 731 14016773<br />
-                E-Mail: info@die-strategie.de
+                Telefon: +49 731 1461789-1<br />
+                E-Mail: hallo@medizinisches-personal.de
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-foreground mb-3">Registereintrag</h2>
+              <h2 className="text-xl font-semibold text-primary mb-3">Registereintrag</h2>
               <p>
-                Eintragung im Handelsregister<br />
                 Registergericht: Amtsgericht Ulm<br />
-                Registernummer: HRB 739512
+                Registernummer: HRB 748810
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-foreground mb-3">Umsatzsteuer-ID</h2>
+              <h2 className="text-xl font-semibold text-primary mb-3">Umsatzsteuer-Identifikationsnummer</h2>
               <p>
-                Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-                DE355253623
+                DE310597771 gemäß § 27a Umsatzsteuergesetz (UStG)
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-foreground mb-3">Vertretungsberechtigter Geschäftsführer</h2>
-              <p>Malik Senghor</p>
+              <h2 className="text-xl font-semibold text-primary mb-3">Verantwortlich für journalistisch-redaktionelle Inhalte nach § 18 Abs. 2 MStV</h2>
+              <p>
+                Damir Koren<br />
+                Ensingerstraße 33/2<br />
+                89073 Ulm<br />
+                Deutschland
+              </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-foreground mb-3">Hinweis</h2>
+              <h2 className="text-xl font-semibold text-primary mb-3">Geltungsbereich</h2>
               <p>
-                Diese Website dient ausschließlich der Präsentation eines Domain-Portfolios. Es werden keine operativen Dienstleistungen angeboten, keine Stellenangebote vermittelt und kein Personalrecruiting betrieben.
+                Dieses Impressum gilt für die Website medizinisches-personal.de sowie alle zugehörigen Unterseiten.
+              </p>
+              <p>
+                Diese Website stellt kein Angebot an Arbeitnehmer oder Arbeitgeber dar und erbringt keine Personal-, Vermittlungs-, Zeitarbeits- oder Beratungsleistungen.<br />
+                Sie dient ausschließlich der neutralen Darstellung digitaler Assets (Domains).<br />
+                Eine etwaige Übertragung digitaler Assets (Domains) erfolgt ausschließlich individuell und außerhalb dieser Website.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-primary mb-3">Urheberrecht</h2>
+              <p>
+                Die Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht.<br />
+                Jede Verwertung außerhalb gesetzlicher Grenzen bedarf der vorherigen schriftlichen Zustimmung der Rechteinhaber.
               </p>
             </section>
 

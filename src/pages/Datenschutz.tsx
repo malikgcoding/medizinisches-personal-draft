@@ -23,63 +23,132 @@ const Datenschutz = () => {
           
           <div className="prose prose-slate max-w-none space-y-6 text-muted-foreground">
             <section>
-              <h2 className="text-xl font-semibold text-foreground mb-3">1. Datenschutz auf einen Blick</h2>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Allgemeine Hinweise</h3>
-              <p>
-                Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-xl font-semibold text-foreground mb-3">2. Hosting</h2>
-              <p>
-                Diese Website wird bei Netlify gehostet. Anbieter ist die Netlify, Inc., 44 Montgomery Street, Suite 300, San Francisco, California 94104, USA.
-              </p>
-              <p>
-                Netlify erfasst in sogenannten Logfiles folgende Daten: IP-Adresse, Browser-Typ, Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners und Uhrzeit der Serveranfrage. Diese Daten werden in den USA verarbeitet.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-xl font-semibold text-foreground mb-3">3. Allgemeine Hinweise und Pflichtinformationen</h2>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Verantwortliche Stelle</h3>
+              <h2 className="text-xl font-semibold text-primary mb-3">1. Verantwortliche Stelle</h2>
               <p>
                 D.I.E. STRATEGIE GmbH<br />
-                Grüner Hof 5<br />
+                Ensingerstraße 33/2<br />
                 89073 Ulm<br />
-                E-Mail: info@die-strategie.de
+                Deutschland<br />
+                Telefon: +49 731 1461789-1<br />
+                E-Mail: hallo@medizinisches-personal.de
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-foreground mb-3">4. Datenerfassung auf dieser Website</h2>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Keine Cookies</h3>
+              <h2 className="text-xl font-semibold text-primary mb-3">2. Zweck und Charakter dieser Website</h2>
               <p>
-                Diese Website verwendet keine Cookies.
-              </p>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Keine Tracking-Tools</h3>
-              <p>
-                Diese Website verwendet keine Tracking- oder Analyse-Tools wie Google Analytics, Matomo oder ähnliche Dienste.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-xl font-semibold text-foreground mb-3">5. Ihre Rechte</h2>
-              <p>
-                Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.
+                Diese Website stellt ausschließlich Informationen zur Verfügung.<br />
+                Sie stellt kein Angebot an Arbeitnehmer oder Arbeitgeber dar und erbringt keine Personal-, Vermittlungs-, Zeitarbeits-, Matching-, Recruiting- oder Beratungsleistungen.<br />
+                Die Website dient ausschließlich der neutralen Darstellung digitaler Assets (Domains) und stellt kein Angebot im rechtlichen Sinne dar.<br />
+                Es erfolgt keine Registrierung, kein Login, keine Datenbanknutzung, keine Verarbeitung von Bewerber- oder Arbeitgeberdaten und keine operative Tätigkeit.<br />
+                Eine etwaige Übertragung digitaler Assets (Domains) erfolgt ausschließlich individuell und außerhalb dieser Website.
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-foreground mb-3">6. Beschwerderecht bei der zuständigen Aufsichtsbehörde</h2>
+              <h2 className="text-xl font-semibold text-primary mb-3">3. Server-Logs / Zugriffsdaten</h2>
               <p>
-                Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.
+                Die Website wird über Netlify, Inc. gehostet:<br />
+                2325 3rd Street, Suite 296, San Francisco, CA 94107, USA.
+              </p>
+              <p>
+                Beim Aufruf der Website verarbeitet der Hosting-Provider automatisch technisch notwendige Daten (Server-Logs):<br />
+                – IP-Adresse<br />
+                – Datum und Uhrzeit des Zugriffs<br />
+                – angeforderte Datei / Seite<br />
+                – Browsertyp / Version<br />
+                – Betriebssystem
+              </p>
+              <p>
+                Server-Logs werden spätestens nach 30 Tagen anonymisiert oder gelöscht.<br />
+                Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherem Betrieb).
               </p>
             </section>
 
             <section>
-              <p className="text-sm italic">
-                Stand: 07.01.2026
+              <h2 className="text-xl font-semibold text-primary mb-3">4. Datenübermittlung in die USA</h2>
+              <p>
+                Netlify verarbeitet Daten in den USA. Die USA bieten derzeit kein mit der EU vergleichbares Datenschutzniveau.<br />
+                Datenübermittlungen erfolgen ausschließlich auf Basis der Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO).<br />
+                Mit Netlify besteht ein Vertrag zur Auftragsverarbeitung gemäß Art. 28 DSGVO.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-primary mb-3">5. Cookies und Tracking</h2>
+              <p>
+                Diese Website verwendet keine Cookies.<br />
+                Es werden keine Tracking-, Analyse-, Marketing- oder Profiling-Tools eingesetzt.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-primary mb-3">6. Kein Verkauf oder Weitergabe von Daten</h2>
+              <p>
+                Personenbezogene Daten werden nicht verkauft, vermietet, geteilt oder zu Werbezwecken weitergegeben.<br />
+                Es findet keine automatisierte Entscheidungsfindung statt.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-primary mb-3">7. Kontakt</h2>
+              <p>
+                Wenn Sie uns per Telefon oder E-Mail kontaktieren, verarbeiten wir die übermittelten Daten ausschließlich zur Bearbeitung der Anfrage.<br />
+                Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).<br />
+                Die Daten werden gelöscht, sobald der Zweck entfällt, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-primary mb-3">8. Weitergabe an Dritte</h2>
+              <p>
+                Eine Weitergabe erfolgt nur an technische Dienstleister (z. B. Hosting-Provider).<br />
+                Mit Dienstleistern bestehen – sofern erforderlich – Auftragsverarbeitungsverträge gemäß Art. 28 DSGVO.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-primary mb-3">9. Ihre Rechte</h2>
+              <p>
+                Sie haben jederzeit folgende Rechte:<br />
+                – Auskunft (Art. 15 DSGVO)<br />
+                – Berichtigung (Art. 16 DSGVO)<br />
+                – Löschung (Art. 17 DSGVO)<br />
+                – Einschränkung (Art. 18 DSGVO)<br />
+                – Datenübertragbarkeit (Art. 20 DSGVO)<br />
+                – Widerspruch (Art. 21 DSGVO)
+              </p>
+              <p>
+                Zur Ausübung genügt eine formlose E-Mail an: hallo@medizinisches-personal.de
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-primary mb-3">10. Beschwerderecht</h2>
+              <p>
+                Sie haben das Recht, eine Beschwerde bei einer Datenschutzaufsichtsbehörde einzureichen.<br />
+                Zuständig:<br />
+                Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg<br />
+                Lautenschlagerstraße 20<br />
+                70173 Stuttgart<br />
+                Deutschland<br />
+                www.baden-wuerttemberg.datenschutz.de
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-primary mb-3">11. Stand der Erklärung</h2>
+              <p>
+                07.01.2026 - bei rechtlichen oder technischen Änderungen kann eine Anpassung erfolgen.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-primary mb-3">Abschließender Hinweis zur Einordnung dieser Website</h2>
+              <p>
+                Der Besuch dieser Website begründet kein Vertragsverhältnis.<br />
+                Über diese Website werden keine Leistungen angeboten, vermittelt oder erbracht.<br />
+                Eine Kontaktaufnahme stellt kein rechtsverbindliches Angebot dar.
               </p>
             </section>
 

@@ -1,5 +1,4 @@
 import Header from '@/components/landing/Header';
-import Hero from '@/components/landing/Hero';
 import Footer from '@/components/landing/Footer';
 import DisclaimerOverlay from '@/components/DisclaimerOverlay';
 import { Link } from 'react-router-dom';
@@ -20,7 +19,35 @@ const Kliniken = () => {
       <Header />
       
       <main className="pt-16">
-        <Hero />
+        {/* Custom Hero for Kliniken */}
+        <section className="relative min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pb-10 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
+          
+          <div className="relative z-10 max-w-6xl mx-auto w-full">
+            <div className="flex flex-col md:grid md:grid-cols-2 gap-6 items-center">
+              <div 
+                className="flex justify-start md:justify-end animate-fade-in order-1 md:order-2 w-full"
+                style={{ animationDelay: '0.2s' }}
+              >
+                <img 
+                  src="/dach_map.svg" 
+                  alt="DACH Region - Deutschland, Österreich, Schweiz" 
+                  className="w-48 md:w-full md:max-w-md opacity-90"
+                />
+              </div>
+
+              <div className="animate-fade-in order-2 md:order-1" style={{ animationDelay: '0.1s' }}>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-balance lowercase">
+                  Medizinisches Personal & Kliniken
+                </h1>
+                <div className="text-lg md:text-xl text-muted-foreground leading-relaxed space-y-4">
+                  <p className="font-medium">Versorgung beginnt nicht im Dienstplan.<br />
+                  Sie beginnt dort, wo Bedarf erstmals formuliert wird.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Content Sections */}
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-16 pb-16">
@@ -283,7 +310,7 @@ const Kliniken = () => {
           </div>
 
           {/* Langfristigkeit */}
-          <div className="md:col-span-1">
+          <div className="md:col-span-2">
             <div className="section-card">
               <h2 className="section-heading mb-6">Langfristigkeit als klinische Logik</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
@@ -301,7 +328,7 @@ const Kliniken = () => {
           </div>
 
           {/* Wettbewerb */}
-          <div className="md:col-span-1">
+          <div className="md:col-span-2">
             <div className="section-card">
               <h2 className="section-heading mb-6">Wettbewerb und Systemperspektive</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">

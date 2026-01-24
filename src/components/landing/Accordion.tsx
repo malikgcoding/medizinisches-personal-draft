@@ -11,7 +11,7 @@ const Accordion = () => {
           onClick={() => setIsOpen(!isOpen)}
           className="w-full flex items-center justify-between text-left hover:text-primary transition-colors"
         >
-          <span className="font-medium text-lg text-foreground">Mehr über Markt, Wachstum & Nachfrage und digitale Zuänge lesen</span>
+          <span className="font-bold text-lg text-primary">Mehr über Markt, Wachstum & Nachfrage und digitale Zugänge lesen</span>
           <span 
             className={`flex-shrink-0 text-primary transition-transform duration-300 ${
               isOpen ? 'rotate-180' : ''
