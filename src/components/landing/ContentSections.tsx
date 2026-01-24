@@ -189,24 +189,23 @@ const ContentSections = () => {
               icon={<GlobeIcon />} 
               delay="0.6s"
             >
-              <div className="mb-6">
-                <p className="text-lg text-muted-foreground leading-relaxed mb-2">
-                  Der Gesundheitssektor im DACH-Raum steht strukturell unter Druck:
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-2">
-                  Mehr ältere Menschen.<br />
-                  Mehr Versorgungsbedarf.<br />
-                  Weniger verfügbare Fachkräfte.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-2">
-                  Dieser Engpass betrifft nahezu alle Bereiche:<br />
-                  Pflege, Therapie, medizinische Assistenz, psychosoziale Versorgung, Ausbildung und ärztliche Berufe.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Die Nachfrage ist dauerhaft.<br />
-                  Der Wettbewerb um Zugang nimmt zu.
-                </p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-6">
+                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px]">
+                  <div className="text-sm sm:text-base lg:text-lg font-bold text-primary">Mehr ältere Menschen.</div>
+                </div>
+                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px]">
+                  <div className="text-sm sm:text-base lg:text-lg font-bold text-primary">Mehr Versorgungsbedarf.</div>
+                </div>
+                <div className="flex items-center justify-center text-center p-3 sm:p-4 bg-primary-light rounded-2xl h-full min-h-[60px] sm:min-h-[80px]">
+                  <div className="text-sm sm:text-base lg:text-lg font-bold text-primary">Weniger verfügbare Fachkräfte.</div>
+                </div>
               </div>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                Dieser Engpass betrifft nahezu alle Bereiche: Pflege, Therapie, medizinische Assistenz, psychosoziale Versorgung, Ausbildung und ärztliche Berufe.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Die Nachfrage ist dauerhaft. Der Wettbewerb um Zugang nimmt zu.
+              </p>
             </SectionCard>
           </div>
 
