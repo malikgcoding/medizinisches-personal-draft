@@ -10,8 +10,8 @@ const Footer = () => {
           </span>
 
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <Link to="/impressum" className="hover:text-primary transition-colors">Impressum</Link>
-            <Link to="/datenschutz" className="hover:text-primary transition-colors">Datenschutz</Link>
+            <Link to="/impressum" rel="nofollow" className="hover:text-primary transition-colors">Impressum</Link>
+            <Link to="/datenschutz" rel="nofollow" className="hover:text-primary transition-colors">Datenschutz</Link>
           </div>
 
           <p className="text-sm text-muted-foreground">
