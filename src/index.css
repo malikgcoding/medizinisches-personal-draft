@@ -110,7 +110,7 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased overflow-x-hidden;
     font-family: 'Verdana', 'Geneva', sans-serif;
   }
 
