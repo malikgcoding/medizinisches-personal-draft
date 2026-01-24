@@ -179,13 +179,21 @@ const ContentSections = () => {
           {/* Full-width: Was unter medizinisches Personal verstanden wird */}
           <div className="md:col-span-2">
             <SectionCard 
-              title="Was unter medizinisches Personal verstanden wird" 
+              title="Was unter „medizinisches Personal“ verstanden wird" 
               icon={<HeartPulseIcon />}
               delay="0.5s"
             >
-              <p className="text-lg text-muted-foreground">
-                Als medizinisches Personal gelten alle qualifizierten Fachkräfte, die direkt oder indirekt an der medizinischen und gesundheitlichen Versorgung beteiligt sind. Dazu zählen unter anderem Pflegekräfte, medizinische Fachangestellte, therapeutische Berufe, medizinisch-technische Assistenz, psychosoziale Fachkräfte, Hebammen, Reha-Personal sowie Ausbildungs- und Lehrberufe im Gesundheitswesen. Der Begriff beschreibt keine einzelne Funktion, sondern ein funktionales Gesamtsystem innerhalb des Gesundheitswesens.
-              </p>
+              <div className="text-lg text-muted-foreground">
+                <p>
+                  Als medizinisches Personal gelten alle qualifizierten Fachkräfte, die direkt oder indirekt an der medizinischen und gesundheitlichen Versorgung beteiligt sind.
+                </p>
+                <p className="mt-4">
+                  Dazu zählen unter anderem Pflegekräfte, medizinische Fachangestellte, therapeutische Berufe, medizinisch-technische Assistenz, psychosoziale Fachkräfte, Hebammen, Reha-Personal sowie Ausbildungs- und Lehrberufe im Gesundheitswesen.
+                </p>
+                <p className="mt-4">
+                  Der Begriff beschreibt keine einzelne Funktion, sondern ein funktionales Gesamtsystem innerhalb des Gesundheitswesens.
+                </p>
+              </div>
             </SectionCard>
           </div>
 
