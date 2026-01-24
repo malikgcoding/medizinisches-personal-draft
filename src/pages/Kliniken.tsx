@@ -1,28 +1,16 @@
 import Header from '@/components/landing/Header';
+import Hero from '@/components/landing/Hero';
 import Footer from '@/components/landing/Footer';
 import DisclaimerOverlay from '@/components/DisclaimerOverlay';
-import { Mail } from 'lucide-react';
 
 const Kliniken = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <DisclaimerOverlay />
       <Header />
       
-      <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="relative min-h-[50vh] flex items-center px-4 sm:px-6 pt-32 pb-16">
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
-          
-          <div className="relative z-10 max-w-6xl mx-auto w-full">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Für Kliniken
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
-              Wie das Domain-Paket „medizinisches Personal" Versorgungsstrukturen digital abbildet
-            </p>
-          </div>
-        </section>
+      <main className="pt-16">
+        <Hero />
 
         {/* Content Sections */}
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 space-y-16">
@@ -384,13 +372,6 @@ const Kliniken = () => {
               Sie haben Fragen oder wünschen einen unverbindlichen Austausch?<br />
               Dann melden Sie sich gerne per E-Mail.
             </p>
-            <a 
-              href="mailto:info@die-strategie.de" 
-              className="inline-flex items-center gap-2 text-primary hover:underline text-lg font-semibold"
-            >
-              <Mail className="w-5 h-5" />
-              info@die-strategie.de
-            </a>
           </section>
 
           {/* Legal Notice */}
