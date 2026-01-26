@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
 import SectionCard from './SectionCard';
 import { 
   UsersIcon, 
@@ -14,14 +13,6 @@ import {
   MailIcon,
   HeartPulseIcon
 } from './icons';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import type { CarouselApi } from "@/components/ui/carousel";
 
 const relevantCards = [
   {
@@ -57,21 +48,6 @@ const relevantCards = [
 ];
 
 const ContentSections = () => {
-  const [carouselApi, setCarouselApi] = useState<CarouselApi>()
-  const [current, setCurrent] = useState(0)
-
-  useEffect(() => {
-    if (!carouselApi) {
-      return
-    }
-
-    setCurrent(carouselApi.selectedScrollSnap())
-
-    carouselApi.on("select", () => {
-      setCurrent(carouselApi.selectedScrollSnap())
-    })
-  }, [carouselApi])
-
   return (
     <section id="details" className="px-2 sm:px-4 md:px-6 pb-10 pt-4 sm:pt-8 overflow-x-hidden w-full">
       <div className="max-w-6xl mx-auto w-full px-2 sm:px-0">
@@ -87,61 +63,15 @@ const ContentSections = () => {
                   <h2 className="section-heading">Für wen dieses Paket relevant ist</h2>
                 </div>
                 
-                {/* Mobile Carousel - visible only on mobile */}
-                <div className="md:hidden w-full">
-                  <Carousel
-                    setApi={setCarouselApi}
-                    opts={{
-                      align: "start",
-                      loop: true,
-                    }}
-                    className="w-full"
-                  >
-                    <CarouselContent className="-ml-4">
-                      {relevantCards.map((card, index) => (
-                        <CarouselItem key={index} className="pl-4 basis-full flex">
-                          <Link 
-                            to={card.link}
-                            className="bg-card rounded-2xl border border-border-subtle p-3 transition-all duration-300 hover:shadow-md block group w-full flex flex-col justify-center items-center min-h-[200px]"
-                          >
-                            <div className="w-full">
-                              <h3 className="text-lg font-semibold mb-2 text-primary underline decoration-primary/20 decoration-1 underline-offset-2 group-hover:decoration-primary/60 transition-all cursor-pointer">{card.title}</h3>
-                              <p className="text-base text-muted-foreground leading-relaxed mb-5">{card.content}</p>
-                              
-                              {/* Pagination Dots inside card */}
-                              <div className="flex justify-center gap-2 mt-2">
-                              {relevantCards.map((_, dotIndex) => (
-                                <div
-                                  key={dotIndex}
-                                  className={`h-1.5 rounded-full transition-all ${
-                                    dotIndex === current 
-                                      ? 'w-6 bg-primary' 
-                                      : 'w-1.5 bg-primary/30'
-                                  }`}
-                                />
-                              ))}
-                            </div>
-                            </div>
-                          </Link>
-                        </CarouselItem>
-                      ))}
-                    </CarouselContent>
-                    <div className="flex justify-center gap-4 mt-4 mb-2">
-                      <CarouselPrevious className="static translate-y-0" />
-                      <CarouselNext className="static translate-y-0" />
-                    </div>
-                  </Carousel>
-                </div>
-
-                {/* Desktop Grid - hidden on mobile */}
-                <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full max-w-full min-w-0">
+                {/* Stacked Cards on Mobile, Grid on Desktop */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full max-w-full min-w-0">
                   {relevantCards.map((card, index) => (
                     <Link 
                       key={index} 
                       to={card.link}
                       className="bg-card rounded-2xl border border-border-subtle p-4 md:p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 block group w-full max-w-full min-w-0"
                     >
-                      <h3 className="text-xl font-semibold mb-3 text-primary underline decoration-primary/30 decoration-1 underline-offset-2 group-hover:decoration-primary/70 transition-all cursor-pointer">{card.title}</h3>
+                      <h3 className="text-lg md:text-xl font-semibold mb-3 text-primary underline decoration-primary/20 md:decoration-primary/30 decoration-1 underline-offset-2 group-hover:decoration-primary/60 md:group-hover:decoration-primary/70 transition-all cursor-pointer">{card.title}</h3>
                       <p className="text-lg text-muted-foreground leading-relaxed">{card.content}</p>
                     </Link>
                   ))}
