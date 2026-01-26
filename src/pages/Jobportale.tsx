@@ -20,7 +20,7 @@ const Jobportale = () => {
       
       <main className="pt-16">
         {/* Custom Hero for Jobportale */}
-        <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center px-4 sm:px-6 py-8 overflow-hidden">
+        <section className="relative min-h-[calc(100vh-4rem)] flex items-start md:items-center justify-center pt-8 md:pt-0 px-4 sm:px-6 py-8 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
           
           <div className="relative z-10 max-w-6xl mx-auto w-full">
