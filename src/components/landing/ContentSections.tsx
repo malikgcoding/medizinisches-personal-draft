@@ -63,7 +63,7 @@ const ContentSections = () => {
           <div className="md:col-span-2 w-full max-w-full min-w-0">
             <section className="w-full max-w-full">
               <div className="max-w-6xl mx-auto w-full">
-                <div className="text-center mb-12 w-full">
+                <div className="text-center mb-12 md:mb-12 mb-6 w-full">
                   <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
                     <UsersIcon />
                   </div>
@@ -86,13 +86,13 @@ const ContentSections = () => {
                             to={card.link}
                             className="bg-card rounded-2xl border border-border-subtle p-4 transition-all duration-300 hover:shadow-md block group h-full"
                           >
-                            <h3 className="text-xl font-semibold mb-3 text-primary group-hover:underline transition-all cursor-pointer">{card.title}</h3>
+                            <h3 className="text-xl font-semibold mb-3 text-primary underline decoration-primary/20 decoration-1 underline-offset-2 group-hover:decoration-primary/60 transition-all cursor-pointer">{card.title}</h3>
                             <p className="text-lg text-muted-foreground leading-relaxed">{card.content}</p>
                           </Link>
                         </CarouselItem>
                       ))}
                     </CarouselContent>
-                    <div className="flex justify-center gap-4 mt-4">
+                    <div className="flex justify-center gap-4 mt-4 mb-2">
                       <CarouselPrevious className="static translate-y-0" />
                       <CarouselNext className="static translate-y-0" />
                     </div>
@@ -107,7 +107,7 @@ const ContentSections = () => {
                       to={card.link}
                       className="bg-card rounded-2xl border border-border-subtle p-4 md:p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 block group w-full max-w-full min-w-0"
                     >
-                      <h3 className="text-xl font-semibold mb-3 text-primary group-hover:underline transition-all cursor-pointer">{card.title}</h3>
+                      <h3 className="text-xl font-semibold mb-3 text-primary underline decoration-primary/20 decoration-1 underline-offset-2 group-hover:decoration-primary/60 transition-all cursor-pointer">{card.title}</h3>
                       <p className="text-lg text-muted-foreground leading-relaxed">{card.content}</p>
                     </Link>
                   ))}
