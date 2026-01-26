@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import SectionCard from './SectionCard';
 import { 
   UsersIcon, 
@@ -13,61 +14,134 @@ import {
   MailIcon,
   HeartPulseIcon
 } from './icons';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import type { CarouselApi } from "@/components/ui/carousel";
+
+const relevantCards = [
+  {
+    title: "Zeitarbeit / Arbeitnehmerüberlassung",
+    content: "Zugang zur Nachfrage, bevor sie verteilt wird. Nicht reagieren – vorliegen.",
+    link: "/zeitarbeit"
+  },
+  {
+    title: "Jobportale & Recruiting-Plattformen",
+    content: "Eigentum am generischen Einstiegspunkt. Reichweite entsteht, bevor Kampagnen starten.",
+    link: "/jobportale"
+  },
+  {
+    title: "Kliniken und Klinikgruppen",
+    content: "Unabhängiger Zugang zum Bewerbermarkt. Weniger Abhängigkeit von Plattformen und Dienstleistern.",
+    link: "/kliniken"
+  },
+  {
+    title: "Gesundheitsverbände",
+    content: "Sprachführerschaft im digitalen Raum. Begriffe prägen Wahrnehmung – nicht Logos.",
+    link: "/verbaende"
+  },
+  {
+    title: "Fachverlage & Gesundheitsmedien",
+    content: "Struktureller SEO-Traffic auf einem dauerhaft relevanten Thema. Redaktionell und wirtschaftlich nutzbar.",
+    link: "/verlage"
+  },
+  {
+    title: "Pflegeheime & Träger",
+    content: "Direkter Zugang zur Pflege-Nachfrage. Ohne Vermittler, ohne Streuverluste.",
+    link: "/pflegeheime"
+  }
+];
 
 const ContentSections = () => {
+  const [carouselApi, setCarouselApi] = useState<CarouselApi>()
+  const [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    if (!carouselApi) {
+      return
+    }
+
+    setCurrent(carouselApi.selectedScrollSnap())
+
+    carouselApi.on("select", () => {
+      setCurrent(carouselApi.selectedScrollSnap())
+    })
+  }, [carouselApi])
+
   return (
-    <section id="details" className="px-2 sm:px-4 md:px-6 pb-10 pt-8 sm:pt-16 overflow-x-hidden w-full">
+    <section id="details" className="px-2 sm:px-4 md:px-6 pb-10 pt-4 sm:pt-8 overflow-x-hidden w-full">
       <div className="max-w-6xl mx-auto w-full px-2 sm:px-0">
         <div className="grid gap-4 md:gap-8 md:grid-cols-2 w-full max-w-full min-w-0">
           {/* Für wen relevant */}
           <div className="md:col-span-2 w-full max-w-full min-w-0">
-            <section className="px-0 sm:px-6 py-10 w-full max-w-full">
-              <div className="max-w-6xl mx-auto w-full max-w-full">
-                <div className="text-center mb-12 w-full max-w-full">
+            <section className="w-full max-w-full">
+              <div className="max-w-6xl mx-auto w-full">
+                <div className="text-center mb-12 md:mb-12 mb-6 w-full">
                   <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
                     <UsersIcon />
                   </div>
                   <h2 className="section-heading">Für wen dieses Paket relevant ist</h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full max-w-full min-w-0">
-                  {[
-                    {
-                      title: "Zeitarbeit / Arbeitnehmerüberlassung",
-                      content: "Zugang zur Nachfrage, bevor sie verteilt wird. Nicht reagieren – vorliegen.",
-                      link: "/zeitarbeit"
-                    },
-                    {
-                      title: "Jobportale & Recruiting-Plattformen",
-                      content: "Eigentum am generischen Einstiegspunkt. Reichweite entsteht, bevor Kampagnen starten.",
-                      link: "/jobportale"
-                    },
-                    {
-                      title: "Kliniken und Klinikgruppen",
-                      content: "Unabhängiger Zugang zum Bewerbermarkt. Weniger Abhängigkeit von Plattformen und Dienstleistern.",
-                      link: "/kliniken"
-                    },
-                    {
-                      title: "Gesundheitsverbände",
-                      content: "Sprachführerschaft im digitalen Raum. Begriffe prägen Wahrnehmung – nicht Logos.",
-                      link: "/verbaende"
-                    },
-                    {
-                      title: "Fachverlage & Gesundheitsmedien",
-                      content: "Struktureller SEO-Traffic auf einem dauerhaft relevanten Thema. Redaktionell und wirtschaftlich nutzbar.",
-                      link: "/verlage"
-                    },
-                    {
-                      title: "Pflegeheime & Träger",
-                      content: "Direkter Zugang zur Pflege-Nachfrage. Ohne Vermittler, ohne Streuverluste.",
-                      link: "/pflegeheime"
-                    }
-                  ].map((card, index) => (
+                
+                {/* Mobile Carousel - visible only on mobile */}
+                <div className="md:hidden w-full">
+                  <Carousel
+                    setApi={setCarouselApi}
+                    opts={{
+                      align: "start",
+                      loop: true,
+                    }}
+                    className="w-full"
+                  >
+                    <CarouselContent className="-ml-4">
+                      {relevantCards.map((card, index) => (
+                        <CarouselItem key={index} className="pl-4 basis-full flex">
+                          <Link 
+                            to={card.link}
+                            className="bg-card rounded-2xl border border-border-subtle p-3 transition-all duration-300 hover:shadow-md block group w-full flex flex-col justify-center items-center min-h-[200px]"
+                          >
+                            <div className="w-full">
+                              <h3 className="text-lg font-semibold mb-2 text-primary underline decoration-primary/20 decoration-1 underline-offset-2 group-hover:decoration-primary/60 transition-all cursor-pointer">{card.title}</h3>
+                              <p className="text-base text-muted-foreground leading-relaxed mb-5">{card.content}</p>
+                              
+                              {/* Pagination Dots inside card */}
+                              <div className="flex justify-center gap-2 mt-2">
+                              {relevantCards.map((_, dotIndex) => (
+                                <div
+                                  key={dotIndex}
+                                  className={`h-1.5 rounded-full transition-all ${
+                                    dotIndex === current 
+                                      ? 'w-6 bg-primary' 
+                                      : 'w-1.5 bg-primary/30'
+                                  }`}
+                                />
+                              ))}
+                            </div>
+                            </div>
+                          </Link>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <div className="flex justify-center gap-4 mt-4 mb-2">
+                      <CarouselPrevious className="static translate-y-0" />
+                      <CarouselNext className="static translate-y-0" />
+                    </div>
+                  </Carousel>
+                </div>
+
+                {/* Desktop Grid - hidden on mobile */}
+                <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full max-w-full min-w-0">
+                  {relevantCards.map((card, index) => (
                     <Link 
                       key={index} 
                       to={card.link}
                       className="bg-card rounded-2xl border border-border-subtle p-4 md:p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 block group w-full max-w-full min-w-0"
                     >
-                      <h3 className="text-xl font-semibold mb-3 text-primary group-hover:underline transition-all cursor-pointer">{card.title}</h3>
+                      <h3 className="text-xl font-semibold mb-3 text-primary underline decoration-primary/30 decoration-1 underline-offset-2 group-hover:decoration-primary/70 transition-all cursor-pointer">{card.title}</h3>
                       <p className="text-lg text-muted-foreground leading-relaxed">{card.content}</p>
                     </Link>
                   ))}
@@ -85,7 +159,7 @@ const ContentSections = () => {
                 </div>
                 <h2 className="section-heading mb-0">Was hier konkret angeboten wird</h2>
               </div>
-              <p className="text-lg text-muted-foreground mb-6 w-full max-w-full">
+              <p className="text-lg text-muted-foreground mb-6">
                 Zum Paket gehören folgende Domains:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 mb-6 w-full max-w-full min-w-0">
@@ -296,14 +370,17 @@ const ContentSections = () => {
                   <div className="text-muted-foreground text-xs md:text-sm">oder Lizenzmodell</div>
                 </div>
 
-                <div className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center">
-                  <div className="flex justify-center mb-1 md:mb-2 text-primary flex-shrink-0">
+                <a 
+                  href="mailto:hallo@medizinisches-personal.de"
+                  className="text-center p-4 md:p-6 bg-primary-light rounded-2xl min-h-[120px] md:min-h-[140px] flex flex-col justify-center items-center hover:bg-primary/10 hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
+                >
+                  <div className="flex justify-center mb-1 md:mb-2 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <MailIcon />
                   </div>
-                  <div className="text-xl md:text-2xl font-bold text-primary mb-0.5 md:mb-1">Erstkontakt</div>
+                  <div className="text-xl md:text-2xl font-bold text-primary mb-0.5 md:mb-1 group-hover:underline">Erstkontakt</div>
                   <div className="text-muted-foreground text-xs md:text-sm">Gespräch – diskret</div>
                   <div className="text-muted-foreground text-xs md:text-sm">& unverbindlich</div>
-                </div>
+                </a>
               </div>
             </SectionCard>
           </div>

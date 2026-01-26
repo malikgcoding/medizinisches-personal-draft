@@ -20,7 +20,7 @@ const Kliniken = () => {
       
       <main className="pt-16">
         {/* Custom Hero for Kliniken */}
-        <section className="relative min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
+        <section className="relative min-h-[60vh] md:min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
           
           <div className="relative z-10 max-w-6xl mx-auto w-full">
@@ -56,8 +56,8 @@ const Kliniken = () => {
           {/* Ausgangslage */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-4">Ausgangslage klinischer Versorgung</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+              <h2 className="section-heading mb-6">Ausgangslage klinischer Versorgung</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Kliniken stehen unter dauerhaftem Versorgungsdruck.
               </p>
               <ul className="space-y-3 text-muted-foreground mb-6">
