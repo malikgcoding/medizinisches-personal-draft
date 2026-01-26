@@ -103,10 +103,24 @@ const ContentSections = () => {
                         <CarouselItem key={index} className="pl-4 basis-full">
                           <Link 
                             to={card.link}
-                            className="bg-card rounded-2xl border border-border-subtle p-4 transition-all duration-300 hover:shadow-md block group h-full"
+                            className="bg-card rounded-2xl border border-border-subtle p-4 pb-8 transition-all duration-300 hover:shadow-md block group h-full relative"
                           >
                             <h3 className="text-xl font-semibold mb-3 text-primary underline decoration-primary/20 decoration-1 underline-offset-2 group-hover:decoration-primary/60 transition-all cursor-pointer">{card.title}</h3>
-                            <p className="text-lg text-muted-foreground leading-relaxed">{card.content}</p>
+                            <p className="text-lg text-muted-foreground leading-relaxed mb-6">{card.content}</p>
+                            
+                            {/* Pagination Dots inside card */}
+                            <div className="flex justify-center gap-2 absolute bottom-3 left-0 right-0">
+                              {relevantCards.map((_, dotIndex) => (
+                                <div
+                                  key={dotIndex}
+                                  className={`h-1.5 rounded-full transition-all ${
+                                    dotIndex === current 
+                                      ? 'w-6 bg-primary' 
+                                      : 'w-1.5 bg-primary/30'
+                                  }`}
+                                />
+                              ))}
+                            </div>
                           </Link>
                         </CarouselItem>
                       ))}
@@ -116,22 +130,6 @@ const ContentSections = () => {
                       <CarouselNext className="static translate-y-0" />
                     </div>
                   </Carousel>
-                  
-                  {/* Pagination Dots */}
-                  <div className="flex justify-center gap-2 mt-4">
-                    {relevantCards.map((_, index) => (
-                      <button
-                        key={index}
-                        onClick={() => carouselApi?.scrollTo(index)}
-                        className={`h-2 rounded-full transition-all ${
-                          index === current 
-                            ? 'w-8 bg-primary' 
-                            : 'w-2 bg-primary/30'
-                        }`}
-                        aria-label={`Go to slide ${index + 1}`}
-                      />
-                    ))}
-                  </div>
                 </div>
 
                 {/* Desktop Grid - hidden on mobile */}
