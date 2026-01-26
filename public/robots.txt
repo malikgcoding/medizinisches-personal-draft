@@ -2,7 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://medizinisches-personal.de/sitemap.xml
-Allow: /
-
-User-agent: *
-Allow: /
