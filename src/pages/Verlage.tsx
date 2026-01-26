@@ -20,7 +20,7 @@ const Verlage = () => {
       
       <main className="pt-16">
         {/* Custom Hero for Verlage */}
-        <section className="relative min-h-[60vh] md:min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
+        <section className="relative min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
           
           <div className="relative z-10 max-w-6xl mx-auto w-full">
@@ -56,7 +56,7 @@ const Verlage = () => {
           {/* Ausgangslage */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Ausgangslage für Fachverlage im Gesundheitswesen</h2>
+              <h2 className="section-heading mb-3">Ausgangslage für Fachverlage im Gesundheitswesen</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Fachverlage konkurrieren heute weniger über Inhalte als über Aufmerksamkeit.
               </p>
@@ -88,7 +88,7 @@ const Verlage = () => {
           {/* Suchrealität */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Suchrealität im publizistischen Kontext</h2>
+              <h2 className="section-heading mb-3">Suchrealität im publizistischen Kontext</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Die Suche nach medizinischem Personal beginnt im deutschsprachigen Raum überwiegend digital.
               </p>
@@ -141,7 +141,7 @@ const Verlage = () => {
           {/* Systemischer Begriff */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Warum „medizinisches Personal" für Fachverlage zentral ist</h2>
+              <h2 className="section-heading mb-3">Warum „medizinisches Personal" für Fachverlage zentral ist</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Der Begriff „medizinisches Personal" fungiert als übergeordneter Themenanker.
               </p>
@@ -206,7 +206,7 @@ const Verlage = () => {
           {/* Infrastruktureller Zugang */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Das Domain-Paket als vorgelagerter Medienzugang</h2>
+              <h2 className="section-heading mb-3">Das Domain-Paket als vorgelagerter Medienzugang</h2>
               
               <div className="space-y-6">
                 <div>
@@ -256,7 +256,7 @@ const Verlage = () => {
           {/* Strategischer Nutzen */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Strategischer Nutzen für Fachverlage</h2>
+              <h2 className="section-heading mb-3">Strategischer Nutzen für Fachverlage</h2>
               
               <div className="space-y-6">
                 <div>
@@ -317,7 +317,7 @@ const Verlage = () => {
           {/* Aufmerksamkeit als Ressource */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Aufmerksamkeit als strukturelle Ressource</h2>
+              <h2 className="section-heading mb-3">Aufmerksamkeit als strukturelle Ressource</h2>
               
               <div className="space-y-6">
                 <div>
@@ -384,7 +384,7 @@ const Verlage = () => {
           {/* Wettbewerb */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Wettbewerb um thematische Deutung</h2>
+              <h2 className="section-heading mb-3">Wettbewerb um thematische Deutung</h2>
               
               <div className="space-y-6">
                 <div>
@@ -433,7 +433,7 @@ const Verlage = () => {
           {/* DACH-Perspektive */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">DACH-Perspektive</h2>
+              <h2 className="section-heading mb-3">DACH-Perspektive</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Deutschland, Österreich und die Schweiz bilden einen gemeinsamen Sprachraum mit vergleichbaren Themenlagen im Gesundheitswesen.
               </p>
@@ -461,7 +461,7 @@ const Verlage = () => {
           {/* Langfristigkeit */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Langfristigkeit als verlegerische Logik</h2>
+              <h2 className="section-heading mb-3">Langfristigkeit als verlegerische Logik</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Gute Fachverlage denken nicht in Klicks.<br />
                 Sie denken in Relevanz, Autorität und Zeit.<br />
@@ -474,7 +474,7 @@ const Verlage = () => {
           {/* Zusammenfassung */}
           <div className="md:col-span-2">
             <div className="section-card bg-primary-light/10">
-              <h2 className="section-heading mb-6">Zusammenfassung für Verlagsentscheider</h2>
+              <h2 className="section-heading mb-3">Zusammenfassung für Verlagsentscheider</h2>
               <p className="text-lg font-semibold text-primary mb-6">Dieses Domain-Paket bietet Fachverlagen im Gesundheitswesen:</p>
               <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">

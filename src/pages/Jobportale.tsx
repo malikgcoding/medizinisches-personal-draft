@@ -20,7 +20,7 @@ const Jobportale = () => {
       
       <main className="pt-16">
         {/* Custom Hero for Jobportale */}
-        <section className="relative min-h-[60vh] md:min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
+        <section className="relative min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
           
           <div className="relative z-10 max-w-6xl mx-auto w-full">
@@ -56,7 +56,7 @@ const Jobportale = () => {
           {/* Ausgangslage */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Ausgangslage spezialisierter Jobportale</h2>
+              <h2 className="section-heading mb-3">Ausgangslage spezialisierter Jobportale</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Jobportale im Gesundheitswesen operieren in einem Umfeld mit:
               </p>
@@ -89,7 +89,7 @@ const Jobportale = () => {
           {/* Wo Jobportale ins Spiel kommen */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Wo Jobportale in der Suche ins Spiel kommen</h2>
+              <h2 className="section-heading mb-3">Wo Jobportale in der Suche ins Spiel kommen</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Jobportale greifen nicht am Anfang der Suche.
               </p>
@@ -144,7 +144,7 @@ const Jobportale = () => {
           {/* Systemischer Begriff */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Warum „medizinisches Personal" für Plattformen zentral ist</h2>
+              <h2 className="section-heading mb-3">Warum „medizinisches Personal" für Plattformen zentral ist</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Der Begriff „medizinisches Personal" fungiert als übergeordneter Sammelbegriff.
               </p>
@@ -209,7 +209,7 @@ const Jobportale = () => {
           {/* Infrastruktureller Zugang */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Das Domain-Paket als vorgelagerter Nachfrage-Layer</h2>
+              <h2 className="section-heading mb-3">Das Domain-Paket als vorgelagerter Nachfrage-Layer</h2>
               
               <div className="space-y-6">
                 <div>
@@ -259,7 +259,7 @@ const Jobportale = () => {
           {/* Strategischer Nutzen */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Strategischer Nutzen für Jobportale</h2>
+              <h2 className="section-heading mb-3">Strategischer Nutzen für Jobportale</h2>
               
               <div className="space-y-6">
                 <div>
@@ -320,7 +320,7 @@ const Jobportale = () => {
           {/* Unabhängigkeit */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Unabhängigkeit von Plattformdynamiken</h2>
+              <h2 className="section-heading mb-3">Unabhängigkeit von Plattformdynamiken</h2>
               
               <div className="space-y-6">
                 <div>
@@ -369,7 +369,7 @@ const Jobportale = () => {
           {/* Wettbewerb */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Wettbewerbsperspektive</h2>
+              <h2 className="section-heading mb-3">Wettbewerbsperspektive</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Die zentrale Frage für Plattformbetreiber lautet:<br />
                 Wer kontrolliert den generischen Einstieg in die Gesundheitsnachfrage?
@@ -402,7 +402,7 @@ const Jobportale = () => {
           {/* Optionale Nutzung */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Optionale Nutzung – besonders relevant für Plattformen</h2>
+              <h2 className="section-heading mb-3">Optionale Nutzung – besonders relevant für Plattformen</h2>
               
               <div className="space-y-6">
                 <div>
@@ -456,7 +456,7 @@ const Jobportale = () => {
           {/* DACH-Perspektive */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">DACH-Perspektive</h2>
+              <h2 className="section-heading mb-3">DACH-Perspektive</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Deutschland, Österreich und die Schweiz nutzen identische Begriffe im Gesundheitswesen, bei gleichzeitig unterschiedlichen Markt- und Plattformmodellen.
               </p>
@@ -484,7 +484,7 @@ const Jobportale = () => {
           {/* Infrastruktur und Plattform */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Infrastruktur und Plattform</h2>
+              <h2 className="section-heading mb-3">Infrastruktur und Plattform</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
                 Plattformen sind beweglich.<br />
                 Infrastruktur ist stabil.
@@ -503,7 +503,7 @@ const Jobportale = () => {
           {/* Zusammenfassung */}
           <div className="md:col-span-2">
             <div className="section-card bg-primary-light/10">
-              <h2 className="section-heading mb-6">Zusammenfassung für Plattformbetreiber</h2>
+              <h2 className="section-heading mb-3">Zusammenfassung für Plattformbetreiber</h2>
               <p className="text-lg font-semibold text-primary mb-6">Dieses Domain-Paket bietet Jobportalen und Recruiting-Plattformen im Gesundheitswesen:</p>
               <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">

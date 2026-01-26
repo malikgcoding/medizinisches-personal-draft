@@ -20,7 +20,7 @@ const Zeitarbeit = () => {
       
       <main className="pt-16">
         {/* Custom Hero for Zeitarbeit */}
-        <section className="relative min-h-[60vh] md:min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
+        <section className="relative min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
           
           <div className="relative z-10 max-w-6xl mx-auto w-full">
@@ -56,7 +56,7 @@ const Zeitarbeit = () => {
           {/* Ausgangslage */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Ausgangslage im Gesundheitswesen</h2>
+              <h2 className="section-heading mb-3">Ausgangslage im Gesundheitswesen</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Der Bedarf an medizinischem Personal ist kein kurzfristiges Marktphänomen, sondern strukturell bedingt.
               </p>
@@ -84,7 +84,7 @@ const Zeitarbeit = () => {
           {/* Suchrealität */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Suchrealität vor operativer Logik</h2>
+              <h2 className="section-heading mb-3">Suchrealität vor operativer Logik</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Die Suche nach medizinischem Personal beginnt im deutschsprachigen Raum überwiegend digital.
               </p>
@@ -141,7 +141,7 @@ const Zeitarbeit = () => {
           {/* Systemischer Begriff */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Warum der Begriff „medizinisches Personal" für Zeitarbeit zentral ist</h2>
+              <h2 className="section-heading mb-3">Warum der Begriff „medizinisches Personal" für Zeitarbeit zentral ist</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Der Begriff „medizinisches Personal" fungiert als aggregierender Sammelbegriff.
               </p>
@@ -185,7 +185,7 @@ const Zeitarbeit = () => {
           {/* Infrastruktureller Zugang */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Das Domain-Paket als vorgelagerter Nachfragezugang</h2>
+              <h2 className="section-heading mb-3">Das Domain-Paket als vorgelagerter Nachfragezugang</h2>
               
               <div className="space-y-6">
                 <div>
@@ -235,7 +235,7 @@ const Zeitarbeit = () => {
           {/* Strategischer Nutzen */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Strategischer Nutzen für Zeitarbeitsunternehmen</h2>
+              <h2 className="section-heading mb-3">Strategischer Nutzen für Zeitarbeitsunternehmen</h2>
               
               <div className="space-y-6">
                 <div>
@@ -289,7 +289,7 @@ const Zeitarbeit = () => {
           {/* Optionale Nutzung */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Optionale Nutzung ohne Verpflichtung</h2>
+              <h2 className="section-heading mb-3">Optionale Nutzung ohne Verpflichtung</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Der Besitz des Domain-Pakets bedeutet Handlungsfreiheit.
               </p>
@@ -330,7 +330,7 @@ const Zeitarbeit = () => {
           {/* Rechtliche Realität */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Rechtliche Realität und digitale Wahrnehmung</h2>
+              <h2 className="section-heading mb-3">Rechtliche Realität und digitale Wahrnehmung</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
                 Rechtlich ist die Trennung zwischen Verleiher und Entleiher klar geregelt.<br />
                 Digital existiert diese Trennung am Anfang der Suche nicht.
@@ -345,7 +345,7 @@ const Zeitarbeit = () => {
           {/* Auffindbarkeit */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Auffindbarkeit im Suchkontext</h2>
+              <h2 className="section-heading mb-3">Auffindbarkeit im Suchkontext</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
                 Das Domain-Paket ist thematisch präzise und nicht operativ verwässert.<br />
                 Dadurch entsteht eine natürliche Anschlussfähigkeit für Suchanfragen rund um medizinisches Personal und Zeitarbeit.
@@ -359,7 +359,7 @@ const Zeitarbeit = () => {
           {/* Wettbewerb */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Wettbewerbsperspektive</h2>
+              <h2 className="section-heading mb-3">Wettbewerbsperspektive</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Die entscheidende Frage lautet:<br />
                 Wem gehört der generische Einstiegspunkt?
@@ -374,7 +374,7 @@ const Zeitarbeit = () => {
           {/* DACH-Perspektive */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">DACH-Perspektive</h2>
+              <h2 className="section-heading mb-3">DACH-Perspektive</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Deutschland, Österreich und die Schweiz bilden einen gemeinsamen Sprachraum mit vergleichbarer Begriffsnutzung im Gesundheitswesen.
               </p>
@@ -402,7 +402,7 @@ const Zeitarbeit = () => {
           {/* Zusammenfassung */}
           <div className="md:col-span-2">
             <div className="section-card bg-primary-light/10">
-              <h2 className="section-heading mb-6">Zusammenfassung für Entscheider</h2>
+              <h2 className="section-heading mb-3">Zusammenfassung für Entscheider</h2>
               <p className="text-lg font-semibold text-primary mb-6">Dieses Domain-Paket bietet Zeitarbeitsunternehmen im Gesundheitswesen:</p>
               <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">

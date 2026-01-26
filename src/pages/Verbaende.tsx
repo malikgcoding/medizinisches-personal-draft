@@ -20,7 +20,7 @@ const Verbaende = () => {
       
       <main className="pt-16">
         {/* Custom Hero for Verbaende */}
-        <section className="relative min-h-[60vh] md:min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
+        <section className="relative min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
           
           <div className="relative z-10 max-w-6xl mx-auto w-full">
@@ -56,7 +56,7 @@ const Verbaende = () => {
           {/* Ausgangslage */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Ausgangslage für Gesundheitsverbände</h2>
+              <h2 className="section-heading mb-3">Ausgangslage für Gesundheitsverbände</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Gesundheitsverbände agieren auf Systemebene.
               </p>
@@ -113,7 +113,7 @@ const Verbaende = () => {
           {/* Sprachliche Realität */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Sprachliche Realität im Gesundheitssektor</h2>
+              <h2 className="section-heading mb-3">Sprachliche Realität im Gesundheitssektor</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Öffentliche Debatten beginnen nicht mit Detailfragen, sondern mit Oberbegriffen.
               </p>
@@ -178,7 +178,7 @@ const Verbaende = () => {
           {/* Infrastruktureller Diskursraum */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Das Domain-Paket als infrastruktureller Diskursraum</h2>
+              <h2 className="section-heading mb-3">Das Domain-Paket als infrastruktureller Diskursraum</h2>
               
               <div className="space-y-6">
                 <div>
@@ -228,7 +228,7 @@ const Verbaende = () => {
           {/* Strategischer Nutzen */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Strategischer Nutzen für Gesundheitsverbände</h2>
+              <h2 className="section-heading mb-3">Strategischer Nutzen für Gesundheitsverbände</h2>
               
               <div className="space-y-6">
                 <div>
@@ -285,7 +285,7 @@ const Verbaende = () => {
           {/* Aggregation als Schlüssel */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Aggregation als Schlüssel für Verbände</h2>
+              <h2 className="section-heading mb-3">Aggregation als Schlüssel für Verbände</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Verbände vertreten Vielfalt.<br />
                 Öffentlichkeit sucht Einordnung.
@@ -322,7 +322,7 @@ const Verbaende = () => {
           {/* Langfristigkeit */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Langfristigkeit statt Projektlogik</h2>
+              <h2 className="section-heading mb-3">Langfristigkeit statt Projektlogik</h2>
               
               <div className="space-y-6">
                 <div>
@@ -356,7 +356,7 @@ const Verbaende = () => {
           {/* Deutungshoheit */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Deutungshoheit im digitalen Raum</h2>
+              <h2 className="section-heading mb-3">Deutungshoheit im digitalen Raum</h2>
               
               <div className="space-y-6">
                 <div>
@@ -415,7 +415,7 @@ const Verbaende = () => {
           {/* DACH-Perspektive */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">DACH-Perspektive</h2>
+              <h2 className="section-heading mb-3">DACH-Perspektive</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Deutschland, Österreich und die Schweiz teilen einen gemeinsamen Sprachraum bei unterschiedlichen Gesundheitssystemen.
               </p>
@@ -443,7 +443,7 @@ const Verbaende = () => {
           {/* Zusammenfassung */}
           <div className="md:col-span-2">
             <div className="section-card bg-primary-light/10">
-              <h2 className="section-heading mb-6">Zusammenfassung für Verbandsentscheider</h2>
+              <h2 className="section-heading mb-3">Zusammenfassung für Verbandsentscheider</h2>
               <p className="text-lg font-semibold text-primary mb-6">Dieses Domain-Paket bietet Gesundheitsverbänden:</p>
               <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">

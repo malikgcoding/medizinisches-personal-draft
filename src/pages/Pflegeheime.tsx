@@ -20,7 +20,7 @@ const Pflegeheime = () => {
       
       <main className="pt-16">
         {/* Custom Hero for Pflegeheime */}
-        <section className="relative min-h-[60vh] md:min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
+        <section className="relative min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
           
           <div className="relative z-10 max-w-6xl mx-auto w-full">
@@ -56,7 +56,7 @@ const Pflegeheime = () => {
           {/* Ausgangslage */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Ausgangslage in der stationären Pflege</h2>
+              <h2 className="section-heading mb-3">Ausgangslage in der stationären Pflege</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Pflegeheime stehen unter dauerhaftem Versorgungsdruck.
               </p>
@@ -88,7 +88,7 @@ const Pflegeheime = () => {
           {/* Wahrnehmung */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Wie Pflegebedarf heute wahrgenommen wird</h2>
+              <h2 className="section-heading mb-3">Wie Pflegebedarf heute wahrgenommen wird</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Der Bedarf an medizinischem Personal wird im deutschsprachigen Raum frühzeitig digital sichtbar.
               </p>
@@ -140,7 +140,7 @@ const Pflegeheime = () => {
           {/* Systemischer Begriff */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Warum „medizinisches Personal" für Pflegeheime relevant ist</h2>
+              <h2 className="section-heading mb-3">Warum „medizinisches Personal" für Pflegeheime relevant ist</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Der Begriff „medizinisches Personal" umfasst Pflege als systemrelevanten Bestandteil des Gesundheitswesens.
               </p>
@@ -201,7 +201,7 @@ const Pflegeheime = () => {
           {/* Infrastruktureller Zugang */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Das Domain-Paket als vorgelagerte Sichtbarkeit</h2>
+              <h2 className="section-heading mb-3">Das Domain-Paket als vorgelagerte Sichtbarkeit</h2>
               
               <div className="space-y-6">
                 <div>
@@ -251,7 +251,7 @@ const Pflegeheime = () => {
           {/* Strategischer Nutzen */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Strategischer Nutzen für Pflegeheime</h2>
+              <h2 className="section-heading mb-3">Strategischer Nutzen für Pflegeheime</h2>
               
               <div className="space-y-6">
                 <div>
@@ -308,7 +308,7 @@ const Pflegeheime = () => {
           {/* Wettbewerbsfaktor */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Wahrnehmung als Wettbewerbsfaktor</h2>
+              <h2 className="section-heading mb-3">Wahrnehmung als Wettbewerbsfaktor</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Pflegeheime konkurrieren nicht nur um Belegung,<br />
                 sondern um Vertrauen, Einordnung und gesellschaftliche Wahrnehmung.
@@ -353,7 +353,7 @@ const Pflegeheime = () => {
           {/* Langfristigkeit */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Langfristigkeit statt Aktionismus</h2>
+              <h2 className="section-heading mb-3">Langfristigkeit statt Aktionismus</h2>
               
               <div className="space-y-6">
                 <div>
@@ -387,7 +387,7 @@ const Pflegeheime = () => {
           {/* DACH-Perspektive */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">DACH-Perspektive</h2>
+              <h2 className="section-heading mb-3">DACH-Perspektive</h2>
               
               <div className="space-y-6">
                 <div>
@@ -432,7 +432,7 @@ const Pflegeheime = () => {
           {/* Zusammenfassung */}
           <div className="md:col-span-2">
             <div className="section-card bg-primary-light/10">
-              <h2 className="section-heading mb-6">Zusammenfassung für Träger und Entscheider</h2>
+              <h2 className="section-heading mb-3">Zusammenfassung für Träger und Entscheider</h2>
               <p className="text-lg font-semibold text-primary mb-6">Dieses Domain-Paket bietet Pflegeheimen:</p>
               <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
