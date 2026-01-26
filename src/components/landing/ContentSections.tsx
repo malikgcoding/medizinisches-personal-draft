@@ -13,15 +13,55 @@ import {
   MailIcon,
   HeartPulseIcon
 } from './icons';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+const relevantCards = [
+  {
+    title: "Zeitarbeit / Arbeitnehmerüberlassung",
+    content: "Zugang zur Nachfrage, bevor sie verteilt wird. Nicht reagieren – vorliegen.",
+    link: "/zeitarbeit"
+  },
+  {
+    title: "Jobportale & Recruiting-Plattformen",
+    content: "Eigentum am generischen Einstiegspunkt. Reichweite entsteht, bevor Kampagnen starten.",
+    link: "/jobportale"
+  },
+  {
+    title: "Kliniken und Klinikgruppen",
+    content: "Unabhängiger Zugang zum Bewerbermarkt. Weniger Abhängigkeit von Plattformen und Dienstleistern.",
+    link: "/kliniken"
+  },
+  {
+    title: "Gesundheitsverbände",
+    content: "Sprachführerschaft im digitalen Raum. Begriffe prägen Wahrnehmung – nicht Logos.",
+    link: "/verbaende"
+  },
+  {
+    title: "Fachverlage & Gesundheitsmedien",
+    content: "Struktureller SEO-Traffic auf einem dauerhaft relevanten Thema. Redaktionell und wirtschaftlich nutzbar.",
+    link: "/verlage"
+  },
+  {
+    title: "Pflegeheime & Träger",
+    content: "Direkter Zugang zur Pflege-Nachfrage. Ohne Vermittler, ohne Streuverluste.",
+    link: "/pflegeheime"
+  }
+];
 
 const ContentSections = () => {
   return (
-    <section id="details" className="px-2 sm:px-4 md:px-6 pb-10 pt-8 sm:pt-16 overflow-x-hidden w-full">
+    <section id="details" className="px-2 sm:px-4 md:px-6 pb-10 pt-4 sm:pt-8 overflow-x-hidden w-full">
       <div className="max-w-6xl mx-auto w-full px-2 sm:px-0">
         <div className="grid gap-4 md:gap-8 md:grid-cols-2 w-full max-w-full min-w-0">
           {/* Für wen relevant */}
           <div className="md:col-span-2 w-full max-w-full min-w-0">
-            <section className="py-10 w-full max-w-full">
+            <section className="w-full max-w-full">
               <div className="max-w-6xl mx-auto w-full max-w-full">
                 <div className="text-center mb-12 w-full max-w-full">
                   <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
@@ -29,39 +69,39 @@ const ContentSections = () => {
                   </div>
                   <h2 className="section-heading">Für wen dieses Paket relevant ist</h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full max-w-full min-w-0">
-                  {[
-                    {
-                      title: "Zeitarbeit / Arbeitnehmerüberlassung",
-                      content: "Zugang zur Nachfrage, bevor sie verteilt wird. Nicht reagieren – vorliegen.",
-                      link: "/zeitarbeit"
-                    },
-                    {
-                      title: "Jobportale & Recruiting-Plattformen",
-                      content: "Eigentum am generischen Einstiegspunkt. Reichweite entsteht, bevor Kampagnen starten.",
-                      link: "/jobportale"
-                    },
-                    {
-                      title: "Kliniken und Klinikgruppen",
-                      content: "Unabhängiger Zugang zum Bewerbermarkt. Weniger Abhängigkeit von Plattformen und Dienstleistern.",
-                      link: "/kliniken"
-                    },
-                    {
-                      title: "Gesundheitsverbände",
-                      content: "Sprachführerschaft im digitalen Raum. Begriffe prägen Wahrnehmung – nicht Logos.",
-                      link: "/verbaende"
-                    },
-                    {
-                      title: "Fachverlage & Gesundheitsmedien",
-                      content: "Struktureller SEO-Traffic auf einem dauerhaft relevanten Thema. Redaktionell und wirtschaftlich nutzbar.",
-                      link: "/verlage"
-                    },
-                    {
-                      title: "Pflegeheime & Träger",
-                      content: "Direkter Zugang zur Pflege-Nachfrage. Ohne Vermittler, ohne Streuverluste.",
-                      link: "/pflegeheime"
-                    }
-                  ].map((card, index) => (
+                
+                {/* Mobile Carousel - visible only on mobile */}
+                <div className="md:hidden w-full">
+                  <Carousel
+                    opts={{
+                      align: "start",
+                      loop: true,
+                    }}
+                    className="w-full"
+                  >
+                    <CarouselContent className="-ml-4">
+                      {relevantCards.map((card, index) => (
+                        <CarouselItem key={index} className="pl-4 basis-full">
+                          <Link 
+                            to={card.link}
+                            className="bg-card rounded-2xl border border-border-subtle p-4 transition-all duration-300 hover:shadow-md block group h-full"
+                          >
+                            <h3 className="text-xl font-semibold mb-3 text-primary group-hover:underline transition-all cursor-pointer">{card.title}</h3>
+                            <p className="text-lg text-muted-foreground leading-relaxed">{card.content}</p>
+                          </Link>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <div className="flex justify-center gap-4 mt-4">
+                      <CarouselPrevious className="static translate-y-0" />
+                      <CarouselNext className="static translate-y-0" />
+                    </div>
+                  </Carousel>
+                </div>
+
+                {/* Desktop Grid - hidden on mobile */}
+                <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full max-w-full min-w-0">
+                  {relevantCards.map((card, index) => (
                     <Link 
                       key={index} 
                       to={card.link}

@@ -1,15 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+
+// Global flag outside component to survive re-renders and strict mode
+let globalDisclaimerShown = false;
 
 const DisclaimerOverlay = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    // Check if overlay has been shown in this browser session
-    if (!(window as any).__disclaimerShown) {
-      setIsVisible(true);
-      (window as any).__disclaimerShown = true;
-    }
-  }, []);
+  // Initialize state synchronously based on global flag
+  const [isVisible, setIsVisible] = useState(() => {
+    if (globalDisclaimerShown) return false;
+    globalDisclaimerShown = true;
+    return true;
+  });
+  
+  // Ref to track if this instance has been dismissed
+  const dismissed = useRef(false);
 
   useEffect(() => {
     if (isVisible) {
@@ -29,8 +32,14 @@ const DisclaimerOverlay = () => {
       document.body.style.paddingRight = '';
     };
   }, [isVisible]);
+  
+  const handleDismiss = () => {
+    dismissed.current = true;
+    setIsVisible(false);
+  };
 
-  if (!isVisible) return null;
+  // Don't show if already dismissed
+  if (!isVisible || dismissed.current) return null;
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 p-4 py-4">
@@ -54,7 +63,7 @@ const DisclaimerOverlay = () => {
           </p>
         </div>
         <button
-          onClick={() => setIsVisible(false)}
+          onClick={handleDismiss}
           className="mt-6 w-full py-3 px-6 rounded-md font-semibold text-white transition-colors"
           style={{ backgroundColor: '#2f6f5e' }}
           onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#25594b'}

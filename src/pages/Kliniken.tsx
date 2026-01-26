@@ -20,13 +20,13 @@ const Kliniken = () => {
       
       <main className="pt-16">
         {/* Custom Hero for Kliniken */}
-        <section className="relative min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pb-10 overflow-hidden">
+        <section className="relative min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-4 md:pt-8 pb-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
           
           <div className="relative z-10 max-w-6xl mx-auto w-full">
-            <div className="flex flex-col md:grid md:grid-cols-2 gap-6 items-center">
+            <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-6 items-center md:items-center">
               <div 
-                className="flex justify-start md:justify-end animate-fade-in order-1 md:order-2 w-full"
+                className="flex justify-start md:justify-end animate-fade-in order-1 md:order-2 w-full md:pt-0"
                 style={{ animationDelay: '0.2s' }}
               >
                 <img 
@@ -63,19 +63,19 @@ const Kliniken = () => {
               <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span>steigender Behandlungsbedarf</span>
+                  <span className="text-lg">steigender Behandlungsbedarf</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span>demografische Veränderungen</span>
+                  <span className="text-lg">demografische Veränderungen</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span>struktureller Fachkräftemangel</span>
+                  <span className="text-lg">struktureller Fachkräftemangel</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span>wachsende Anforderungen an Qualität und Verfügbarkeit</span>
+                  <span className="text-lg">wachsende Anforderungen an Qualität und Verfügbarkeit</span>
                 </li>
               </ul>
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -99,15 +99,15 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>allgemein</span>
+                      <span className="text-lg">allgemein</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>nicht einrichtungsbezogen</span>
+                      <span className="text-lg">nicht einrichtungsbezogen</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>vorgelagert</span>
+                      <span className="text-lg">vorgelagert</span>
                     </li>
                   </ul>
                 </div>
@@ -117,15 +117,15 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>vor internen Bedarfsanzeigen</span>
+                      <span className="text-lg">vor internen Bedarfsanzeigen</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>vor Ausschreibungen</span>
+                      <span className="text-lg">vor Ausschreibungen</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>vor konkreten Beschaffungsmodellen</span>
+                      <span className="text-lg">vor konkreten Beschaffungsmodellen</span>
                     </li>
                   </ul>
                 </div>
@@ -151,23 +151,23 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Pflege</span>
+                      <span className="text-lg">Pflege</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>ärztliche und klinische Tätigkeiten</span>
+                      <span className="text-lg">ärztliche und klinische Tätigkeiten</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>therapeutische Berufe</span>
+                      <span className="text-lg">therapeutische Berufe</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>psychosoziale Dienste</span>
+                      <span className="text-lg">psychosoziale Dienste</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Ausbildung und Qualifikation</span>
+                      <span className="text-lg">Ausbildung und Qualifikation</span>
                     </li>
                   </ul>
                 </div>
@@ -177,19 +177,19 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Öffentlichkeit</span>
+                      <span className="text-lg">Öffentlichkeit</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Politik</span>
+                      <span className="text-lg">Politik</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Verwaltung</span>
+                      <span className="text-lg">Verwaltung</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Medien</span>
+                      <span className="text-lg">Medien</span>
                     </li>
                   </ul>
                 </div>
@@ -213,15 +213,15 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>keine Plattform</span>
+                      <span className="text-lg">keine Plattform</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>kein Steuerungsinstrument</span>
+                      <span className="text-lg">kein Steuerungsinstrument</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>kein operatives Werkzeug</span>
+                      <span className="text-lg">kein operatives Werkzeug</span>
                     </li>
                   </ul>
                 </div>
@@ -231,15 +231,15 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>digitaler Orientierungspunkt</span>
+                      <span className="text-lg">digitaler Orientierungspunkt</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>vorgelagerter Zugang zur Versorgungsdebatte</span>
+                      <span className="text-lg">vorgelagerter Zugang zur Versorgungsdebatte</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>sprachliche Infrastruktur im Gesundheitswesen</span>
+                      <span className="text-lg">sprachliche Infrastruktur im Gesundheitswesen</span>
                     </li>
                   </ul>
                 </div>
@@ -263,19 +263,19 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Präsenz auf Systemebene</span>
+                      <span className="text-lg">Präsenz auf Systemebene</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Sichtbarkeit dort, wo Bedarf begrifflich entsteht</span>
+                      <span className="text-lg">Sichtbarkeit dort, wo Bedarf begrifflich entsteht</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Unabhängigkeit von kurzfristigen Maßnahmen</span>
+                      <span className="text-lg">Unabhängigkeit von kurzfristigen Maßnahmen</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Absicherung eines zentralen Gesundheitsbegriffs</span>
+                      <span className="text-lg">Absicherung eines zentralen Gesundheitsbegriffs</span>
                     </li>
                   </ul>
                 </div>
@@ -285,19 +285,19 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Nutzung als Dach für Informationen oder Studien</span>
+                      <span className="text-lg">Nutzung als Dach für Informationen oder Studien</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Kontextseite für Versorgungsmodelle</span>
+                      <span className="text-lg">Kontextseite für Versorgungsmodelle</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Weiterleitung in bestehende Klinik- oder Konzernstrukturen</span>
+                      <span className="text-lg">Weiterleitung in bestehende Klinik- oder Konzernstrukturen</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Einbindung ohne Veränderung interner Abläufe</span>
+                      <span className="text-lg">Einbindung ohne Veränderung interner Abläufe</span>
                     </li>
                   </ul>
                 </div>
@@ -341,11 +341,11 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>entsteht Abhängigkeit</span>
+                      <span className="text-lg">entsteht Abhängigkeit</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>geht strategische Ruhe verloren</span>
+                      <span className="text-lg">geht strategische Ruhe verloren</span>
                     </li>
                   </ul>
                 </div>
@@ -355,15 +355,15 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Kontrolle</span>
+                      <span className="text-lg">Kontrolle</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Planbarkeit</span>
+                      <span className="text-lg">Planbarkeit</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Unabhängigkeit</span>
+                      <span className="text-lg">Unabhängigkeit</span>
                     </li>
                   </ul>
                 </div>
@@ -384,15 +384,15 @@ const Kliniken = () => {
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
-                    <span>konsistente sprachliche Präsenz</span>
+                    <span className="text-lg">konsistente sprachliche Präsenz</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
-                    <span>länderübergreifende Einordnung</span>
+                    <span className="text-lg">länderübergreifende Einordnung</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
-                    <span>klare Trennung von Sprache und Regulierung</span>
+                    <span className="text-lg">klare Trennung von Sprache und Regulierung</span>
                   </li>
                 </ul>
               </div>
@@ -407,19 +407,19 @@ const Kliniken = () => {
               <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span>vorgelagerten digitalen Zugang zur Versorgungsfrage</span>
+                  <span className="text-lg">vorgelagerten digitalen Zugang zur Versorgungsfrage</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span>Kontrolle über einen zentralen systemischen Begriff</span>
+                  <span className="text-lg">Kontrolle über einen zentralen systemischen Begriff</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span>strukturelle Sichtbarkeit ohne operative Bindung</span>
+                  <span className="text-lg">strukturelle Sichtbarkeit ohne operative Bindung</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span>langfristige Infrastruktur ergänzend zu bestehenden Prozessen</span>
+                  <span className="text-lg">langfristige Infrastruktur ergänzend zu bestehenden Prozessen</span>
                 </li>
               </ul>
               <p className="text-lg text-muted-foreground leading-relaxed italic">
@@ -435,7 +435,7 @@ const Kliniken = () => {
               <h2 className="section-heading mb-4">Abschluss</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Sie haben Fragen oder wünschen einen unverbindlichen Austausch?<br />
-                Dann melden Sie sich gerne per E-Mail.
+                Dann melden Sie sich gerne per <a href="mailto:hallo@medizinisches-personal.de" className="text-primary hover:underline">E-Mail</a>.
               </p>
             </div>
           </div>
