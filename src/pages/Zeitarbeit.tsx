@@ -16,11 +16,11 @@ const Zeitarbeit = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <DisclaimerOverlay />
-      <Header />
+      <div className="md:relative md:z-50"><Header /></div>
       
-      <main className="md:pt-16">
+      <main className="pt-16">
         {/* Custom Hero for Zeitarbeit */}
-        <section className="relative min-h-[100vh] md:min-h-[calc(100vh-4rem)] flex items-center justify-center px-4 sm:px-6 py-8 overflow-hidden">
+        <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center px-4 sm:px-6 py-8 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
           
           <div className="relative z-10 max-w-6xl mx-auto w-full">
@@ -48,7 +48,7 @@ const Zeitarbeit = () => {
             </div>
                     
           {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 md:hidden">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 md:hidden">
             <svg className="w-6 h-6 text-primary/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
