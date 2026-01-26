@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import SectionCard from './SectionCard';
 import { 
   UsersIcon, 
@@ -20,6 +21,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useState } from 'react';
+import type { CarouselApi } from "@/components/ui/carousel";
 
 const relevantCards = [
   {
@@ -55,6 +58,21 @@ const relevantCards = [
 ];
 
 const ContentSections = () => {
+  const [carouselApi, setCarouselApi] = useState<CarouselApi>()
+  const [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    if (!carouselApi) {
+      return
+    }
+
+    setCurrent(carouselApi.selectedScrollSnap())
+
+    carouselApi.on("select", () => {
+      setCurrent(carouselApi.selectedScrollSnap())
+    })
+  }, [carouselApi])
+
   return (
     <section id="details" className="px-2 sm:px-4 md:px-6 pb-10 pt-4 sm:pt-8 overflow-x-hidden w-full">
       <div className="max-w-6xl mx-auto w-full px-2 sm:px-0">
@@ -73,6 +91,7 @@ const ContentSections = () => {
                 {/* Mobile Carousel - visible only on mobile */}
                 <div className="md:hidden w-full">
                   <Carousel
+                    setApi={setCarouselApi}
                     opts={{
                       align: "start",
                       loop: true,
@@ -97,6 +116,22 @@ const ContentSections = () => {
                       <CarouselNext className="static translate-y-0" />
                     </div>
                   </Carousel>
+                  
+                  {/* Pagination Dots */}
+                  <div className="flex justify-center gap-2 mt-4">
+                    {relevantCards.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => carouselApi?.scrollTo(index)}
+                        className={`h-2 rounded-full transition-all ${
+                          index === current 
+                            ? 'w-8 bg-primary' 
+                            : 'w-2 bg-primary/30'
+                        }`}
+                        aria-label={`Go to slide ${index + 1}`}
+                      />
+                    ))}
+                  </div>
                 </div>
 
                 {/* Desktop Grid - hidden on mobile */}
