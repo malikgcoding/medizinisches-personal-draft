@@ -62,8 +62,8 @@ const ContentSections = () => {
           {/* Für wen relevant */}
           <div className="md:col-span-2 w-full max-w-full min-w-0">
             <section className="w-full max-w-full">
-              <div className="max-w-6xl mx-auto w-full max-w-full">
-                <div className="text-center mb-12 w-full max-w-full">
+              <div className="max-w-6xl mx-auto w-full">
+                <div className="text-center mb-12 w-full">
                   <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
                     <UsersIcon />
                   </div>
@@ -125,7 +125,7 @@ const ContentSections = () => {
                 </div>
                 <h2 className="section-heading mb-0">Was hier konkret angeboten wird</h2>
               </div>
-              <p className="text-lg text-muted-foreground mb-6 w-full max-w-full">
+              <p className="text-lg text-muted-foreground mb-6">
                 Zum Paket gehören folgende Domains:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 mb-6 w-full max-w-full min-w-0">

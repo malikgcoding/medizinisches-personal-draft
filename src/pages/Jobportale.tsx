@@ -4,12 +4,12 @@ import DisclaimerOverlay from '@/components/DisclaimerOverlay';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
-const Kliniken = () => {
+const Jobportale = () => {
   useEffect(() => {
-    document.title = 'Kliniken | Medizinisches Personal';
+    document.title = 'Jobportale | Medizinisches Personal';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Domain-Paket für medizinisches Personal in Kliniken: Strategische Sichtbarkeit im DACH-Gesundheitsmarkt.');
+      metaDescription.setAttribute('content', 'Domain-Paket für Jobportale im Gesundheitswesen: Strategischer Zugang zur Nachfrage im DACH-Raum.');
     }
   }, []);
 
@@ -19,7 +19,7 @@ const Kliniken = () => {
       <Header />
       
       <main className="pt-16">
-        {/* Custom Hero for Kliniken */}
+        {/* Custom Hero for Jobportale */}
         <section className="relative min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
           
@@ -38,11 +38,11 @@ const Kliniken = () => {
 
               <div className="animate-fade-in order-2 md:order-1" style={{ animationDelay: '0.1s' }}>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-balance lowercase">
-                  Medizinisches Personal & Kliniken
+                  medizinisches personal & jobportale
                 </h1>
                 <div className="text-lg md:text-xl text-muted-foreground leading-relaxed space-y-4">
-                  <p className="font-medium">Versorgung beginnt nicht im Dienstplan.<br />
-                  Sie beginnt dort, wo Bedarf erstmals formuliert wird.</p>
+                  <p className="font-medium">Plattformen vermitteln Stellen.<br />
+                  Der Begriff definiert Nachfrage.</p>
                 </div>
               </div>
             </div>
@@ -56,83 +56,87 @@ const Kliniken = () => {
           {/* Ausgangslage */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Ausgangslage klinischer Versorgung</h2>
+              <h2 className="section-heading mb-6">Ausgangslage spezialisierter Jobportale</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Kliniken stehen unter dauerhaftem Versorgungsdruck.
+                Jobportale im Gesundheitswesen operieren in einem Umfeld mit:
               </p>
               <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">steigender Behandlungsbedarf</span>
+                  <span className="text-lg">hohem Wettbewerbsdruck</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">demografische Veränderungen</span>
+                  <span className="text-lg">funktionaler Vergleichbarkeit</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">struktureller Fachkräftemangel</span>
+                  <span className="text-lg">steigenden Kosten für Reichweite</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">wachsende Anforderungen an Qualität und Verfügbarkeit</span>
+                  <span className="text-lg">zunehmender Abhängigkeit von Traffic-Quellen</span>
                 </li>
               </ul>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Personalfragen sind keine Einzelmaßnahmen, sondern Teil der Versorgungsarchitektur.<br />
-                Sichtbarkeit und Einordnung entstehen, bevor interne Prozesse greifen.
+                Funktionen lassen sich kopieren.<br />
+                Reichweite lässt sich einkaufen.<br />
+                Der früheste Zugang zur Nachfrage lässt sich nur besitzen.
               </p>
             </div>
           </div>
 
-          {/* Wie Bedarf sichtbar wird */}
+          {/* Wo Jobportale ins Spiel kommen */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Wie Bedarf heute sichtbar wird</h2>
+              <h2 className="section-heading mb-6">Wo Jobportale in der Suche ins Spiel kommen</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Der Bedarf an medizinischem Personal wird im deutschsprachigen Raum zunehmend digital wahrgenommen.
+                Jobportale greifen nicht am Anfang der Suche.
               </p>
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Diese frühe Phase ist:</p>
+                  <p className="text-lg font-semibold text-primary mb-4">Sie wirken:</p>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">allgemein</span>
+                      <span className="text-lg">nach erster Orientierung</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">nicht einrichtungsbezogen</span>
+                      <span className="text-lg">nach thematischer Einordnung</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">vorgelagert</span>
+                      <span className="text-lg">nach Begriffsbildung</span>
                     </li>
                   </ul>
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Sie entsteht:</p>
+                  <p className="text-lg font-semibold text-primary mb-4">Die vorgelagerte Suche ist:</p>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">vor internen Bedarfsanzeigen</span>
+                      <span className="text-lg">generisch</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">vor Ausschreibungen</span>
+                      <span className="text-lg">unspezifisch</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">vor konkreten Beschaffungsmodellen</span>
+                      <span className="text-lg">nicht plattformbezogen</span>
                     </li>
                   </ul>
                 </div>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                Das Domain-Paket bildet genau diese Phase ab – dort, wo Versorgung erstmals sprachlich sichtbar wird.
+                Suchende beginnen mit dem Bedarf.<br />
+                Plattformen kommen später.<br />
+                <br />
+                Domains wie medizinisches-personal.de markieren genau diesen Anfang.
               </p>
             </div>
           </div>
@@ -140,14 +144,36 @@ const Kliniken = () => {
           {/* Systemischer Begriff */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Warum „medizinisches Personal" für Kliniken ein systemischer Begriff ist</h2>
+              <h2 className="section-heading mb-6">Warum „medizinisches Personal" für Plattformen zentral ist</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Der Begriff „medizinisches Personal" steht für Versorgung als Ganzes.
+                Der Begriff „medizinisches Personal" fungiert als übergeordneter Sammelbegriff.
               </p>
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Er umfasst:</p>
+                  <p className="text-lg font-semibold text-primary mb-4">Er wird genutzt von:</p>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Einrichtungen</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Öffentlichkeit</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Medien</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">politischen und administrativen Akteuren</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p className="text-lg font-semibold text-primary mb-4">Er bündelt:</p>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -155,7 +181,7 @@ const Kliniken = () => {
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">ärztliche und klinische Tätigkeiten</span>
+                      <span className="text-lg">ärztliche Versorgung</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -171,33 +197,11 @@ const Kliniken = () => {
                     </li>
                   </ul>
                 </div>
-
-                <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Er wird genutzt von:</p>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start gap-3">
-                      <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Öffentlichkeit</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Politik</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Verwaltung</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Medien</span>
-                    </li>
-                  </ul>
-                </div>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                <strong>Für Kliniken bedeutet das:</strong><br />
-                Der Begriff beschreibt Verantwortung auf Systemebene – nicht einzelne Funktionen.
+                Für Jobportale bedeutet das:<br />
+                Relevanz entsteht vor Rollenfiltern, vor Kategorien und vor Plattformlogik.
               </p>
             </div>
           </div>
@@ -205,7 +209,7 @@ const Kliniken = () => {
           {/* Infrastruktureller Zugang */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Das Domain-Paket als infrastruktureller Zugang</h2>
+              <h2 className="section-heading mb-6">Das Domain-Paket als vorgelagerter Nachfrage-Layer</h2>
               
               <div className="space-y-6">
                 <div>
@@ -213,15 +217,15 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">kein Jobportal</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">kein Matching-System</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
                       <span className="text-lg">keine Plattform</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">kein Steuerungsinstrument</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">kein operatives Werkzeug</span>
                     </li>
                   </ul>
                 </div>
@@ -231,23 +235,23 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">digitaler Orientierungspunkt</span>
+                      <span className="text-lg">thematischer Einstiegspunkt</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">vorgelagerter Zugang zur Versorgungsdebatte</span>
+                      <span className="text-lg">vorgelagerter Nachfrage-Layer</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">sprachliche Infrastruktur im Gesundheitswesen</span>
+                      <span className="text-lg">Filter vor der Plattform</span>
                     </li>
                   </ul>
                 </div>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                Prozesse lösen Aufgaben.<br />
-                Infrastruktur definiert den Rahmen.
+                Plattformen organisieren Auswahl.<br />
+                Domains definieren Herkunft.
               </p>
             </div>
           </div>
@@ -255,74 +259,109 @@ const Kliniken = () => {
           {/* Strategischer Nutzen */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Strategischer Nutzen für Kliniken</h2>
+              <h2 className="section-heading mb-6">Strategischer Nutzen für Jobportale</h2>
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-4">Positionierung</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-4">Plattformstrategie</h3>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Präsenz auf Systemebene</span>
+                      <span className="text-lg">Kontrolle über einen generischen Gesundheitsbegriff</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Sichtbarkeit dort, wo Bedarf begrifflich entsteht</span>
+                      <span className="text-lg">Entkopplung vom reinen Wettbewerb um Klicks</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Unabhängigkeit von kurzfristigen Maßnahmen</span>
+                      <span className="text-lg">Schutz vor Verdrängung im vorgelagerten Suchraum</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Absicherung eines zentralen Gesundheitsbegriffs</span>
+                      <span className="text-lg">Zugang zu Nachfrage vor Segmentierung</span>
                     </li>
                   </ul>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-4">Integration</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-4">Architektonische Nutzung</h3>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Nutzung als Dach für Informationen oder Studien</span>
+                      <span className="text-lg">vorgelagerte Einstiegsseite</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Kontextseite für Versorgungsmodelle</span>
+                      <span className="text-lg">Dach über mehreren Portalen oder Marken</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Weiterleitung in bestehende Klinik- oder Konzernstrukturen</span>
+                      <span className="text-lg">neutrale Referenzseite innerhalb von Konzernstrukturen</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Einbindung ohne Veränderung interner Abläufe</span>
+                      <span className="text-lg">Weiterleitung in bestehende Systeme</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Integration ohne Produktumbau</span>
                     </li>
                   </ul>
                 </div>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                Das Domain-Paket ergänzt bestehende Systeme, ohne sie zu beeinflussen.
+                Das Domain-Paket ergänzt Plattformen, ohne sie zu verändern.
               </p>
             </div>
           </div>
 
-          {/* Langfristigkeit */}
+          {/* Unabhängigkeit */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Langfristigkeit als klinische Logik</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Kliniken tragen Versorgungsverantwortung über Jahre und Jahrzehnte.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Maßnahmen sind zeitlich begrenzt.<br />
-                Infrastruktur wirkt dauerhaft.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Das Domain-Paket folgt dieser Logik:<br />
-                ruhig, stabil, unabhängig von operativen Zyklen.
+              <h2 className="section-heading mb-6">Unabhängigkeit von Plattformdynamiken</h2>
+              
+              <div className="space-y-6">
+                <div>
+                  <p className="text-lg font-semibold text-primary mb-4">Jobportale unterliegen:</p>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Algorithmus-Abhängigkeiten</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Reichweiten-Schwankungen</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">externen Traffic-Quellen</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p className="text-lg font-semibold text-primary mb-4">Domain-Eigentum schafft:</p>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Stabilität</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Eigenständigkeit</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Verhandlungsspielraum</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p className="text-lg text-muted-foreground leading-relaxed mt-6">
+                Nicht als Ersatz, sondern als strukturelle Ergänzung.
               </p>
             </div>
           </div>
@@ -330,44 +369,87 @@ const Kliniken = () => {
           {/* Wettbewerb */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Wettbewerb und Systemperspektive</h2>
+              <h2 className="section-heading mb-6">Wettbewerbsperspektive</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Kliniken konkurrieren nicht nur um Personal, sondern auch um Wahrnehmung im Versorgungssystem.
+                Die zentrale Frage für Plattformbetreiber lautet:<br />
+                Wer kontrolliert den generischen Einstieg in die Gesundheitsnachfrage?
               </p>
+              
+              <div>
+                <p className="text-lg font-semibold text-primary mb-4">Wenn dieser Einstieg extern liegt:</p>
+                <ul className="space-y-3 text-muted-foreground mb-6">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-lg">konkurrieren Portale um Traffic</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-lg">statt ihn strukturell zu besitzen</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-lg">steigt die Austauschbarkeit</span>
+                  </li>
+                </ul>
+              </div>
+
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Eigentum am Einstieg verschiebt diese Dynamik.
+              </p>
+            </div>
+          </div>
+
+          {/* Optionale Nutzung */}
+          <div className="md:col-span-2">
+            <div className="section-card">
+              <h2 className="section-heading mb-6">Optionale Nutzung – besonders relevant für Plattformen</h2>
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Wenn zentrale Begriffe extern kontrolliert werden:</p>
+                  <p className="text-lg font-semibold text-primary mb-4">Für Jobportale ist entscheidend:</p>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">entsteht Abhängigkeit</span>
+                      <span className="text-lg">keine technische Verpflichtung</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">geht strategische Ruhe verloren</span>
+                      <span className="text-lg">keine Markenverwässerung</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">keine operative Bindung</span>
                     </li>
                   </ul>
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Eigentum bedeutet:</p>
+                  <p className="text-lg font-semibold text-primary mb-4">Mögliche Szenarien:</p>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Kontrolle</span>
+                      <span className="text-lg">reine Weiterleitung auf bestehende Portale</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Planbarkeit</span>
+                      <span className="text-lg">Nutzung als neutraler Vorfilter</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Unabhängigkeit</span>
+                      <span className="text-lg">Trennung von Infrastruktur und Marke</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Vorbereitung auf Zusammenschlüsse oder Exit-Szenarien</span>
                     </li>
                   </ul>
                 </div>
               </div>
+
+              <p className="text-lg text-muted-foreground leading-relaxed mt-6">
+                Besitz schafft Optionen.<br />
+                Nicht-Besitz schließt sie aus.
+              </p>
             </div>
           </div>
 
@@ -376,7 +458,7 @@ const Kliniken = () => {
             <div className="section-card">
               <h2 className="section-heading mb-6">DACH-Perspektive</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Deutschland, Österreich und die Schweiz teilen einen gemeinsamen Sprachraum bei unterschiedlichen Versorgungssystemen.
+                Deutschland, Österreich und die Schweiz nutzen identische Begriffe im Gesundheitswesen, bei gleichzeitig unterschiedlichen Markt- und Plattformmodellen.
               </p>
               
               <div>
@@ -388,7 +470,7 @@ const Kliniken = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
-                    <span className="text-lg">länderübergreifende Einordnung</span>
+                    <span className="text-lg">länderübergreifende Skalierung</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
@@ -399,32 +481,55 @@ const Kliniken = () => {
             </div>
           </div>
 
+          {/* Infrastruktur und Plattform */}
+          <div className="md:col-span-2">
+            <div className="section-card">
+              <h2 className="section-heading mb-6">Infrastruktur und Plattform</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                Plattformen sind beweglich.<br />
+                Infrastruktur ist stabil.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                Beides ist notwendig.<br />
+                Aber nicht austauschbar.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Jobportale gewinnen langfristig, wenn sie nicht nur optimieren,<br />
+                sondern den Einstieg kontrollieren.
+              </p>
+            </div>
+          </div>
+
           {/* Zusammenfassung */}
           <div className="md:col-span-2">
             <div className="section-card bg-primary-light/10">
-              <h2 className="section-heading mb-6">Zusammenfassung für Klinikentscheider</h2>
-              <p className="text-lg font-semibold text-primary mb-6">Dieses Domain-Paket bietet Kliniken:</p>
+              <h2 className="section-heading mb-6">Zusammenfassung für Plattformbetreiber</h2>
+              <p className="text-lg font-semibold text-primary mb-6">Dieses Domain-Paket bietet Jobportalen und Recruiting-Plattformen im Gesundheitswesen:</p>
               <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">vorgelagerten digitalen Zugang zur Versorgungsfrage</span>
+                  <span className="text-lg">vorgelagerten Zugang zur Nachfrage</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">Kontrolle über einen zentralen systemischen Begriff</span>
+                  <span className="text-lg">Kontrolle über einen systemischen Gesundheitsbegriff</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">strukturelle Sichtbarkeit ohne operative Bindung</span>
+                  <span className="text-lg">geringere Abhängigkeit von externen Traffic-Quellen</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">langfristige Infrastruktur ergänzend zu bestehenden Prozessen</span>
+                  <span className="text-lg">flexible, optionale Nutzung</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-lg">langfristige Infrastruktur jenseits von Produktzyklen</span>
                 </li>
               </ul>
               <p className="text-lg text-muted-foreground leading-relaxed italic">
-                Einige Systeme organisieren Betrieb.<br />
-                Andere definieren, wo Versorgung beginnt.
+                Plattformen organisieren Märkte.<br />
+                Infrastruktur entscheidet, wo sie beginnen.
               </p>
             </div>
           </div>
@@ -465,4 +570,4 @@ const Kliniken = () => {
   );
 };
 
-export default Kliniken;
+export default Jobportale;

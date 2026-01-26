@@ -4,12 +4,12 @@ import DisclaimerOverlay from '@/components/DisclaimerOverlay';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
-const Kliniken = () => {
+const Verbaende = () => {
   useEffect(() => {
-    document.title = 'Kliniken | Medizinisches Personal';
+    document.title = 'Gesundheitsverbände | Medizinisches Personal';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Domain-Paket für medizinisches Personal in Kliniken: Strategische Sichtbarkeit im DACH-Gesundheitsmarkt.');
+      metaDescription.setAttribute('content', 'Domain-Paket für Gesundheitsverbände: Sprachliche Infrastruktur für den Gesundheitsdiskurs im DACH-Raum.');
     }
   }, []);
 
@@ -19,7 +19,7 @@ const Kliniken = () => {
       <Header />
       
       <main className="pt-16">
-        {/* Custom Hero for Kliniken */}
+        {/* Custom Hero for Verbaende */}
         <section className="relative min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
           
@@ -38,11 +38,11 @@ const Kliniken = () => {
 
               <div className="animate-fade-in order-2 md:order-1" style={{ animationDelay: '0.1s' }}>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-balance lowercase">
-                  Medizinisches Personal & Kliniken
+                  medizinisches personal & gesundheitsverbände
                 </h1>
                 <div className="text-lg md:text-xl text-muted-foreground leading-relaxed space-y-4">
-                  <p className="font-medium">Versorgung beginnt nicht im Dienstplan.<br />
-                  Sie beginnt dort, wo Bedarf erstmals formuliert wird.</p>
+                  <p className="font-medium">Interessen werden vertreten.<br />
+                  Wahrnehmung entsteht davor.</p>
                 </div>
               </div>
             </div>
@@ -56,98 +56,93 @@ const Kliniken = () => {
           {/* Ausgangslage */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Ausgangslage klinischer Versorgung</h2>
+              <h2 className="section-heading mb-6">Ausgangslage für Gesundheitsverbände</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Kliniken stehen unter dauerhaftem Versorgungsdruck.
-              </p>
-              <ul className="space-y-3 text-muted-foreground mb-6">
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">steigender Behandlungsbedarf</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">demografische Veränderungen</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">struktureller Fachkräftemangel</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">wachsende Anforderungen an Qualität und Verfügbarkeit</span>
-                </li>
-              </ul>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Personalfragen sind keine Einzelmaßnahmen, sondern Teil der Versorgungsarchitektur.<br />
-                Sichtbarkeit und Einordnung entstehen, bevor interne Prozesse greifen.
-              </p>
-            </div>
-          </div>
-
-          {/* Wie Bedarf sichtbar wird */}
-          <div className="md:col-span-2">
-            <div className="section-card">
-              <h2 className="section-heading mb-6">Wie Bedarf heute sichtbar wird</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Der Bedarf an medizinischem Personal wird im deutschsprachigen Raum zunehmend digital wahrgenommen.
+                Gesundheitsverbände agieren auf Systemebene.
               </p>
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Diese frühe Phase ist:</p>
+                  <p className="text-lg font-semibold text-primary mb-4">Sie bündeln:</p>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">allgemein</span>
+                      <span className="text-lg">Interessen</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">nicht einrichtungsbezogen</span>
+                      <span className="text-lg">Positionen</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">vorgelagert</span>
+                      <span className="text-lg">Diskurse</span>
                     </li>
                   </ul>
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Sie entsteht:</p>
+                  <p className="text-lg font-semibold text-primary mb-4">Zentrale Themen sind:</p>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">vor internen Bedarfsanzeigen</span>
+                      <span className="text-lg">Versorgungssicherheit</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">vor Ausschreibungen</span>
+                      <span className="text-lg">Fachkräftesituation im Gesundheitswesen</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">vor konkreten Beschaffungsmodellen</span>
+                      <span className="text-lg">demografische Entwicklung</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">strukturelle Personalengpässe</span>
                     </li>
                   </ul>
                 </div>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                Das Domain-Paket bildet genau diese Phase ab – dort, wo Versorgung erstmals sprachlich sichtbar wird.
+                Verbände wirken langfristig.<br />
+                Sprache ist dabei ihr zentrales Instrument.
               </p>
             </div>
           </div>
 
-          {/* Systemischer Begriff */}
+          {/* Sprachliche Realität */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Warum „medizinisches Personal" für Kliniken ein systemischer Begriff ist</h2>
+              <h2 className="section-heading mb-6">Sprachliche Realität im Gesundheitssektor</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Der Begriff „medizinisches Personal" steht für Versorgung als Ganzes.
+                Öffentliche Debatten beginnen nicht mit Detailfragen, sondern mit Oberbegriffen.
               </p>
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Er umfasst:</p>
+                  <p className="text-lg font-semibold text-primary mb-4">„Medizinisches Personal" ist:</p>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">neutral</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">etabliert</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">erklärungsfrei</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">anschlussfähig</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p className="text-lg font-semibold text-primary mb-4">Der Begriff verbindet:</p>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -155,7 +150,7 @@ const Kliniken = () => {
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">ärztliche und klinische Tätigkeiten</span>
+                      <span className="text-lg">ärztliche Versorgung</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -171,41 +166,19 @@ const Kliniken = () => {
                     </li>
                   </ul>
                 </div>
-
-                <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Er wird genutzt von:</p>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start gap-3">
-                      <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Öffentlichkeit</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Politik</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Verwaltung</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Medien</span>
-                    </li>
-                  </ul>
-                </div>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                <strong>Für Kliniken bedeutet das:</strong><br />
-                Der Begriff beschreibt Verantwortung auf Systemebene – nicht einzelne Funktionen.
+                Für Verbände bedeutet das:<br />
+                Ein gemeinsamer Referenzbegriff, der Vielfalt abbildet, ohne sie zu fragmentieren.
               </p>
             </div>
           </div>
 
-          {/* Infrastruktureller Zugang */}
+          {/* Infrastruktureller Diskursraum */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Das Domain-Paket als infrastruktureller Zugang</h2>
+              <h2 className="section-heading mb-6">Das Domain-Paket als infrastruktureller Diskursraum</h2>
               
               <div className="space-y-6">
                 <div>
@@ -213,15 +186,15 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">keine Plattform</span>
+                      <span className="text-lg">kein Kommunikationsorgan</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">kein Steuerungsinstrument</span>
+                      <span className="text-lg">keine Kampagnenplattform</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">kein operatives Werkzeug</span>
+                      <span className="text-lg">kein Sprachrohr</span>
                     </li>
                   </ul>
                 </div>
@@ -231,23 +204,23 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">digitaler Orientierungspunkt</span>
+                      <span className="text-lg">vorgelagerter Diskursanker</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">vorgelagerter Zugang zur Versorgungsdebatte</span>
+                      <span className="text-lg">sprachliche Infrastruktur</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">sprachliche Infrastruktur im Gesundheitswesen</span>
+                      <span className="text-lg">Orientierungspunkt für Öffentlichkeit, Medien und Entscheidungsträger</span>
                     </li>
                   </ul>
                 </div>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                Prozesse lösen Aufgaben.<br />
-                Infrastruktur definiert den Rahmen.
+                Verbände argumentieren innerhalb des Systems.<br />
+                Domains definieren, wo das System sprachlich beginnt.
               </p>
             </div>
           </div>
@@ -255,56 +228,93 @@ const Kliniken = () => {
           {/* Strategischer Nutzen */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Strategischer Nutzen für Kliniken</h2>
+              <h2 className="section-heading mb-6">Strategischer Nutzen für Gesundheitsverbände</h2>
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-4">Positionierung</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-4">Systemische Wirkung</h3>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Präsenz auf Systemebene</span>
+                      <span className="text-lg">Kontrolle über einen zentralen Gesundheitsbegriff</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Sichtbarkeit dort, wo Bedarf begrifflich entsteht</span>
+                      <span className="text-lg">Unabhängigkeit von externen Plattformen</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Unabhängigkeit von kurzfristigen Maßnahmen</span>
+                      <span className="text-lg">Stabiler Referenzpunkt für Positionen und Studien</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Absicherung eines zentralen Gesundheitsbegriffs</span>
+                      <span className="text-lg">Sichtbarkeit jenseits einzelner Kampagnen</span>
                     </li>
                   </ul>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-4">Integration</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-4">Kommunikative Integration</h3>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Nutzung als Dach für Informationen oder Studien</span>
+                      <span className="text-lg">Nutzung als Kontext- oder Referenzseite</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Kontextseite für Versorgungsmodelle</span>
+                      <span className="text-lg">Weiterleitung auf bestehende Verbandsangebote</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Weiterleitung in bestehende Klinik- oder Konzernstrukturen</span>
+                      <span className="text-lg">Einbindung ohne Veränderung bestehender Kommunikationsstrukturen</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Einbindung ohne Veränderung interner Abläufe</span>
+                      <span className="text-lg">klare Trennung von Infrastruktur und Interessenvertretung</span>
                     </li>
                   </ul>
                 </div>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                Das Domain-Paket ergänzt bestehende Systeme, ohne sie zu beeinflussen.
+                Das Domain-Paket stärkt die Wirkung, ohne operative Bindung zu erzeugen.
+              </p>
+            </div>
+          </div>
+
+          {/* Aggregation als Schlüssel */}
+          <div className="md:col-span-2">
+            <div className="section-card">
+              <h2 className="section-heading mb-6">Aggregation als Schlüssel für Verbände</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Verbände vertreten Vielfalt.<br />
+                Öffentlichkeit sucht Einordnung.
+              </p>
+              
+              <div>
+                <p className="text-lg font-semibold text-primary mb-4">Der Begriff „medizinisches Personal":</p>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-lg">reduziert Komplexität</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-lg">ohne Inhalte zu verfälschen</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-lg">schafft Anschlussfähigkeit</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-lg">ohne Einzelinteressen zu vermischen</span>
+                  </li>
+                </ul>
+              </div>
+
+              <p className="text-lg text-muted-foreground leading-relaxed mt-6">
+                Das Domain-Paket transportiert genau diese Balance.
               </p>
             </div>
           </div>
@@ -312,40 +322,71 @@ const Kliniken = () => {
           {/* Langfristigkeit */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Langfristigkeit als klinische Logik</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Kliniken tragen Versorgungsverantwortung über Jahre und Jahrzehnte.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Maßnahmen sind zeitlich begrenzt.<br />
-                Infrastruktur wirkt dauerhaft.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Das Domain-Paket folgt dieser Logik:<br />
-                ruhig, stabil, unabhängig von operativen Zyklen.
+              <h2 className="section-heading mb-6">Langfristigkeit statt Projektlogik</h2>
+              
+              <div className="space-y-6">
+                <div>
+                  <p className="text-lg font-semibold text-primary mb-4">Verbände investieren regelmäßig in:</p>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Öffentlichkeitsarbeit</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Studien</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Kommunikationsmaßnahmen</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p className="text-lg text-muted-foreground leading-relaxed mt-6">
+                Diese Maßnahmen sind thematisch und zeitlich begrenzt.<br />
+                Das Domain-Paket wirkt dauerhaft und unabhängig von Projektzyklen.<br />
+                <br />
+                Es sichert den sprachlichen Rahmen, in dem Positionen wahrgenommen werden.
               </p>
             </div>
           </div>
 
-          {/* Wettbewerb */}
+          {/* Deutungshoheit */}
           <div className="md:col-span-2">
             <div className="section-card">
-              <h2 className="section-heading mb-6">Wettbewerb und Systemperspektive</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Kliniken konkurrieren nicht nur um Personal, sondern auch um Wahrnehmung im Versorgungssystem.
-              </p>
+              <h2 className="section-heading mb-6">Deutungshoheit im digitalen Raum</h2>
               
               <div className="space-y-6">
+                <div>
+                  <p className="text-lg font-semibold text-primary mb-4">Auch im Verbandsumfeld gilt:</p>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Begriffe werden besetzt</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Diskurse werden vorstrukturiert</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">Aufmerksamkeit ist begrenzt</span>
+                    </li>
+                  </ul>
+                </div>
+
                 <div>
                   <p className="text-lg font-semibold text-primary mb-4">Wenn zentrale Begriffe extern kontrolliert werden:</p>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">entsteht Abhängigkeit</span>
+                      <span className="text-lg">verschiebt sich Deutungshoheit</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">geht strategische Ruhe verloren</span>
+                      <span className="text-lg">sinkt Einfluss auf öffentliche Wahrnehmung</span>
                     </li>
                   </ul>
                 </div>
@@ -355,15 +396,15 @@ const Kliniken = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Kontrolle</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-primary mt-1">•</span>
-                      <span className="text-lg">Planbarkeit</span>
+                      <span className="text-lg">Stabilität</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
                       <span className="text-lg">Unabhängigkeit</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-lg">langfristige Gestaltungsfreiheit</span>
                     </li>
                   </ul>
                 </div>
@@ -376,7 +417,7 @@ const Kliniken = () => {
             <div className="section-card">
               <h2 className="section-heading mb-6">DACH-Perspektive</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Deutschland, Österreich und die Schweiz teilen einen gemeinsamen Sprachraum bei unterschiedlichen Versorgungssystemen.
+                Deutschland, Österreich und die Schweiz teilen einen gemeinsamen Sprachraum bei unterschiedlichen Gesundheitssystemen.
               </p>
               
               <div>
@@ -384,11 +425,11 @@ const Kliniken = () => {
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
-                    <span className="text-lg">konsistente sprachliche Präsenz</span>
+                    <span className="text-lg">länderübergreifende Einordnung</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
-                    <span className="text-lg">länderübergreifende Einordnung</span>
+                    <span className="text-lg">Vergleichbarkeit von Positionen</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
@@ -402,16 +443,16 @@ const Kliniken = () => {
           {/* Zusammenfassung */}
           <div className="md:col-span-2">
             <div className="section-card bg-primary-light/10">
-              <h2 className="section-heading mb-6">Zusammenfassung für Klinikentscheider</h2>
-              <p className="text-lg font-semibold text-primary mb-6">Dieses Domain-Paket bietet Kliniken:</p>
+              <h2 className="section-heading mb-6">Zusammenfassung für Verbandsentscheider</h2>
+              <p className="text-lg font-semibold text-primary mb-6">Dieses Domain-Paket bietet Gesundheitsverbänden:</p>
               <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">vorgelagerten digitalen Zugang zur Versorgungsfrage</span>
+                  <span className="text-lg">vorgelagerten sprachlichen Zugang zum Gesundheitsdiskurs</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">Kontrolle über einen zentralen systemischen Begriff</span>
+                  <span className="text-lg">Kontrolle über einen systemischen Begriff</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
@@ -419,12 +460,12 @@ const Kliniken = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
-                  <span className="text-lg">langfristige Infrastruktur ergänzend zu bestehenden Prozessen</span>
+                  <span className="text-lg">langfristige Infrastruktur statt projektbezogener Maßnahmen</span>
                 </li>
               </ul>
               <p className="text-lg text-muted-foreground leading-relaxed italic">
-                Einige Systeme organisieren Betrieb.<br />
-                Andere definieren, wo Versorgung beginnt.
+                Verbände vertreten Interessen.<br />
+                Infrastruktur definiert den Rahmen, in dem sie gehört werden.
               </p>
             </div>
           </div>
@@ -465,4 +506,4 @@ const Kliniken = () => {
   );
 };
 
-export default Kliniken;
+export default Verbaende;
