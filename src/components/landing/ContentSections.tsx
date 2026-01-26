@@ -100,16 +100,16 @@ const ContentSections = () => {
                   >
                     <CarouselContent className="-ml-4">
                       {relevantCards.map((card, index) => (
-                        <CarouselItem key={index} className="pl-4 basis-full">
+                        <CarouselItem key={index} className="pl-4 basis-full flex">
                           <Link 
                             to={card.link}
-                            className="bg-card rounded-2xl border border-border-subtle p-3 pb-7 transition-all duration-300 hover:shadow-md block group h-full relative"
+                            className="bg-card rounded-2xl border border-border-subtle p-3 pb-7 transition-all duration-300 hover:shadow-md block group w-full relative flex flex-col justify-center"
                           >
                             <h3 className="text-lg font-semibold mb-2 text-primary underline decoration-primary/20 decoration-1 underline-offset-2 group-hover:decoration-primary/60 transition-all cursor-pointer">{card.title}</h3>
                             <p className="text-base text-muted-foreground leading-relaxed mb-5">{card.content}</p>
                             
                             {/* Pagination Dots inside card */}
-                            <div className="flex justify-center gap-2 absolute bottom-2 left-0 right-0">
+                            <div className="flex justify-center gap-2 absolute bottom-2.5 left-0 right-0">
                               {relevantCards.map((_, dotIndex) => (
                                 <div
                                   key={dotIndex}
