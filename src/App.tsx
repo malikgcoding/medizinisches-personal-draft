@@ -3,14 +3,8 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import Kliniken from "./pages/Kliniken";
-import Zeitarbeit from "./pages/Zeitarbeit";
-import Jobportale from "./pages/Jobportale";
-import Verbaende from "./pages/Verbaende";
-import Pflegeheime from "./pages/Pflegeheime";
-import Verlage from "./pages/Verlage";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
 import NotFound from "./pages/NotFound";
@@ -23,15 +17,9 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/kliniken" element={<Kliniken />} />
-          <Route path="/zeitarbeit" element={<Zeitarbeit />} />
-          <Route path="/jobportale" element={<Jobportale />} />
-          <Route path="/verbaende" element={<Verbaende />} />
-          <Route path="/pflegeheime" element={<Pflegeheime />} />
-          <Route path="/verlage" element={<Verlage />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
