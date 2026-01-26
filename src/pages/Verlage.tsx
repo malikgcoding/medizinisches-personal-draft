@@ -60,7 +60,7 @@ const Verlage = () => {
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Fachverlage konkurrieren heute weniger über Inhalte als über Aufmerksamkeit.
               </p>
-              <ul className="space-y-3 text-muted-foreground mb-6">
+                  <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
                   <span className="text-lg">Inhalte sind schneller verfügbar</span>
@@ -95,7 +95,7 @@ const Verlage = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Diese Suche ist:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Diese Suche ist:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -113,7 +113,7 @@ const Verlage = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Leser und Entscheider suchen:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Leser und Entscheider suchen:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -148,7 +148,7 @@ const Verlage = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Er wird genutzt:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Er wird genutzt:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -170,7 +170,7 @@ const Verlage = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Er umfasst:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Er umfasst:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -210,7 +210,7 @@ const Verlage = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Das Domain-Paket ist:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Das Domain-Paket ist:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -228,7 +228,7 @@ const Verlage = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Es fungiert als:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Es fungiert als:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -260,7 +260,7 @@ const Verlage = () => {
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-4">Thematische Positionierung</h3>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Thematische Positionierung</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -282,7 +282,7 @@ const Verlage = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-4">Integration in bestehende Verlagsstrukturen</h3>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Integration in bestehende Verlagsstrukturen</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -321,7 +321,7 @@ const Verlage = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Verlage investieren kontinuierlich in:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Verlage investieren kontinuierlich in:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -339,7 +339,7 @@ const Verlage = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Diese Maßnahmen sind:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Diese Maßnahmen sind:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -357,7 +357,7 @@ const Verlage = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Domain-Eigentum schafft:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Domain-Eigentum schafft:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -388,7 +388,7 @@ const Verlage = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Im Medienumfeld gilt:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Im Medienumfeld gilt:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -406,7 +406,7 @@ const Verlage = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Wenn zentrale Begriffe extern kontrolliert werden:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Wenn zentrale Begriffe extern kontrolliert werden:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -439,8 +439,8 @@ const Verlage = () => {
               </p>
               
               <div>
-                <p className="text-lg font-semibold text-primary mb-4">Das Domain-Paket ermöglicht:</p>
-                <ul className="space-y-3 text-muted-foreground">
+                <h2 className="text-xl font-semibold text-primary mb-4">Das Domain-Paket ermöglicht:</h2>
+                  <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
                     <span className="text-lg">länderübergreifende Themenführung</span>
@@ -475,8 +475,8 @@ const Verlage = () => {
           <div className="md:col-span-2">
             <div className="section-card bg-primary-light/10">
               <h2 className="section-heading mb-3">Zusammenfassung für Verlagsentscheider</h2>
-              <p className="text-lg font-semibold text-primary mb-6">Dieses Domain-Paket bietet Fachverlagen im Gesundheitswesen:</p>
-              <ul className="space-y-3 text-muted-foreground mb-6">
+              <h2 className="text-xl font-semibold text-primary mb-4">Dieses Domain-Paket bietet Fachverlagen im Gesundheitswesen:</h2>
+                  <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
                   <span className="text-lg">vorgelagerten Zugang zu thematischer Aufmerksamkeit</span>

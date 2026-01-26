@@ -60,7 +60,7 @@ const Jobportale = () => {
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Jobportale im Gesundheitswesen operieren in einem Umfeld mit:
               </p>
-              <ul className="space-y-3 text-muted-foreground mb-6">
+                  <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
                   <span className="text-lg">hohem Wettbewerbsdruck</span>
@@ -96,7 +96,7 @@ const Jobportale = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Sie wirken:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Sie wirken:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -114,7 +114,7 @@ const Jobportale = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Die vorgelagerte Suche ist:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Die vorgelagerte Suche ist:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -151,7 +151,7 @@ const Jobportale = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Er wird genutzt von:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Er wird genutzt von:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -173,7 +173,7 @@ const Jobportale = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Er bündelt:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Er bündelt:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -213,7 +213,7 @@ const Jobportale = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Das Domain-Paket ist:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Das Domain-Paket ist:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -231,7 +231,7 @@ const Jobportale = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Es fungiert als:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Es fungiert als:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -263,7 +263,7 @@ const Jobportale = () => {
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-4">Plattformstrategie</h3>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Plattformstrategie</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -285,7 +285,7 @@ const Jobportale = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-4">Architektonische Nutzung</h3>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Architektonische Nutzung</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -324,7 +324,7 @@ const Jobportale = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Jobportale unterliegen:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Jobportale unterliegen:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -342,7 +342,7 @@ const Jobportale = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Domain-Eigentum schafft:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Domain-Eigentum schafft:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -376,8 +376,8 @@ const Jobportale = () => {
               </p>
               
               <div>
-                <p className="text-lg font-semibold text-primary mb-4">Wenn dieser Einstieg extern liegt:</p>
-                <ul className="space-y-3 text-muted-foreground mb-6">
+                <h2 className="text-xl font-semibold text-primary mb-4">Wenn dieser Einstieg extern liegt:</h2>
+                  <ul className="space-y-3 text-muted-foreground mb-6">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
                     <span className="text-lg">konkurrieren Portale um Traffic</span>
@@ -406,7 +406,7 @@ const Jobportale = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Für Jobportale ist entscheidend:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Für Jobportale ist entscheidend:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -424,7 +424,7 @@ const Jobportale = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Mögliche Szenarien:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Mögliche Szenarien:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -462,8 +462,8 @@ const Jobportale = () => {
               </p>
               
               <div>
-                <p className="text-lg font-semibold text-primary mb-4">Das Domain-Paket ermöglicht:</p>
-                <ul className="space-y-3 text-muted-foreground">
+                <h2 className="text-xl font-semibold text-primary mb-4">Das Domain-Paket ermöglicht:</h2>
+                  <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
                     <span className="text-lg">konsistente sprachliche Präsenz</span>
@@ -504,8 +504,8 @@ const Jobportale = () => {
           <div className="md:col-span-2">
             <div className="section-card bg-primary-light/10">
               <h2 className="section-heading mb-3">Zusammenfassung für Plattformbetreiber</h2>
-              <p className="text-lg font-semibold text-primary mb-6">Dieses Domain-Paket bietet Jobportalen und Recruiting-Plattformen im Gesundheitswesen:</p>
-              <ul className="space-y-3 text-muted-foreground mb-6">
+              <h2 className="text-xl font-semibold text-primary mb-4">Dieses Domain-Paket bietet Jobportalen und Recruiting-Plattformen im Gesundheitswesen:</h2>
+                  <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
                   <span className="text-lg">vorgelagerten Zugang zur Nachfrage</span>

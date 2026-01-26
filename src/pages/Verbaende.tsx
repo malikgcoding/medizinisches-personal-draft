@@ -63,7 +63,7 @@ const Verbaende = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Sie bündeln:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Sie bündeln:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -81,7 +81,7 @@ const Verbaende = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Zentrale Themen sind:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Zentrale Themen sind:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -120,7 +120,7 @@ const Verbaende = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">„Medizinisches Personal" ist:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">„Medizinisches Personal" ist:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -142,7 +142,7 @@ const Verbaende = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Der Begriff verbindet:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Der Begriff verbindet:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -182,7 +182,7 @@ const Verbaende = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Das Domain-Paket ist:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Das Domain-Paket ist:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -200,7 +200,7 @@ const Verbaende = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Es fungiert als:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Es fungiert als:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -232,7 +232,7 @@ const Verbaende = () => {
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-4">Systemische Wirkung</h3>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Systemische Wirkung</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -254,7 +254,7 @@ const Verbaende = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-4">Kommunikative Integration</h3>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Kommunikative Integration</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -292,8 +292,8 @@ const Verbaende = () => {
               </p>
               
               <div>
-                <p className="text-lg font-semibold text-primary mb-4">Der Begriff „medizinisches Personal":</p>
-                <ul className="space-y-3 text-muted-foreground">
+                <h2 className="text-xl font-semibold text-primary mb-4">Der Begriff „medizinisches Personal":</h2>
+                  <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
                     <span className="text-lg">reduziert Komplexität</span>
@@ -326,7 +326,7 @@ const Verbaende = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Verbände investieren regelmäßig in:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Verbände investieren regelmäßig in:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -360,7 +360,7 @@ const Verbaende = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Auch im Verbandsumfeld gilt:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Auch im Verbandsumfeld gilt:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -378,7 +378,7 @@ const Verbaende = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Wenn zentrale Begriffe extern kontrolliert werden:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Wenn zentrale Begriffe extern kontrolliert werden:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -392,7 +392,7 @@ const Verbaende = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Eigentum bedeutet:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Eigentum bedeutet:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -421,8 +421,8 @@ const Verbaende = () => {
               </p>
               
               <div>
-                <p className="text-lg font-semibold text-primary mb-4">Das Domain-Paket ermöglicht:</p>
-                <ul className="space-y-3 text-muted-foreground">
+                <h2 className="text-xl font-semibold text-primary mb-4">Das Domain-Paket ermöglicht:</h2>
+                  <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
                     <span className="text-lg">länderübergreifende Einordnung</span>
@@ -444,8 +444,8 @@ const Verbaende = () => {
           <div className="md:col-span-2">
             <div className="section-card bg-primary-light/10">
               <h2 className="section-heading mb-3">Zusammenfassung für Verbandsentscheider</h2>
-              <p className="text-lg font-semibold text-primary mb-6">Dieses Domain-Paket bietet Gesundheitsverbänden:</p>
-              <ul className="space-y-3 text-muted-foreground mb-6">
+              <h2 className="text-xl font-semibold text-primary mb-4">Dieses Domain-Paket bietet Gesundheitsverbänden:</h2>
+                  <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
                   <span className="text-lg">vorgelagerten sprachlichen Zugang zum Gesundheitsdiskurs</span>

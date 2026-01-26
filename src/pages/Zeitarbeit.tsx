@@ -60,7 +60,7 @@ const Zeitarbeit = () => {
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Der Bedarf an medizinischem Personal ist kein kurzfristiges Marktphänomen, sondern strukturell bedingt.
               </p>
-              <ul className="space-y-3 text-muted-foreground mb-6">
+                  <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
                   <span className="text-lg">Demografische Entwicklungen erhöhen den Versorgungsdruck</span>
@@ -91,7 +91,7 @@ const Zeitarbeit = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Diese frühe Phase ist:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Diese frühe Phase ist:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -109,7 +109,7 @@ const Zeitarbeit = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Typische Suchanfragen kombinieren Begriffe wie:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Typische Suchanfragen kombinieren Begriffe wie:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -148,7 +148,7 @@ const Zeitarbeit = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Er umfasst:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Er umfasst:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -189,7 +189,7 @@ const Zeitarbeit = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Das Domain-Paket ist:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Das Domain-Paket ist:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -207,7 +207,7 @@ const Zeitarbeit = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Es fungiert als:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Es fungiert als:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -239,7 +239,7 @@ const Zeitarbeit = () => {
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-4">Marktpositionierung</h3>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Marktpositionierung</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -261,7 +261,7 @@ const Zeitarbeit = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-4">Unternehmerische Logik</h3>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Unternehmerische Logik</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -295,8 +295,8 @@ const Zeitarbeit = () => {
               </p>
               
               <div>
-                <p className="text-lg font-semibold text-primary mb-4">Mögliche Nutzungen sind:</p>
-                <ul className="space-y-3 text-muted-foreground">
+                <h2 className="text-xl font-semibold text-primary mb-4">Mögliche Nutzungen sind:</h2>
+                  <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
                     <span className="text-lg">Weiterleitung auf bestehende Marken oder Portfolios</span>
@@ -380,8 +380,8 @@ const Zeitarbeit = () => {
               </p>
               
               <div>
-                <p className="text-lg font-semibold text-primary mb-4">Das Domain-Paket ermöglicht:</p>
-                <ul className="space-y-3 text-muted-foreground">
+                <h2 className="text-xl font-semibold text-primary mb-4">Das Domain-Paket ermöglicht:</h2>
+                  <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
                     <span className="text-lg">konsistente Präsenz</span>
@@ -403,8 +403,8 @@ const Zeitarbeit = () => {
           <div className="md:col-span-2">
             <div className="section-card bg-primary-light/10">
               <h2 className="section-heading mb-3">Zusammenfassung für Entscheider</h2>
-              <p className="text-lg font-semibold text-primary mb-6">Dieses Domain-Paket bietet Zeitarbeitsunternehmen im Gesundheitswesen:</p>
-              <ul className="space-y-3 text-muted-foreground mb-6">
+              <h2 className="text-xl font-semibold text-primary mb-4">Dieses Domain-Paket bietet Zeitarbeitsunternehmen im Gesundheitswesen:</h2>
+                  <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
                   <span className="text-lg">einen vorgelagerten digitalen Marktzugang</span>

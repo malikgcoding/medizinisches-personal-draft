@@ -60,7 +60,7 @@ const Kliniken = () => {
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Kliniken stehen unter dauerhaftem Versorgungsdruck.
               </p>
-              <ul className="space-y-3 text-muted-foreground mb-6">
+                  <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
                   <span className="text-lg">steigender Behandlungsbedarf</span>
@@ -95,7 +95,7 @@ const Kliniken = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Diese frühe Phase ist:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Diese frühe Phase ist:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -113,7 +113,7 @@ const Kliniken = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Sie entsteht:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Sie entsteht:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -147,7 +147,7 @@ const Kliniken = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Er umfasst:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Er umfasst:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -173,7 +173,7 @@ const Kliniken = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Er wird genutzt von:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Er wird genutzt von:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -209,7 +209,7 @@ const Kliniken = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Das Domain-Paket ist:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Das Domain-Paket ist:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -227,7 +227,7 @@ const Kliniken = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Es fungiert als:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Es fungiert als:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -259,7 +259,7 @@ const Kliniken = () => {
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-4">Positionierung</h3>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Positionierung</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -281,7 +281,7 @@ const Kliniken = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-primary mb-4">Integration</h3>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Integration</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -337,7 +337,7 @@ const Kliniken = () => {
               
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Wenn zentrale Begriffe extern kontrolliert werden:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Wenn zentrale Begriffe extern kontrolliert werden:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -351,7 +351,7 @@ const Kliniken = () => {
                 </div>
 
                 <div>
-                  <p className="text-lg font-semibold text-primary mb-4">Eigentum bedeutet:</p>
+                  <h2 className="text-xl font-semibold text-primary mb-4">Eigentum bedeutet:</h2>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -380,8 +380,8 @@ const Kliniken = () => {
               </p>
               
               <div>
-                <p className="text-lg font-semibold text-primary mb-4">Das Domain-Paket ermöglicht:</p>
-                <ul className="space-y-3 text-muted-foreground">
+                <h2 className="text-xl font-semibold text-primary mb-4">Das Domain-Paket ermöglicht:</h2>
+                  <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
                     <span className="text-lg">konsistente sprachliche Präsenz</span>
@@ -403,8 +403,8 @@ const Kliniken = () => {
           <div className="md:col-span-2">
             <div className="section-card bg-primary-light/10">
               <h2 className="section-heading mb-3">Zusammenfassung für Klinikentscheider</h2>
-              <p className="text-lg font-semibold text-primary mb-6">Dieses Domain-Paket bietet Kliniken:</p>
-              <ul className="space-y-3 text-muted-foreground mb-6">
+              <h2 className="text-xl font-semibold text-primary mb-4">Dieses Domain-Paket bietet Kliniken:</h2>
+                  <ul className="space-y-3 text-muted-foreground mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-primary mt-1">•</span>
                   <span className="text-lg">vorgelagerten digitalen Zugang zur Versorgungsfrage</span>
