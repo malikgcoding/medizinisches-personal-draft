@@ -21,7 +21,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { useState } from 'react';
 import type { CarouselApi } from "@/components/ui/carousel";
 
 const relevantCards = [
@@ -121,6 +120,7 @@ const ContentSections = () => {
                                   }`}
                                 />
                               ))}
+                            </div>
                             </div>
                           </Link>
                         </CarouselItem>
