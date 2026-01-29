@@ -5,7 +5,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border-subtle">
       <div className="layout-container py-6 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <img src="/logo.png" alt="Logo" className="h-6 w-auto block" />
+          <img src="/logo.png" alt="Logo" className="h-8 md:h-9 w-auto block" />
         </Link>
         <a 
           href="mailto:hallo@medizinisches-personal.de" 
