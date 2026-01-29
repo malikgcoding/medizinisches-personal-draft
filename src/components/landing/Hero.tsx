@@ -1,10 +1,10 @@
 const Hero = () => {
   return (
-    <section className="relative min-h-[60vh] md:min-h-[calc(100vh-4rem)] flex items-center px-4 sm:px-6 pt-8 pb-4 overflow-hidden">
+    <section className="relative min-h-[60vh] md:min-h-[calc(100vh-4rem)] flex items-center pt-8 pb-4 overflow-hidden">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
       
-      <div className="relative z-10 max-w-6xl mx-auto w-full">
+      <div className="relative z-10 layout-container w-full">
         <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-6 items-center">
           {/* DACH Map - Above title on mobile, right side on desktop */}
           <div 

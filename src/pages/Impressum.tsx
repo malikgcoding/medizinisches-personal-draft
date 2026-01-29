@@ -18,7 +18,7 @@ const Impressum = () => {
       <DisclaimerOverlay />
       <Header />
       <main className="flex-grow">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-32 pb-16">
+        <div className="layout-container pt-32 pb-16">
           <h1 className="section-heading mb-8">Impressum</h1>
           
           <div className="prose prose-slate max-w-none space-y-6 text-muted-foreground">
@@ -76,7 +76,7 @@ const Impressum = () => {
                 Dieses Impressum gilt für die Website medizinisches-personal.de sowie alle zugehörigen Unterseiten.
               </p>
               <p>
-                Diese Website stellt kein Angebot an Arbeitnehmer oder Arbeitgeber dar und erbringt keine Personal-, Vermittlungs-, Zeitarbeits- oder Beratungsleistungen.<br />
+                Diese Website stellt kein Angebot an Arbeitnehmer oder Arbeitgeber dar und erbringt keine Personal-, Vermittlungs-,<br />Zeitarbeits- oder Beratungsleistungen.<br />
                 Sie dient ausschließlich der neutralen Darstellung digitaler Assets (Domains).<br />
                 Eine etwaige Übertragung digitaler Assets (Domains) erfolgt ausschließlich individuell und außerhalb dieser Website.
               </p>

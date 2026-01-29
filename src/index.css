@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Prevent layout shift from scrollbar appearing/disappearing */
+html {
+  scrollbar-gutter: stable;
+}
+
 /* Soft Minimalist Design System - Medical Personnel Landing Page
    Primary Accent: #2f6f5e (HSL: 160 40% 31%)
    Clean, airy, high-end feel with generous whitespace
@@ -11,6 +16,19 @@
 
 @layer base {
   :root {
+.layout-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(16px, 3vw, 32px);
+  padding-right: clamp(16px, 3vw, 32px);
+}
+
+.layout-container--flush {
+  padding-left: 0;
+  padding-right: 0;
+}
     /* Core palette - Monochrome base with teal accent */
     --background: 0 0% 99%;
     --foreground: 220 20% 15%;

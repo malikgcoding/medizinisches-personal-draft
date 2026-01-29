@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="px-4 sm:px-6 py-16 border-t border-border-subtle">
-      <div className="max-w-6xl mx-auto">
+    <footer className="py-16 border-t border-border-subtle">
+      <div className="layout-container">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           <div className="flex flex-col items-center md:items-start gap-3 text-sm text-muted-foreground">
             <Link to="/impressum" rel="nofollow" className="hover:text-primary transition-colors">Impressum</Link>

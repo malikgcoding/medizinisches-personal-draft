@@ -18,7 +18,7 @@ const Datenschutz = () => {
       <DisclaimerOverlay />
       <Header />
       <main className="flex-grow">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-32 pb-16">
+        <div className="layout-container pt-32 pb-16">
           <h1 className="section-heading mb-8">Datenschutzerklärung</h1>
           
           <div className="prose prose-slate max-w-none space-y-6 text-muted-foreground">

@@ -20,10 +20,10 @@ const Zeitarbeit = () => {
       
       <main className="pt-16">
         {/* Custom Hero for Zeitarbeit */}
-        <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center px-4 sm:px-6 pb-8 md:py-8 overflow-hidden">
+        <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center pb-8 md:py-8 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary-light/30 via-background to-background" />
           
-          <div className="relative z-10 max-w-6xl mx-auto w-full -mt-8 md:mt-0">
+          <div className="relative z-10 layout-container w-full -mt-8 md:mt-0">
             <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-6 items-center">
               <div 
                 className="flex justify-start md:justify-end animate-fade-in order-1 md:order-2 w-full md:pt-0"
@@ -49,7 +49,7 @@ const Zeitarbeit = () => {
         </section>
 
         {/* Content Sections */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-16 pb-16">
+        <div className="layout-container pt-16 pb-16">
           <div className="grid gap-8 md:grid-cols-2">
           
           {/* Ausgangslage */}

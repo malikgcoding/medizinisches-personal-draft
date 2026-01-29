@@ -17,7 +17,7 @@ import {
 const relevantCards = [
   {
     title: "Zeitarbeit / Arbeitnehmerüberlassung",
-    content: "Zugang zur Nachfrage, bevor sie verteilt wird. Nicht reagieren – vorliegen.",
+    content: "Zugang zur Nachfrage, bevor sie verteilt wird. Nicht reagieren – vorlegen.",
     link: "/zeitarbeit"
   },
   {
@@ -49,13 +49,13 @@ const relevantCards = [
 
 const ContentSections = () => {
   return (
-    <section id="details" className="px-2 sm:px-4 md:px-6 pb-10 pt-4 sm:pt-8 overflow-x-hidden w-full">
-      <div className="max-w-6xl mx-auto w-full px-2 sm:px-0">
+    <section id="details" className="pb-10 pt-4 sm:pt-8 overflow-x-hidden w-full">
+      <div className="layout-container w-full">
         <div className="grid gap-4 md:gap-8 md:grid-cols-2 w-full max-w-full min-w-0">
           {/* Für wen relevant */}
           <div className="md:col-span-2 w-full max-w-full min-w-0">
             <section className="w-full max-w-full">
-              <div className="max-w-6xl mx-auto w-full">
+              <div className="layout-container layout-container--flush w-full">
                 <div className="text-center mb-12 md:mb-12 mb-6 w-full">
                   <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary-light text-primary mb-6">
                     <UsersIcon />
