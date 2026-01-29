@@ -90,6 +90,17 @@ const Impressum = () => {
               </p>
             </section>
 
+            <section>
+              <h2 className="text-xl font-semibold text-primary mb-3">Bild- und Iconnachweise</h2>
+              <p>Die auf dieser Website verwendeten Icons stammen aus der Open-Source-Bibliothek Lucide Icons.</p>
+              <p>
+                Lizenz: MIT License / ISC License.<br />
+                Die Icons werden lokal gehostet und unverändert verwendet.<br />
+                Copyright (c) Lucide Contributors.<br />
+                Weitere Informationen zur Lizenz unter: <a href="https://lucide.dev" className="text-primary hover:underline">https://lucide.dev</a>
+              </p>
+            </section>
+
             <div className="mt-8">
               <Link to="/" className="text-primary hover:underline">← Zurück zur Startseite</Link>
             </div>
