@@ -1,9 +1,51 @@
-# Force HTTPS
+# --- Domain Redirects (Aliases to Main Domain) ---
+
+# .app (without hyphens)
+http://medizinischespersonal.app/* https://medizinisches-personal.de/:splat 301!
+https://medizinischespersonal.app/* https://medizinisches-personal.de/:splat 301!
+http://www.medizinischespersonal.app/* https://medizinisches-personal.de/:splat 301!
+https://www.medizinischespersonal.app/* https://medizinisches-personal.de/:splat 301!
+
+# .at (without hyphens)
+http://medizinischespersonal.at/* https://medizinisches-personal.de/:splat 301!
+https://medizinischespersonal.at/* https://medizinisches-personal.de/:splat 301!
+http://www.medizinischespersonal.at/* https://medizinisches-personal.de/:splat 301!
+https://www.medizinischespersonal.at/* https://medizinisches-personal.de/:splat 301!
+
+# .ch (without hyphens)
+http://medizinischespersonal.ch/* https://medizinisches-personal.de/:splat 301!
+https://medizinischespersonal.ch/* https://medizinisches-personal.de/:splat 301!
+http://www.medizinischespersonal.ch/* https://medizinisches-personal.de/:splat 301!
+https://www.medizinischespersonal.ch/* https://medizinisches-personal.de/:splat 301!
+
+# .app (with typo/double-l)
+http://medizinisches-personall.app/* https://medizinisches-personal.de/:splat 301!
+https://medizinisches-personall.app/* https://medizinisches-personal.de/:splat 301!
+http://www.medizinisches-personall.app/* https://medizinisches-personal.de/:splat 301!
+https://www.medizinisches-personall.app/* https://medizinisches-personal.de/:splat 301!
+
+# .at (with hyphens)
+http://medizinisches-personal.at/* https://medizinisches-personal.de/:splat 301!
+https://medizinisches-personal.at/* https://medizinisches-personal.de/:splat 301!
+http://www.medizinisches-personal.at/* https://medizinisches-personal.de/:splat 301!
+https://www.medizinisches-personal.at/* https://medizinisches-personal.de/:splat 301!
+
+# .ch (with hyphens)
+http://medizinisches-personal.ch/* https://medizinisches-personal.de/:splat 301!
+https://medizinisches-personal.ch/* https://medizinisches-personal.de/:splat 301!
+http://www.medizinisches-personal.ch/* https://medizinisches-personal.de/:splat 301!
+https://www.medizinisches-personal.ch/* https://medizinisches-personal.de/:splat 301!
+
+# --- Security & Standardization for Main Domain ---
+
+# Force HTTPS for main domain
 http://medizinisches-personal.de/* https://medizinisches-personal.de/:splat 301!
 http://www.medizinisches-personal.de/* https://medizinisches-personal.de/:splat 301!
 
-# Force non-www
+# Force non-www for main domain
 https://www.medizinisches-personal.de/* https://medizinisches-personal.de/:splat 301!
 
+# --- Single Page App Fallback ---
+
 # SPA fallback for client-side routing
-/*    /index.html   200
+/* /index.html   200
