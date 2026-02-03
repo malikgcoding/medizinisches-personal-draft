@@ -18,11 +18,11 @@ https://medizinischespersonal.ch/* https://medizinisches-personal.de/:splat 301!
 http://www.medizinischespersonal.ch/* https://medizinisches-personal.de/:splat 301!
 https://www.medizinischespersonal.ch/* https://medizinisches-personal.de/:splat 301!
 
-# .app (with typo/double-l)
-http://medizinisches-personall.app/* https://medizinisches-personal.de/:splat 301!
-https://medizinisches-personall.app/* https://medizinisches-personal.de/:splat 301!
-http://www.medizinisches-personall.app/* https://medizinisches-personal.de/:splat 301!
-https://www.medizinisches-personall.app/* https://medizinisches-personal.de/:splat 301!
+# .app (with hyphens)
+http://medizinisches-personal.app/* https://medizinisches-personal.de/:splat 301!
+https://medizinisches-personal.app/* https://medizinisches-personal.de/:splat 301!
+http://www.medizinisches-personal.app/* https://medizinisches-personal.de/:splat 301!
+https://www.medizinisches-personal.app/* https://medizinisches-personal.de/:splat 301!
 
 # .at (with hyphens)
 http://medizinisches-personal.at/* https://medizinisches-personal.de/:splat 301!
